@@ -1,0 +1,3281 @@
+<!doctype html >
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      class="">
+<head>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    window._currentDevice = 'desktop';
+    window.Parameters = window.Parameters || {
+        HomeUrl: 'https://www.chriscollado.com/',
+        AccountUUID: '5776bbf2368948bbad668c38a86a0639',
+        SystemID: 'US_DIRECT_PRODUCTION',
+        SiteAlias: '3f2e341a',
+        SiteType: atob('RFVEQU9ORQ=='),
+        PublicationDate: 'Tue Oct 01 11:01:58 UTC 2024',
+        ExternalUid: null,
+        IsSiteMultilingual: false,
+        InitialPostAlias: '',
+        InitialDynamicItem: '',
+        DynamicPageInfo: {
+            isDynamicPage: false,
+            base64JsonRowData: 'null',
+        },
+        InitialPageAlias: 'the-art-of-legacy',
+        InitialPageUuid: '0aff1083ca314d05812e3b1c4b00ddae',
+        InitialPageId: '31140052',
+        InitialEncodedPageAlias: 'dGhlLWFydC1vZi1sZWdhY3k=',
+        CurrentPageUrl: '',
+        IsCurrentHomePage: false,
+        AllowAjax: false,
+        AfterAjaxCommand: null,
+        HomeLinkText: 'Back To Home',
+        UseGalleryModule: false,
+        CurrentThemeName: 'Layout Theme',
+        ThemeVersion: '47980',
+        DefaultPageAlias: '',
+        RemoveDID: true,
+        WidgetStyleID: null,
+        IsHeaderFixed: false,
+        IsHeaderSkinny: false,
+        IsBfs: true,
+        StorePageAlias: 'null',
+        StorePagesUrls: 'eyJTVE9SRV9DQVRFR09SWV9QQUdFIjoiY2F0ZWdvcnkiLCJTVE9SRV9QUk9EVUNUX1BBR0UiOiJwcm9kdWN0In0=',
+        IsNewStore: 'false',
+        StorePath: '',
+        StoreId: 'null',
+        StoreVersion: 0,
+        StoreBaseUrl: '',
+        StoreCleanUrl: true,
+        StoreDisableScrolling: true,
+        IsStoreSuspended: false,
+        NotificationSubDomain: 'chriscollado',
+        HasCustomDomain: true,
+        SimpleSite: false,
+        showCookieNotification: false,
+        cookiesNotificationMarkup: 'null',
+        translatedPageUrl: '',
+        isFastMigrationSite: false,
+        sidebarPosition: 'NA',
+        currentLanguage: 'en',
+        currentLocale: 'en',
+        NavItems: '{}',
+        errors: {
+            general: 'There was an error connecting to the page.<br/> Make sure you are not offline.',
+            password: 'Incorrect name/password combination',
+            tryAgain: 'Try again'
+        },
+        NavigationAreaParams: {
+            ShowBackToHomeOnInnerPages: true,
+            NavbarSize: -1,
+            NavbarLiveHomePage: 'https://www.chriscollado.com/',
+            BlockContainerSelector: '.dmBody',
+            NavbarSelector: '#dmNav:has(a)',
+            SubNavbarSelector: '#subnav_main'
+        },
+        hasCustomCode: true,
+        planID: '7',
+        customTemplateId: 'null',
+        siteTemplateId: 'null',
+        productId: 'DM_DIRECT',
+        disableTracking: false,
+        pageType: 'FROM_SCRATCH',
+        isRuntimeServer: true,
+        isInEditor: false,
+        hasNativeStore: true,
+        defaultLang: 'en',
+    };
+
+    window.Parameters.LayoutID = {};
+    window.Parameters.LayoutID[window._currentDevice] = 6;
+    window.Parameters.LayoutVariationID = {};
+    window.Parameters.LayoutVariationID[window._currentDevice] = 5;
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Injecting site-wide to the head -->
+
+
+
+
+<!-- End Injecting site-wide to the head -->
+
+<!-- Inject secured cdn script -->
+
+
+<!-- ========= Meta Tags ========= -->
+<!-- PWA settings -->
+<script>
+    function toHash(str) {
+        var hash = 5381, i = str.length;
+        while (i) {
+            hash = hash * 33 ^ str.charCodeAt(--i)
+        }
+        return hash >>> 0
+    }
+</script>
+<script>
+    (function (global) {
+    //const cacheKey = global.cacheKey;
+    const isOffline = 'onLine' in navigator && navigator.onLine === false;
+    const hasServiceWorkerSupport = 'serviceWorker' in navigator;
+    if (isOffline) {
+        console.log('offline mode');
+    }
+    if (!hasServiceWorkerSupport) {
+        console.log('service worker is not supported');
+    }
+    if (hasServiceWorkerSupport && !isOffline) {
+        window.addEventListener('load', function () {
+            const serviceWorkerPath = '/runtime-service-worker.js?v=3';
+            navigator.serviceWorker
+                .register(serviceWorkerPath, { scope: './' })
+                .then(
+                    function (registration) {
+                        // Registration was successful
+                        console.log(
+                            'ServiceWorker registration successful with scope: ',
+                            registration.scope
+                        );
+                    },
+                    function (err) {
+                        // registration failed :(
+                        console.log('ServiceWorker registration failed: ', err);
+                    }
+                )
+                .catch(function (err) {
+                    console.log(err);
+                });
+        });
+
+        // helper function to refresh the page
+        var refreshPage = (function () {
+            var refreshing;
+            return function () {
+                if (refreshing) return;
+                // prevent multiple refreshes
+                var refreshkey = 'refreshed' + location.href;
+                var prevRefresh = localStorage.getItem(refreshkey);
+                if (prevRefresh) {
+                    localStorage.removeItem(refreshkey);
+                    if (Date.now() - prevRefresh < 30000) {
+                        return; // dont go into a refresh loop
+                    }
+                }
+                refreshing = true;
+                localStorage.setItem(refreshkey, Date.now());
+                console.log('refereshing page');
+                window.location.reload();
+            };
+        })();
+
+        function messageServiceWorker(data) {
+            return new Promise(function (resolve, reject) {
+                if (navigator.serviceWorker.controller) {
+                    var worker = navigator.serviceWorker.controller;
+                    var messageChannel = new MessageChannel();
+                    messageChannel.port1.onmessage = replyHandler;
+                    worker.postMessage(data, [messageChannel.port2]);
+                    function replyHandler(event) {
+                        resolve(event.data);
+                    }
+                } else {
+                    resolve();
+                }
+            });
+        }
+    }
+})(window);
+</script>
+<!-- Add manifest -->
+<!-- End PWA settings -->
+
+
+<meta http-equiv="Content-type" content="text/html;charset=utf-8">
+<meta charset="utf-8">
+
+<link rel="canonical" href="https://www.chriscollado.com/the-art-of-legacy">
+
+<meta id="view" name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!--Add favorites icons-->
+
+<link rel="apple-touch-icon" href="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/CC+Logo+BW.png"/>
+
+<link rel="icon" type="image/x-icon" href="https://irp.cdn-website.com/3f2e341a/site_favicon_16_1722631783051.ico"/>
+
+<!-- End favorite icons -->
+<link rel="preconnect" href="https://lirp.cdn-website.com/"/>
+
+
+
+<!-- render the required CSS and JS in the head section -->
+<script>
+    window.SystemID = 'US_DIRECT_PRODUCTION';
+
+    if (!window.dmAPI) {
+        window.dmAPI = {
+            registerExternalRuntimeComponent: function () {
+            },
+            getCurrentDeviceType: function () {
+                return window._currentDevice;
+            },
+            runOnReady: (ns, fn) => {
+                const safeFn = dmAPI.toSafeFn(fn);
+                ns = ns || 'global_' + Math.random().toString(36).slice(2, 11);
+                const eventName = 'afterAjax.' + ns;
+
+                if (document.readyState === 'complete') {
+                    $.DM.events.off(eventName).on(eventName, safeFn);
+                    setTimeout(function () {
+                        safeFn({
+                            isAjax: false,
+                        });
+                    }, 0);
+                } else {
+                    window?.waitForDeferred?.('dmAjax', () => {
+                        $.DM.events.off(eventName).on(eventName, safeFn);
+                        safeFn({
+                            isAjax: false,
+                        });
+                    });
+                }
+            },
+            toSafeFn: (fn) => {
+                if (fn?.safe) {
+                    return fn;
+                }
+                const safeFn = function (...args) {
+                    try {
+                        return fn?.apply(null, args);
+                    } catch (e) {
+                        console.log('function failed ' + e.message);
+                    }
+                };
+                safeFn.safe = true;
+                return safeFn;
+            }
+        };
+    }
+
+    if (!window.requestIdleCallback) {
+        window.requestIdleCallback = function (fn) {
+            setTimeout(fn, 0);
+        }
+    }
+</script>
+
+<!-- loadCSS function header.jsp-->
+
+
+
+
+
+
+<script id="d-js-load-css">
+/**
+ * There are a few <link> tags with CSS resource in them that are preloaded in the page
+ * in each of those there is a "onload" handler which invokes the loadCSS callback
+ * defined here.
+ * We are monitoring 3 main CSS files - the runtime, the global and the page.
+ * When each load we check to see if we can append them all in a batch. If threre
+ * is no page css (which may happen on inner pages) then we do not wait for it
+ */
+(function () {
+  let cssLinks = {};
+  function loadCssLink(link) {
+    link.onload = null;
+    link.rel = "stylesheet";
+    link.type = "text/css";
+  }
+  
+    function checkCss() {
+      const pageCssLink = document.querySelector("[id*='CssLink']");
+      const widgetCssLink = document.querySelector("[id*='widgetCSS']");
+
+        if (cssLinks && cssLinks.runtime && cssLinks.global && (!pageCssLink || cssLinks.page) && (!widgetCssLink || cssLinks.widget)) {
+            const storedRuntimeCssLink = cssLinks.runtime;
+            const storedPageCssLink = cssLinks.page;
+            const storedGlobalCssLink = cssLinks.global;
+            const storedWidgetCssLink = cssLinks.widget;
+
+            storedGlobalCssLink.disabled = true;
+            loadCssLink(storedGlobalCssLink);
+
+            if (storedPageCssLink) {
+                storedPageCssLink.disabled = true;
+                loadCssLink(storedPageCssLink);
+            }
+
+            if(storedWidgetCssLink) {
+                storedWidgetCssLink.disabled = true;
+                loadCssLink(storedWidgetCssLink);
+            }
+
+            storedRuntimeCssLink.disabled = true;
+            loadCssLink(storedRuntimeCssLink);
+
+            requestAnimationFrame(() => {
+                setTimeout(() => {
+                    storedRuntimeCssLink.disabled = false;
+                    storedGlobalCssLink.disabled = false;
+                    if (storedPageCssLink) {
+                      storedPageCssLink.disabled = false;
+                    }
+                    if (storedWidgetCssLink) {
+                      storedWidgetCssLink.disabled = false;
+                    }
+                    // (SUP-4179) Clear the accumulated cssLinks only when we're
+                    // sure that the document has finished loading and the document 
+                    // has been parsed.
+                    if(document.readyState === 'interactive') {
+                      cssLinks = null;
+                    }
+                }, 0);
+            });
+        }
+    }
+  
+
+  function loadCSS(link) {
+    try {
+      var urlParams = new URLSearchParams(window.location.search);
+      var noCSS = !!urlParams.get("nocss");
+      var cssTimeout = urlParams.get("cssTimeout") || 0;
+
+      if (noCSS) {
+        return;
+      }
+      if (link.href && link.href.includes("d-css-runtime")) {
+        cssLinks.runtime = link;
+        checkCss();
+      } else if (link.id === "siteGlobalCss") {
+        cssLinks.global = link;
+        checkCss();
+      } 
+      
+      else if (link.id && link.id.includes("CssLink")) {
+        cssLinks.page = link;
+        checkCss();
+      } else if (link.id && link.id.includes("widgetCSS")) {
+        cssLinks.widget = link;
+        checkCss();
+      }
+      
+      else {
+        requestIdleCallback(function () {
+          window.setTimeout(function () {
+            loadCssLink(link);
+          }, parseInt(cssTimeout, 10));
+        });
+      }
+    } catch (e) {
+      throw e
+    }
+  }
+  window.loadCSS = window.loadCSS || loadCSS;
+})();
+</script>
+
+
+
+<script data-role="deferred-init" type="text/javascript">
+    /* usage: window.getDeferred(<deferred name>).resolve() or window.getDeferred(<deferred name>).promise.then(...)*/
+    function Def() {
+        this.promise = new Promise((function (a, b) {
+            this.resolve = a, this.reject = b
+        }).bind(this))
+    }
+
+    const defs = {};
+    window.getDeferred = function (a) {
+        return null == defs[a] && (defs[a] = new Def), defs[a]
+    }
+    window.waitForDeferred = function (b, a, c) {
+        let d = window?.getDeferred?.(b);
+        d
+            ? d.promise.then(a)
+            : c && ["complete", "interactive"].includes(document.readyState)
+                ? setTimeout(a, 1)
+                : c
+                    ? document.addEventListener("DOMContentLoaded", a)
+                    : console.error(`Deferred  does not exist`);
+    };
+</script>
+<style id="forceCssIncludes">
+    /* This file is auto-generated from a `scss` file with the same name */
+
+.videobgwrapper{overflow:hidden;position:absolute;z-index:0;width:100%;height:100%;top:0;left:0;pointer-events:none;border-radius:inherit}.videobgframe{position:absolute;width:101%;height:100%;top:50%;left:50%;transform:translateY(-50%) translateX(-50%);object-fit:fill}#dm video.videobgframe{margin:0}@media (max-width:767px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:80vh}}@media (min-width:1025px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}@media (min-width:768px) and (max-width:1024px){.responsiveTablet .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}#dm [data-show-on-page-only]{display:none!important}#dmRoot div.stickyHeaderFix div.site_content{margin-top:0!important}#dmRoot div.stickyHeaderFix div.hamburger-header-container{position:relative}
+    
+
+</style>
+<style id="cssVariables" type="text/css">
+    :root {
+  --color_1: rgba(255,255,255,1);
+  --color_2: rgba(169,176,189,1);
+  --color_3: rgba(0,0,0,1);
+  --color_4: rgba(181, 174, 3, 1);
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Google Fonts Include -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- loadCSS function fonts.jsp-->
+
+
+
+<link type="text/css" rel="stylesheet" href="https://irp.cdn-website.com/fonts/css2?family=Spartan:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900&family=Alata:ital,wght@0,400&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Prata:ital,wght@0,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Exo:ital,wght@0,100..900;1,100..900&amp;subset=latin-ext&amp;display=swap"  />
+
+<style>
+@font-face {
+  font-family: "ITCAvantGardePro-Bold";
+  src: url("https://irp.cdn-website.com/3f2e341a/fonts/ITCAvantGardePro-Bold-6e89_400.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+<style>
+@font-face {
+  font-family: "ITCAvantGardePro-Bk";
+  src: url("https://irp.cdn-website.com/3f2e341a/fonts/ITCAvantGardePro-Bk-20d7_400.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+<style>
+@font-face {
+  font-family: "ITCAvantGardePro-BoldObl";
+  src: url("https://irp.cdn-website.com/3f2e341a/fonts/ITCAvantGardePro-BoldObl-3e6a_400.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+<style>
+@font-face {
+  font-family: "ITCAvantGardePro-Md";
+  src: url("https://irp.cdn-website.com/3f2e341a/fonts/ITCAvantGardePro-Md-1e01_400.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+
+
+
+
+<!-- RT CSS Include d-css-runtime-desktop-one-package-structured-global-->
+<link rel="stylesheet" type="text/css" href="https://static.cdn-website.com/mnlt/production/4822/_dm/s/rt/dist/css/d-css-runtime-desktop-one-package-structured-global.min.css" />
+
+<!-- End of RT CSS Include -->
+
+<link type="text/css" rel="stylesheet" href="https://irp.cdn-website.com/WIDGET_CSS/dbdc278e07d28a480e6ec5131fbfcf84.css" id="widgetCSS" />
+
+<!-- Support `img` size attributes -->
+<style>img[width][height] {
+    height: auto;
+}</style>
+
+<!-- Support showing sticky element on page only -->
+<style>
+    body[data-page-alias="the-art-of-legacy"] #dm [data-show-on-page-only="the-art-of-legacy"] {
+        display: block !important;
+    }
+</style>
+
+<!-- This is populated in Ajax navigation -->
+<style id="pageAdditionalWidgetsCss" type="text/css">
+</style>
+
+
+
+
+<!-- Site CSS -->
+<link type="text/css" rel="stylesheet" href="https://irp.cdn-website.com/3f2e341a/files/3f2e341a_1.min.css?v=353" id="siteGlobalCss" />
+
+
+
+<style id="customWidgetStyle" type="text/css">
+    
+</style>
+<style id="innerPagesStyle" type="text/css">
+    
+</style>
+
+
+<style
+        id="additionalGlobalCss" type="text/css"
+>
+</style>
+
+<style id="pagestyle" type="text/css">
+    *#dm *.dmBody a.span.textonly
+{
+	color:rgb(255,255,255) !important;
+}
+*#dm *.dmBody div.dmform-error
+{
+	font-style:normal !important;
+}
+*#dm *.dmBody div.dmforminput textarea
+{
+	font-style:italic !important;
+}
+*#dm *.dmBody div.dmforminput *.fileUploadLink
+{
+	font-style:italic !important;
+}
+*#dm *.dmBody div.checkboxwrapper span
+{
+	font-style:italic !important;
+}
+*#dm *.dmBody div.radiowrapper span
+{
+	font-style:italic !important;
+}
+*#dm *.dmBody nav.u_1144820115
+{
+	color:black !important;
+}
+*#dm *.dmBody div.u_1921508200
+{
+	background-repeat:no-repeat !important;
+	background-image:url(https://lirp.cdn-website.com/md/dmtmpl/ef2f171b-a079-4ca1-b475-70ff509f51a1/dms3rep/multi/opt/woman-s_back_facing-cloud2-2880w.jpg) !important;
+	background-size:cover !important;
+}
+*#dm *.dmBody *.u_1921508200:before
+{
+	opacity:0.5 !important;
+	background-color:rgb(255,255,255) !important;
+}
+*#dm *.dmBody *.u_1921508200.before
+{
+	opacity:0.5 !important;
+	background-color:rgb(255,255,255) !important;
+}
+*#dm *.dmBody *.u_1921508200>.bgExtraLayerOverlay
+{
+	opacity:0.5 !important;
+	background-color:rgb(255,255,255) !important;
+}
+*#dm *.dmBody div.u_1921508200:before
+{
+	background-color:rgba(0,0,0,1) !important;
+	opacity:0.2 !important;
+}
+*#dm *.dmBody div.u_1921508200.before
+{
+	background-color:rgba(0,0,0,1) !important;
+	opacity:0.2 !important;
+}
+*#dm *.dmBody div.u_1921508200>.bgExtraLayerOverlay
+{
+	background-color:rgba(0,0,0,1) !important;
+	opacity:0.2 !important;
+}
+*#dm *.dmBody div.u_1242138284
+{
+	background-color:rgba(0,0,0,0) !important;
+}
+*#dm *.dmBody nav.u_1417306043
+{
+	color:white !important;
+}
+*#dm *.dmBody *.u_1277729251:before
+{
+	opacity:0.5 !important;
+	background-color:rgb(255,255,255) !important;
+}
+*#dm *.dmBody *.u_1277729251.before
+{
+	opacity:0.5 !important;
+	background-color:rgb(255,255,255) !important;
+}
+*#dm *.dmBody *.u_1277729251>*.bgExtraLayerOverlay
+{
+	opacity:0.5 !important;
+	background-color:rgb(255,255,255) !important;
+}
+*#dm *.dmBody div.u_1277729251:before
+{
+	background-color:rgba(0,0,0,1) !important;
+}
+*#dm *.dmBody div.u_1277729251.before
+{
+	background-color:rgba(0,0,0,1) !important;
+}
+*#dm *.dmBody div.u_1277729251>*.bgExtraLayerOverlay
+{
+	background-color:rgba(0,0,0,1) !important;
+}
+*#dm *.dmBody div.u_1308089551 .tab-label.active
+{
+	border-bottom-width:2px !important;
+	border-bottom-style:solid !important;
+}
+*#dm *.dmBody div.u_1308089551 .tab-label.hover
+{
+	border-bottom-width:2px !important;
+	border-bottom-style:solid !important;
+}
+*#dm *.dmBody *.u_1673725258:before
+{
+	opacity:0.5 !important;
+	background-color:rgb(255,255,255) !important;
+}
+*#dm *.dmBody *.u_1673725258.before
+{
+	opacity:0.5 !important;
+	background-color:rgb(255,255,255) !important;
+}
+*#dm *.dmBody *.u_1673725258>*.bgExtraLayerOverlay
+{
+	opacity:0.5 !important;
+	background-color:rgb(255,255,255) !important;
+}
+*#dm *.dmBody div.u_1673725258:before
+{
+	background-color:rgba(0,0,0,1) !important;
+}
+*#dm *.dmBody div.u_1673725258.before
+{
+	background-color:rgba(0,0,0,1) !important;
+}
+*#dm *.dmBody div.u_1673725258>*.bgExtraLayerOverlay
+{
+	background-color:rgba(0,0,0,1) !important;
+}
+*#dm *.dmBody div.u_1137773648 .tab-label.active
+{
+	border-bottom-width:2px !important;
+	border-bottom-style:solid !important;
+}
+*#dm *.dmBody div.u_1137773648 .tab-label.hover
+{
+	border-bottom-width:2px !important;
+	border-bottom-style:solid !important;
+}
+*#dm *.dmBody div.u_1277729251
+{
+	background-color:rgba(26,26,26,1) !important;
+	background-repeat:no-repeat !important;
+	background-image:none !important;
+}
+*#dm *.dmBody div.u_1673725258
+{
+	background-color:rgba(26,26,26,1) !important;
+	background-repeat:no-repeat !important;
+	background-image:none !important;
+}
+*#dm *.dmBody div.u_1760007810 .shape-text
+{
+	font-family:Epilogue !important;
+	font-weight:normal !important;
+	text-decoration:underline !important;
+	color:rgba(255,255,255,1) !important;
+}
+*#dm *.dmBody div.u_1197904397 .shape-text
+{
+	font-family:Epilogue !important;
+	font-weight:normal !important;
+	text-decoration:underline !important;
+	color:rgba(255,255,255,1) !important;
+}
+*#dm *.dmBody div.u_1467689938
+{
+	background-color:rgba(0,0,0,1) !important;
+}
+*#dm *.dmBody div.u_1544736866
+{
+	background-color:rgba(0,0,0,1) !important;
+}
+*#dm *.dmBody div.u_1137773648 .active .button-class span.text
+{
+	color:rgba(255,255,255,1) !important;
+	font-weight:bold !important;
+	font-style:normal !important;
+	text-decoration:none !important;
+	font-family:'Verdana' !important;
+}
+*#dm *.dmBody *.u_1065737729 .ico svg
+{
+	fill:rgba(255,255,255,1) !important;
+}
+*#dm *.dmBody div.u_1065737729 #myBtn
+{
+	background-image:url(https://sites.bloom.io/site/3f2e341a/path/to/your/image.jpg?dm-skip-opt=true) !important;
+	border-style:solid !important;
+	border-width:0px !important;
+	border-radius:0px 0px 0px 0px !important;
+}
+*#dm *.dmBody *.u_1065737729 #myBtn
+{
+	background-color:rgba(0,0,0,1) !important;
+}
+*#dm *.dmBody *.u_1065737729 #closeButton
+{
+	color:rgba(0,0,0,0) !important;
+}
+*#dm *.dmBody nav.u_1776589715
+{
+	color:white !important;
+}
+*#dm *.dmBody div.u_1772116195
+{
+	border-radius:50% !important;
+	background-color:rgba(255,255,255,0.2) !important;
+	border-color:rgba(255,255,255,1) !important;
+	border-width:4px !important;
+	border-style:double !important;
+}
+*#dm *.dmBody a.u_1353948066
+{
+	background-color:var(--color_1) !important;
+}
+*#dm *.dmBody a.u_1780740110
+{
+	background-color:var(--color_1) !important;
+}
+*#dm *.dmBody div.u_1779910660
+{
+	background-color:rgba(0,0,0,0) !important;
+}
+*#dm *.dmBody div.u_1986626408
+{
+	background-color:rgba(0,0,0,0) !important;
+}
+*#dm *.dmBody a.u_1353948066 span.text
+{
+	color:rgba(0,0,0,1) !important;
+	font-weight:normal !important;
+	font-family:'Prata' !important;
+	text-decoration:none !important;
+}
+*#dm *.dmBody a.u_1780740110 span.text
+{
+	color:rgba(0,0,0,1) !important;
+	font-weight:normal !important;
+	font-family:'Prata' !important;
+	text-decoration:none !important;
+}
+
+</style>
+
+<style id="pagestyleDevice" type="text/css">
+    *#dm *.d-page-1716942098 DIV.dmInner
+{
+	background-repeat:no-repeat !important;
+	background-size:cover !important;
+	background-attachment:fixed !important;
+	background-position:50% 50% !important;
+}
+*#dm *.d-page-1716942098 DIV#dmSlideRightNavRight
+{
+	background-repeat:no-repeat !important;
+	background-image:none !important;
+	background-size:cover !important;
+	background-attachment:fixed !important;
+	background-position:50% 50% !important;
+}
+*#dm *.dmBody div.u_1242138284
+{
+	margin-left:0 !important;
+	padding-top:16px !important;
+	padding-left:16px !important;
+	padding-bottom:16px !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+	padding-right:16px !important;
+}
+*#dm *.dmBody div.u_1910343246
+{
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:calc(100% - 56px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:1055px !important;
+	margin-top:8px !important;
+	margin-bottom:8px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1277729251
+{
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:70px !important;
+	padding-left:40px !important;
+	padding-bottom:70px !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:none !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	padding-right:40px !important;
+	min-width:0 !important;
+	text-align:center !important;
+	background-attachment:fixed !important;
+	background-size:cover !important;
+}
+*#dm *.dmBody div.u_1308089551 .image-container
+{
+	width:1429px !important;
+	height:297px !important;
+}
+*#dm *.dmBody div.u_1308089551 image-container .image
+{
+	width:1429px !important;
+	height:297px !important;
+}
+*#dm *.dmBody div.u_1673725258
+{
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:70px !important;
+	padding-left:40px !important;
+	padding-bottom:70px !important;
+	max-width:none !important;
+	padding-right:40px !important;
+	min-width:0 !important;
+	text-align:center !important;
+	background-attachment:fixed !important;
+	background-size:cover !important;
+}
+*#dm *.dmBody div.u_1137773648 .image-container
+{
+	width:1429px !important;
+	height:297px !important;
+}
+*#dm *.dmBody div.u_1137773648 image-container .image
+{
+	width:1429px !important;
+	height:297px !important;
+}
+*#dm *.dmBody div.u_1041600771
+{
+	display:block !important;
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:calc(100% - 42px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	margin-right:120.5px !important;
+	margin-left:42px !important;
+	max-width:802px !important;
+	margin-top:8px !important;
+	margin-bottom:8px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	min-height:auto !important;
+}
+*#dm *.dmBody div.u_1308089551
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:calc(100% - 35px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-right:-30px !important;
+	margin-left:35px !important;
+	max-width:839px !important;
+	margin-top:27px !important;
+	margin-bottom:0px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:center !important;
+	min-height:auto !important;
+}
+*#dm *.dmBody div.u_1137773648
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:calc(100% - 28px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-right:5px !important;
+	margin-left:100px !important;
+	max-width:1482px !important;
+	margin-top:27px !important;
+	margin-bottom:0px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:center !important;
+	min-height:auto !important;
+}
+*#dm *.dmBody div.u_1693271609
+{
+	display:block !important;
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:calc(100% - 112px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	margin-right:120.5px !important;
+	margin-left:112px !important;
+	max-width:1398px !important;
+	margin-top:8px !important;
+	margin-bottom:8px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	min-height:auto !important;
+}
+*#dm *.dmBody div.u_1760007810
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:117px !important;
+	position:relative !important;
+	height:148px !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-right:46.75px !important;
+	margin-left:-90px !important;
+	max-width:100% !important;
+	margin-top:101px !important;
+	margin-bottom:0 !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	text-align:center !important;
+	display:block !important;
+}
+*#dm *.dmBody div.u_1760007810 .shape-text
+{
+	font-size:18px !important;
+}
+*#dm *.dmBody div.u_1082461283
+{
+	height:407px !important;
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:calc(100% - 171px) !important;
+	position:relative !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-right:0px !important;
+	margin-left:171px !important;
+	max-width:504px !important;
+	margin-top:24px !important;
+	margin-bottom:0px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:center !important;
+	min-height:auto !important;
+}
+*#dm *.dmBody div.u_1561380931
+{
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:calc(100% - 55px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:1090px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	min-height:auto !important;
+}
+*#dm *.dmBody div.u_1349589691
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0px !important;
+	padding-left:165px !important;
+	padding-bottom:0px !important;
+	margin-right:0px !important;
+	margin-left:0px !important;
+	max-width:100% !important;
+	margin-top:17px !important;
+	margin-bottom:0px !important;
+	padding-right:0px !important;
+	min-width:0 !important;
+	text-align:center !important;
+	min-height:auto !important;
+}
+*#dm *.dmBody div.u_1544736866
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:111px !important;
+	padding-left:0px !important;
+	padding-bottom:111px !important;
+	margin-right:0px !important;
+	margin-left:0px !important;
+	max-width:100% !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	padding-right:0px !important;
+	min-width:0 !important;
+	text-align:center !important;
+	min-height:auto !important;
+}
+*#dm *.dmBody div.u_1197904397
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:117px !important;
+	position:relative !important;
+	height:148px !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-right:46.75px !important;
+	margin-left:-90px !important;
+	max-width:100% !important;
+	margin-top:101px !important;
+	margin-bottom:0 !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	text-align:center !important;
+	display:block !important;
+}
+*#dm *.dmBody div.u_1197904397 .shape-text
+{
+	font-size:18px !important;
+}
+*#dm *.dmBody div.u_1836541985
+{
+	height:407px !important;
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:calc(100% - 171px) !important;
+	position:relative !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-right:0px !important;
+	margin-left:171px !important;
+	max-width:504px !important;
+	margin-top:24px !important;
+	margin-bottom:0px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:center !important;
+	min-height:auto !important;
+}
+*#dm *.dmBody div.u_1067091019
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0px !important;
+	padding-left:165px !important;
+	padding-bottom:0px !important;
+	margin-right:0px !important;
+	margin-left:0px !important;
+	max-width:100% !important;
+	margin-top:17px !important;
+	margin-bottom:0px !important;
+	padding-right:0px !important;
+	min-width:0 !important;
+	text-align:center !important;
+	min-height:auto !important;
+}
+*#dm *.dmBody div.u_1921508200
+{
+	margin-left:0px !important;
+	padding-top:202px !important;
+	padding-left:20px !important;
+	padding-bottom:202px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:20px !important;
+	width:auto !important;
+	background-position:50% 50% !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	position:relative !important;
+	height:auto !important;
+	min-height:auto !important;
+	max-width:100% !important;
+	min-width:0 !important;
+	text-align:start !important;
+}
+*#dm *.dmBody div.u_1672552361
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:calc(100% - 79px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	max-width:809.961px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	min-height:auto !important;
+	margin-right:0px !important;
+	margin-left:79.039px !important;
+	margin-top:-27px !important;
+	margin-bottom:8px !important;
+}
+*#dm *.dmBody div.u_1519980088
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:calc(100% - 105px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	margin-right:194.5px !important;
+	margin-left:105px !important;
+	max-width:1011px !important;
+	margin-top:16px !important;
+	margin-bottom:0px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	min-height:auto !important;
+}
+*#dm *.dmBody div.u_1137773648 .active .button-class span.text
+{
+	font-size:18px !important;
+}
+*#dm *.dmBody div.u_1137773648 .active .button-class
+{
+	width:172px !important;
+	height:133px !important;
+}
+*#dm *.dmBody *.u_1065737729 .ico svg
+{
+	width:76px !important;
+	height:76px !important;
+}
+*#dm *.dmBody div.u_1065737729
+{
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:55px !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	min-height:auto !important;
+	margin-right:0px !important;
+	margin-left:0px !important;
+	max-width:100% !important;
+	margin-top:-45px !important;
+	margin-bottom:0px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:start !important;
+}
+*#dm *.dmBody div.u_1243667655
+{
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:40px !important;
+	padding-bottom:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	padding-right:40px !important;
+	margin-right:0px !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	height:auto !important;
+	max-width:100% !important;
+	min-width:0 !important;
+	text-align:center !important;
+	min-height:auto !important;
+}
+*#dm *.dmBody div.u_1430836385
+{
+	margin-left:0 !important;
+	padding-top:16px !important;
+	padding-left:16px !important;
+	padding-bottom:16px !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+	padding-right:16px !important;
+}
+*#dm *.dmBody a.u_1353948066 span.text
+{
+	font-size:18px !important;
+}
+*#dm *.dmBody a.u_1353948066
+{
+	height:56px !important;
+	width:calc(100% - 494px) !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	padding-right:0px !important;
+	display:block !important;
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	position:relative !important;
+	max-width:125px !important;
+	min-width:25px !important;
+	text-align:center !important;
+	margin-right:0px !important;
+	margin-left:494px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	min-height:auto !important;
+}
+*#dm *.dmBody div.u_1779910660
+{
+	margin-left:0px !important;
+	padding-top:0px !important;
+	padding-left:40px !important;
+	padding-bottom:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:40px !important;
+	width:auto !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	position:relative !important;
+	height:auto !important;
+	min-height:auto !important;
+	max-width:100% !important;
+	min-width:0 !important;
+	text-align:start !important;
+}
+*#dm *.dmBody a.u_1780740110 span.text
+{
+	font-size:18px !important;
+}
+*#dm *.dmBody div.u_1986626408
+{
+	padding-top:0px !important;
+	padding-left:40px !important;
+	padding-bottom:0px !important;
+	padding-right:40px !important;
+	width:auto !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	position:relative !important;
+	height:auto !important;
+	min-height:auto !important;
+	max-width:100% !important;
+	min-width:0 !important;
+	text-align:start !important;
+	margin-right:0px !important;
+	margin-left:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+}
+*#dm *.dmBody div.u_1419371136
+{
+	margin-left:0px !important;
+	padding-top:2px !important;
+	padding-left:16px !important;
+	padding-bottom:16px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+	padding-right:16px !important;
+}
+*#dm *.dmBody a.u_1780740110
+{
+	height:56px !important;
+	width:calc(100% - 526px) !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	padding-right:0px !important;
+	display:block !important;
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	position:relative !important;
+	max-width:125px !important;
+	min-width:25px !important;
+	text-align:center !important;
+	margin-right:0px !important;
+	margin-left:526px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	min-height:auto !important;
+}
+*#dm *.dmBody div.u_1467689938
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:100.5px !important;
+	padding-left:0px !important;
+	padding-bottom:100.5px !important;
+	max-width:100% !important;
+	padding-right:0px !important;
+	min-width:0 !important;
+	text-align:center !important;
+	min-height:auto !important;
+	margin-right:0px !important;
+	margin-left:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+}
+
+</style>
+
+<!-- Flex Sections CSS -->
+
+ <style id="grid-styles-desktop-62af179dfb031a1e6efcfa19-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media all {
+    
+#\36 2af179dfb031a1e6efcfa1c {
+    align-self: stretch;
+    background-size: cover;
+    display: flex;
+    min-height: 8px;
+    background-position: 50% 50%;
+    column-gap: 4%;
+    row-gap: 24px;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    min-width: 4%;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0% 0px 0%;
+}
+    
+#\36 2af179dfb031a1e6efcfa1d {
+    align-self: start;
+    background-size: cover;
+    min-height: 191px;
+    background-repeat: no-repeat;
+    flex-direction: row;
+    order: 0;
+    display: flex;
+    background-position: 50% 50%;
+    column-gap: 2%;
+    row-gap: 12px;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    justify-self: center;
+    flex-wrap: nowrap;
+    padding: 57px 2% 50px 4%;
+    margin: 0px 0% 0px 0%;
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+    
+#\36 2af179dfb031a1e6efcfa1a {
+    margin: 0px 0% 0px 0%;
+}
+    
+#\36 2af179dfb031a1e6efcfa1b {
+    background-color: rgba(0,0,0,0);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-template-columns: minmax(0px, 1fr);
+    grid-template-rows: minmax(8px, max-content);
+    display: grid;
+    justify-content: start;
+    background-position: 50% 50%;
+    align-items: start;
+    position: relative;
+}
+    
+#\36 2af17e4fb031a1e6efd0d08.flex-element.widget-wrapper > [data-element-type] {
+    padding-top: 0px;
+}
+#\36 2af17e4fb031a1e6efd0d08 {
+    align-self: auto;
+    min-height: 10px;
+    max-width: 100%;
+    width: 100.00%;
+    position: relative;
+    justify-self: auto;
+    height: auto;
+    min-width: 10px;
+    order: 1;
+    grid-area: auto / auto / auto / auto;
+}
+}</style> 
+
+
+ <style id="grid-styles-adjustments_for_tablet-62af179dfb031a1e6efcfa19-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media (min-width: 767px) and (max-width: 1024px) {
+}</style> 
+
+
+ <style id="grid-styles-tablet-62af179dfb031a1e6efcfa19-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media (min-width: 767px) and (max-width: 1024px) {
+    
+#\36 2af179dfb031a1e6efcfa1c {
+    padding: 0px 0px 0px 0px;
+}
+    
+#\36 2af179dfb031a1e6efcfa1d {
+    min-height: 304px;
+    padding: 60px 2% 5px 2%;
+}
+    
+#\36 2af17e4fb031a1e6efd0d08 {
+    width: 99.9990515803645%;
+    justify-self: auto;
+    align-self: auto;
+    order: 0;
+    margin: 0px 0% 0px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+}</style> 
+
+
+ <style id="grid-styles-desktop_wide-62af179dfb031a1e6efcfa19-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media (min-width: 1400px) {
+}</style> 
+
+
+ <style id="grid-styles-inherited_from_desktop-62af179dfb031a1e6efcfa19-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media (max-width: 766px) {
+    
+#\36 2af179dfb031a1e6efcfa1d {
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+    
+#\36 2af179dfb031a1e6efcfa1b {
+    grid-template-rows: minmax(8px, max-content);
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_portrait-62af179dfb031a1e6efcfa19-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media (max-width: 767px) {
+    
+#\36 2af179dfb031a1e6efcfa1c {
+    row-gap: 10px;
+    width: 100%;
+    min-height: 71px;
+    align-items: center;
+    padding: 0px 0px 0px 0px;
+}
+    
+#\36 2af179dfb031a1e6efcfa1d {
+    flex-direction: column;
+    min-height: unset;
+    padding: 60px 2% 40px 2%;
+}
+    
+#\36 2af17e4fb031a1e6efd0d08 {
+    align-self: stretch;
+    margin-left: 0%;
+    max-width: none;
+    width: 100%;
+    margin-right: 0px;
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_landscape-62af179dfb031a1e6efcfa19-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media (min-width: 468px) and (max-width: 767px) {
+    
+#\36 2af17e4fb031a1e6efd0d08 {
+    align-self: center;
+    margin-left: 0%;
+    width: 80.90%;
+    margin-right: 0px;
+}
+}</style> 
+
+
+ <style id="grid-styles-desktop-174d86f9-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media all {
+    
+#\39 daac600.flex-element.widget-wrapper > [data-element-type] {
+    padding-top: 0px;
+}
+#\39 daac600 {
+    align-self: auto;
+    min-height: 10px;
+    max-width: 100%;
+    width: 100.00%;
+    position: relative;
+    justify-self: auto;
+    height: auto;
+    min-width: 10px;
+    order: 1;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#dc21e713 {
+    background-color: rgba(0,0,0,0);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-template-columns: minmax(0px, 1fr);
+    grid-template-rows: minmax(8px, max-content);
+    display: grid;
+    justify-content: start;
+    background-position: 50% 50%;
+    align-items: start;
+    position: relative;
+}
+    
+#c3bbf6c8 {
+    align-self: stretch;
+    background-size: cover;
+    display: flex;
+    min-height: 8px;
+    background-position: 50% 50%;
+    column-gap: 4%;
+    row-gap: 24px;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    min-width: 4%;
+    padding: 0px 10px 0px 0px;
+    margin: 0px 0% 0px 0%;
+}
+    
+#daa3313a {
+    margin: 0px 0% 0px 0%;
+}
+    
+#\36 39ca257 {
+    align-self: start;
+    background-size: cover;
+    min-height: 191px;
+    background-repeat: no-repeat;
+    flex-direction: row;
+    order: 0;
+    display: flex;
+    background-position: 50% 50%;
+    column-gap: 2%;
+    row-gap: 12px;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    justify-self: center;
+    flex-wrap: nowrap;
+    padding: 121px 2% 100px 4%;
+    margin: 0px 0% 0px 0%;
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+}</style> 
+
+
+ <style id="grid-styles-adjustments_for_tablet-174d86f9-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media (min-width: 767px) and (max-width: 1024px) {
+}</style> 
+
+
+ <style id="grid-styles-tablet-174d86f9-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media (min-width: 767px) and (max-width: 1024px) {
+    
+#\39 daac600 {
+    width: 99.83%;
+}
+    
+#c3bbf6c8 {
+    padding: 0px 0px 0px 0px;
+}
+    
+#\36 39ca257 {
+    min-height: 304px;
+    padding: 60px 2% 20px 2%;
+}
+}</style> 
+
+
+ <style id="grid-styles-desktop_wide-174d86f9-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media (min-width: 1400px) {
+}</style> 
+
+
+ <style id="grid-styles-inherited_from_desktop-174d86f9-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media (max-width: 766px) {
+    
+#dc21e713 {
+    grid-template-rows: minmax(8px, max-content);
+}
+    
+#\36 39ca257 {
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_portrait-174d86f9-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media (max-width: 767px) {
+    
+#\39 daac600 {
+    align-self: stretch;
+    margin-left: 0%;
+    max-width: none;
+    width: 100%;
+    margin-right: 0px;
+}
+    
+#c3bbf6c8 {
+    row-gap: 10px;
+    width: 100%;
+    min-height: 71px;
+    align-items: center;
+    padding: 0px 0px 0px 0px;
+}
+    
+#\36 39ca257 {
+    flex-direction: column;
+    min-height: unset;
+    padding: 60px 2% 40px 2%;
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_landscape-174d86f9-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media (min-width: 468px) and (max-width: 767px) {
+    
+#\39 daac600 {
+    align-self: center;
+    margin-left: 0%;
+    width: 80.90%;
+    margin-right: 0px;
+}
+}</style> 
+
+
+ <style id="grid-styles-desktop-62af20cafb031a1e6efe361a-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media all {
+    
+#\36 2af20cafb031a1e6efe361e {
+    align-self: stretch;
+    background-size: cover;
+    display: flex;
+    min-height: 8px;
+    background-position: 50% 50%;
+    column-gap: 4%;
+    row-gap: 0px;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    max-width: 100%;
+    width: 50%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+    min-width: 4%;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0% 0px 0%;
+}
+    
+#\36 2af20cafb031a1e6efe361d {
+    align-self: stretch;
+    background-size: cover;
+    display: flex;
+    min-height: 8px;
+    background-position: 50% 50%;
+    column-gap: 4%;
+    row-gap: 24px;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    max-width: 100%;
+    width: 50%;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: relative;
+    min-width: 4%;
+    padding: 0px 0px 0px 73px;
+    margin: 0px 0% 0px 0%;
+}
+    
+#\36 2af20cafb031a1e6efe361f {
+    background-color: rgba(0,0,0,0);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-template-columns: minmax(0px, 1fr);
+    grid-template-rows: minmax(8px, max-content);
+    display: grid;
+    justify-content: start;
+    background-position: 50% 50%;
+    align-items: start;
+    position: relative;
+}
+    
+#\36 2af20cafb031a1e6efe361c {
+    align-self: start;
+    background-size: cover;
+    min-height: 45px;
+    background-repeat: no-repeat;
+    flex-direction: row;
+    order: 0;
+    display: flex;
+    background-position: 50% 50%;
+    column-gap: 0%;
+    row-gap: 0px;
+    max-width: none;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    justify-self: center;
+    flex-wrap: nowrap;
+    margin: 0px 0% 0px 0%;
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+    
+#\36 2af20cafb031a1e6efe361b {
+    margin: 0px 0% 0px 0%;
+}
+    
+#\36 2af2105fb031a1e6efe5293.flex-element.widget-wrapper > [data-element-type] {
+    padding-bottom: 0px;
+}
+#\36 2af2105fb031a1e6efe5293 {
+    align-self: stretch;
+    min-height: 10px;
+    margin-right: 0%;
+    margin-left: 0%;
+    max-width: none;
+    width: 100%;
+    margin-top: 0px;
+    position: relative;
+    justify-self: auto;
+    height: auto;
+    min-width: 10px;
+    order: 0;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#\36 2af2120fb031a1e6efe5bb8.flex-element.widget-wrapper > [data-element-type] {
+    padding-left: 0px;
+    padding-right: 91px;
+}
+#\36 2af2120fb031a1e6efe5bb8 {
+    min-height: 10px;
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+    justify-self: auto;
+    height: auto;
+    min-width: 10px;
+    order: 0;
+    align-self: flex-end;
+    grid-area: auto / auto / auto / auto;
+}
+}</style> 
+
+
+ <style id="grid-styles-adjustments_for_tablet-62af20cafb031a1e6efe361a-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media (min-width: 767px) and (max-width: 1024px) {
+}</style> 
+
+
+ <style id="grid-styles-tablet-62af20cafb031a1e6efe361a-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media (min-width: 767px) and (max-width: 1024px) {
+    
+#\36 2af20cafb031a1e6efe361c {
+    padding-left: 2%;
+}
+    
+#\36 2af2120fb031a1e6efe5bb8.flex-element.widget-wrapper > [data-element-type] {
+    padding-left: 0px;
+}
+#\36 2af2120fb031a1e6efe5bb8 {
+    width: 397px;
+    justify-self: auto;
+    align-self: auto;
+    order: 0;
+    margin: 0px 0% 0px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+}</style> 
+
+
+ <style id="grid-styles-desktop_wide-62af20cafb031a1e6efe361a-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media (min-width: 1400px) {
+}</style> 
+
+
+ <style id="grid-styles-inherited_from_desktop-62af20cafb031a1e6efe361a-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media (max-width: 766px) {
+    
+#\36 2af20cafb031a1e6efe361f {
+    grid-template-rows: minmax(8px, max-content);
+}
+    
+#\36 2af20cafb031a1e6efe361c {
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_portrait-62af20cafb031a1e6efe361a-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media (max-width: 767px) {
+    
+#\36 2af20cafb031a1e6efe361e {
+    width: 100%;
+    min-height: 80px;
+    align-items: center;
+}
+    
+#\36 2af20cafb031a1e6efe361d {
+    width: 100%;
+    padding-bottom: 0px;
+    min-height: 80px;
+    align-items: center;
+}
+    
+#\36 2af20cafb031a1e6efe361c {
+    row-gap: 24px;
+    flex-direction: column;
+    min-height: 0;
+    flex-wrap: nowrap;
+    padding: 8px 4% 50px 4%;
+}
+    
+#\36 2af2105fb031a1e6efe5293 {
+    width: 78.53%;
+}
+    
+#\36 2af2120fb031a1e6efe5bb8.flex-element.widget-wrapper > [data-element-type] {
+    padding-right: 0px;
+    padding-top: 0px;
+}
+#\36 2af2120fb031a1e6efe5bb8 {
+    align-self: flex-start;
+    max-width: none;
+    width: 91.25%;
+    justify-self: auto;
+    order: 0;
+    margin: 0px 0% 0px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_landscape-62af20cafb031a1e6efe361a-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media (min-width: 468px) and (max-width: 767px) {
+    
+#\36 2af2105fb031a1e6efe5293 {
+    align-self: center;
+    width: 34.43%;
+    margin: 0px 0px 0px 0%;
+}
+    
+#\36 2af2120fb031a1e6efe5bb8 {
+    align-self: center;
+    width: 49.57%;
+    margin: 0px 0px 0px 0%;
+}
+}</style> 
+
+
+ <style id="grid-styles-desktop-12a6a60d-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media all {
+    
+#\35 1032b63 {
+    align-self: stretch;
+    background-size: cover;
+    display: flex;
+    min-height: 8px;
+    background-position: 50% 50%;
+    column-gap: 4%;
+    row-gap: 24px;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    max-width: 100%;
+    width: 50%;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: relative;
+    min-width: 4%;
+    padding: 0px 0px 0px 73px;
+    margin: 0px 0% 0px 0%;
+}
+    
+#\33 142d787 {
+    align-self: start;
+    background-size: cover;
+    min-height: 99px;
+    background-repeat: no-repeat;
+    flex-direction: row;
+    order: 0;
+    display: flex;
+    background-position: 50% 50%;
+    column-gap: 0%;
+    row-gap: 0px;
+    max-width: none;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    justify-self: center;
+    flex-wrap: nowrap;
+    margin: 0px 0% 0px 0%;
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+    
+#\39 73f2c2a {
+    margin: 0px 0% 0px 0%;
+}
+    
+#\37 a34f43a.flex-element.widget-wrapper > [data-element-type] {
+    padding-bottom: 0px;
+}
+#\37 a34f43a {
+    align-self: stretch;
+    min-height: 10px;
+    margin-right: 0%;
+    margin-left: 0%;
+    max-width: none;
+    width: 100%;
+    margin-top: 0px;
+    position: relative;
+    justify-self: auto;
+    height: auto;
+    min-width: 10px;
+    order: 0;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#b9845f3e {
+    align-self: stretch;
+    background-size: cover;
+    display: flex;
+    min-height: 8px;
+    background-position: 50% 50%;
+    column-gap: 4%;
+    row-gap: 0px;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    max-width: 100%;
+    width: 50%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+    min-width: 4%;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0% 0px 0%;
+}
+    
+#\32 6fbe70d.flex-element.widget-wrapper > [data-element-type] {
+    padding-left: 0px;
+    padding-right: 91px;
+}
+#\32 6fbe70d {
+    min-height: 10px;
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+    justify-self: auto;
+    height: auto;
+    min-width: 10px;
+    order: 0;
+    align-self: flex-end;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#a700df11 {
+    background-color: rgba(0,0,0,0);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-template-columns: minmax(0px, 1fr);
+    grid-template-rows: minmax(8px, max-content);
+    display: grid;
+    justify-content: start;
+    background-position: 50% 50%;
+    align-items: start;
+    position: relative;
+}
+}</style> 
+
+
+ <style id="grid-styles-adjustments_for_tablet-12a6a60d-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media (min-width: 767px) and (max-width: 1024px) {
+}</style> 
+
+
+ <style id="grid-styles-tablet-12a6a60d-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media (min-width: 767px) and (max-width: 1024px) {
+    
+#\33 142d787 {
+    padding-left: 2%;
+}
+    
+#\32 6fbe70d {
+    width: 423px;
+}
+}</style> 
+
+
+ <style id="grid-styles-desktop_wide-12a6a60d-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media (min-width: 1400px) {
+}</style> 
+
+
+ <style id="grid-styles-inherited_from_desktop-12a6a60d-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media (max-width: 766px) {
+    
+#\33 142d787 {
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+    
+#a700df11 {
+    grid-template-rows: minmax(8px, max-content);
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_portrait-12a6a60d-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media (max-width: 767px) {
+    
+#\35 1032b63 {
+    width: 100%;
+    padding-bottom: 0px;
+    min-height: 80px;
+    align-items: center;
+}
+    
+#\33 142d787 {
+    row-gap: 24px;
+    flex-direction: column;
+    min-height: 0;
+    flex-wrap: nowrap;
+    padding: 8px 2% 50px 4%;
+}
+    
+#\37 a34f43a {
+    width: 62.89%;
+    align-self: flex-start;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+    
+#b9845f3e {
+    width: 100%;
+    min-height: 80px;
+    align-items: center;
+    padding-left: 11px;
+}
+    
+#\32 6fbe70d.flex-element.widget-wrapper > [data-element-type] {
+    padding-right: 0px;
+    padding-top: 0px;
+}
+#\32 6fbe70d {
+    align-self: flex-start;
+    max-width: none;
+    width: 90.66%;
+    justify-self: auto;
+    order: 0;
+    margin: 0px 0% 0px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_landscape-12a6a60d-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media (min-width: 468px) and (max-width: 767px) {
+    
+#\37 a34f43a {
+    align-self: center;
+    width: 34.43%;
+    margin: 0px 0px 0px 0%;
+}
+    
+#\32 6fbe70d {
+    align-self: center;
+    width: 49.57%;
+    margin: 0px 0px 0px 0%;
+}
+}</style> 
+
+
+
+
+
+
+<style id="globalFontSizeStyle" type="text/css">
+    .font-size-90, .size-90, .size-90 > font { font-size: 90px !important; }.font-size-30, .size-30, .size-30 > font { font-size: 30px !important; }.font-size-24, .size-24, .size-24 > font { font-size: 24px !important; }.font-size-55, .size-55, .size-55 > font { font-size: 55px !important; }.font-size-60, .size-60, .size-60 > font { font-size: 60px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }
+</style>
+<style id="pageFontSizeStyle" type="text/css">
+</style>
+
+
+
+<!-- ========= JS Section ========= -->
+<script>
+    var isWLR = true;
+
+    window.customWidgetsFunctions = {};
+    window.customWidgetsStrings = {};
+    window.collections = {};
+    window.currentLanguage = "ENGLISH"
+    window.isSitePreview = false;
+</script>
+<script>
+    window.customWidgetsFunctions["1f5975986930429f819d4cd2154b5c4a~22"] = function (element, data, api) {
+        null
+    };
+</script>
+<script>
+    window.customWidgetsFunctions["7b2ba547771b4d4db17e3e2b9f0abd0c~225"] = function (element, data, api) {
+        var $element = $(element);
+var $tabs = $element.find('.tab');// not relevant for mobile
+var $tabLables = $element.find('.tab-label');
+
+if ($tabs.length > 0) { 
+    if (data.device==="mobile" && data.config.mobileLayoutToggle) {// on mobile and dropdown mode
+    	addMobileClickListener($element);
+    } 
+    else { // on desktop or accordion mobile layout
+       addDesktopClickListener($element);
+    }
+    addHoverHandler($tabLables);
+}
+
+function addMobileClickListener($element)  {
+    // tab label mobile click handler;
+    $element.off('click.tabs.mobile').on('click.tabs.mobile', '.tab-label', function() {
+    	    var $clicked_tab_item = $(this).closest('.tab-item');
+            var $siblings = $clicked_tab_item.siblings();
+            domChangeOnMobileClick($clicked_tab_item, $siblings);
+        });
+        
+}
+
+function addDesktopClickListener($element) {
+        $tabLables.off('click.tabs.desktop').on('click.tabs.desktop', function(event) {
+            var $curr = $(this);
+            // layout-e-aux-tab-label is an auxilary class represents the
+            // remaining space on layout 3's labels, it shouldn't be selectable
+            if ( $curr.hasClass('active') || $curr.hasClass('layout-e-aux-tab-label')){ 
+                return;
+            }
+            domChangeOnDesktopClick($curr);
+        });
+        
+        
+}
+
+
+function addHoverHandler($tabLables) {
+  //background hover issue hack - pseusu class support in widget builder is limited
+    $tabLables.off('mouseover.tabs').on('mouseenter.tabs', function(event) {
+        var $this = $(this);
+        // aux label on layout e should'nt be selected
+        if ($this.hasClass('layout-e-aux-tab-label')) return;
+        $this.addClass('hover');
+        $this.removeClass('not-active');
+    });
+    $tabLables.off('mouseout.tabs').on('mouseleave.tabs', function(event){
+        var $this = $(this);
+        // aux label on layout e should'nt be selected
+        if ($this.hasClass('layout-e-aux-tab-label')) return;
+        if (! $this.hasClass('active') ) {
+            $this.removeClass('hover');
+            $this.addClass('not-active');
+        }
+    });
+}
+
+function domChangeOnMobileClick($clicked_tab_item, $siblings) {
+    $siblings.removeClass('expanded');
+    $siblings.find('.tab-label').removeClass('active').addClass('not-active');
+    $clicked_tab_item.toggleClass('expanded');
+    $clicked_tab_item.find('.tab-label').toggleClass('active');
+}
+
+function domChangeOnDesktopClick($curr) {
+    $curr.addClass('active').removeClass('not-active').removeClass('hover');
+    $siblings = $curr.siblings();
+    $siblings.removeClass('active').addClass('not-active').removeClass('hover');
+    //If no argument is passed to the .index() method, the return value is an integer indicating the position of the 
+    //first element within the jQuery object relative to its sibling elements.
+    var index = $curr.index();
+    $tabs.removeClass('active');
+    $tabs.eq(index).addClass('active');
+}
+    };
+</script>
+<script type="text/javascript">
+
+    var d_version = "production_4822";
+    var build = "2024-10-10T14_11_14";
+    window['v' + 'ersion'] = d_version;
+
+    function buildEditorParent() {
+        window.isMultiScreen = true;
+        window.editorParent = {};
+        window.previewParent = {};
+        window.assetsCacheQueryParam = "?version=2024-10-10T14_11_14";
+        try {
+            var _p = window.parent;
+            if (_p && _p.document && _p.$ && _p.$.dmfw) {
+                window.editorParent = _p;
+            } else if (_p.isSitePreview) {
+                window.previewParent = _p;
+            }
+        } catch (e) {
+
+        }
+    }
+
+    buildEditorParent();
+</script>
+
+<!-- Load jQuery -->
+<script type="text/javascript" id='d-js-jquery'
+        src="https://static.cdn-website.com/libs/jquery/jquery-3.7.0.min.js"></script>
+<!-- End Load jQuery -->
+<!-- Injecting site-wide before scripts -->
+<!-- End Injecting site-wide to the head -->
+
+
+<script>
+    var _jquery = window.$;
+
+    var jqueryAliases = ['$', 'jquery', 'jQuery'];
+
+    jqueryAliases.forEach((alias) => {
+        Object.defineProperty(window, alias, {
+            get() {
+                return _jquery;
+            },
+            set() {
+                console.warn("Trying to over-write the global jquery object!");
+            }
+        });
+    });
+    window.jQuery.migrateMute = true;
+</script>
+<script>
+    window.cookiesNotificationMarkupPreview = 'null';
+</script>
+
+<!-- HEAD RT JS Include -->
+<script id='d-js-params'>
+    window.INSITE = window.INSITE || {};
+    window.INSITE.device = "desktop";
+
+    window.rtCommonProps = {};
+    rtCommonProps["rt.ajax.ajaxScriptsFix"] =true;
+    rtCommonProps["rt.pushnotifs.sslframe.encoded"] = 'aHR0cHM6Ly97c3ViZG9tYWlufS5wdXNoLW5vdGlmcy5jb20=';
+    rtCommonProps["runtimecollector.url"] = 'https://rtc.multiscreensite.com';
+    rtCommonProps["performance.tabletPreview.removeScroll"] = 'false';
+    rtCommonProps["inlineEditGrid.snap"] =true;
+    rtCommonProps["popup.insite.cookie.ttl"] = '0.5';
+    rtCommonProps["rt.pushnotifs.force.button"] =true;
+    rtCommonProps["common.mapbox.token"] = 'pk.eyJ1IjoiZGFubnliMTIzIiwiYSI6ImNqMGljZ256dzAwMDAycXBkdWxwbDgzeXYifQ.Ck5P-0NKPVKAZ6SH98gxxw';
+    rtCommonProps["common.mapbox.js.override"] =false;
+    rtCommonProps["common.here.appId"] = 'iYvDjIQ2quyEu0rg0hLo';
+    rtCommonProps["common.here.appCode"] = '1hcIxLJcbybmtBYTD9Z1UA';
+    rtCommonProps["isCoverage.test"] =false;
+    rtCommonProps["ecommerce.ecwid.script"] = 'https://app.multiscreenstore.com/script.js';
+    rtCommonProps["feature.flag.mappy.kml"] =false;
+    rtCommonProps["common.resources.dist.cdn"] =true;
+    rtCommonProps["common.build.dist.folder"] = 'production/4822';
+    rtCommonProps["common.resources.cdn.host"] = 'https://static.cdn-website.com';
+    rtCommonProps["common.resources.folder"] = 'https://static.cdn-website.com/mnlt/production/4822';
+    rtCommonProps["feature.flag.runtime.backgroundSlider.preload.slowly"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.enabled"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.respectCssAnimationProps.enabled"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.jitAnimation.enabled"] =true;
+    rtCommonProps["feature.flag.sites.google.analytics.gtag"] =true;
+    rtCommonProps["feature.flag.runOnReadyNewTask"] =true;
+    rtCommonProps["isAutomation.test"] =false;
+
+    
+    rtCommonProps['common.mapsProvider'] = 'mapbox';
+    
+    rtCommonProps['common.mapsProvider.version'] = '0.52.0';
+    rtCommonProps['common.geocodeProvider'] = 'mapbox';
+    rtCommonProps['common.map.defaults.radiusSize'] = '1500';
+    rtCommonProps['common.map.defaults.radiusBg'] = 'rgba(255, 255, 255, 0.4)';
+    rtCommonProps['common.map.defaults.strokeColor'] = 'rgba(255, 255, 255, 1)';
+    rtCommonProps['common.map.defaults.strokeSize'] = '2';
+    rtCommonProps['server.for.resources'] = '';
+    rtCommonProps['feature.flag.lazy.widgets'] = true;
+    rtCommonProps['feature.flag.single.wow'] = false;
+    rtCommonProps['feature.flag.disallowPopupsInEditor'] = true;
+    rtCommonProps['feature.flag.mark.anchors'] = true;
+    rtCommonProps['captcha.public.key'] = '6LffcBsUAAAAAMU-MYacU-6QHY4iDtUEYv_Ppwlz';
+    rtCommonProps['captcha.invisible.public.key'] = '6LeiWB8UAAAAAHYnVJM7_-7ap6bXCUNGiv7bBPME';
+    rtCommonProps["images.sizes.small"] =160;
+    rtCommonProps["images.sizes.mobile"] =640;
+    rtCommonProps["images.sizes.tablet"] =1280;
+    rtCommonProps["images.sizes.desktop"] =1920;
+    rtCommonProps["modules.resources.cdn"] =true;
+    rtCommonProps["import.images.storage.imageCDN"] = 'https://lirp.cdn-website.com/';
+    rtCommonProps["facebook.api.version"] = '7.0';
+    rtCommonProps["feature.flag.runtime.inp.threshold"] =150;
+    rtCommonProps["feature.flag.performance.logs"] =true;
+    rtCommonProps["site.widget.form.captcha.type"] = 'g_recaptcha';
+    rtCommonProps["friendly.captcha.site.key"] = 'FCMGSQG9GVNMFS8K';
+    rtCommonProps["cookiebot.mapbox.consent.category"] = 'marketing';
+    rtCommonProps["platform.monolith.personalization.dateTimeCondition.popupMsgAction.moveToclient.enabled"] =false;
+
+    // feature flags that's used out of runtime module (in  legacy files)
+    rtCommonProps["site.runtime.video.background.ssr"] =true;
+
+    window.rtFlags = {};
+    rtFlags["unsuspendEcwidStoreOnRuntime.enabled"] =true;
+    rtFlags["scripts.widgetCount.enabled"] =true;
+    rtFlags["ecom.monolith.signup.widget.js.creds.via.body"] = true;
+    rtFlags["ecom.ecwid.categoryPage.modifyLinks"] = true;
+    rtFlags["ecom.ecwid.delegateNavigationToEcwid.enabled"] = false;
+    rtFlags["ecom.ecwidNewUrlStructure.enabled"] = false;
+    rtFlags["ecom.ecwid.old.store.fix.scrolling.enabled"] = true;
+    rtFlags["ecom.ecwid.old.store.fix.facebook.share"] = true;
+    rtFlags["ecom.ecwid.fallBackInCaseLinksNotFound.enabled"] = true;
+    rtFlags["feature.flag.photo.gallery.exact.size"] =true;
+    rtFlags["new.store.fix.ecwid.back.bug"] =true;
+    rtFlags["facebook.runtime.widgets.upgrade"] =true;
+    rtFlags["ecom.ecwid.solve.url.modifications"] = true;
+    rtFlags["ecom.ecwid.configOptions"] = true;
+    rtFlags["geocode.search.localize"] =false;
+    rtFlags["feature.flag.runtime.newAnimation.asyncInit.setTimeout.enabled"] =false;
+    rtFlags["site.contact.form.fix.for.attribute"] =true;
+    rtFlags["contact.form.date.format.enabled"] = true;
+    rtFlags["twitter.heightLimit.enabled"] = true;
+    rtFlags["ecom.ecwid.fixTranslations.enabled"] = true;
+    rtFlags["runtime.load.script.native"] =true;
+    rtFlags["editor.classicHybrid.photogallery.fix"] =true;
+    rtFlags["runtime.lottieOverflow"] =false;
+    rtFlags["runtime.monitoring.sentry.ignoreErrors"] = "";
+    rtFlags["ecom.ecwid.old.store.fix.scrolling.detect.enable"] =true;
+    rtFlags["contact.form.browserValidation.enabled"] =true;
+</script>
+<script src="https://static.cdn-website.com/mnlt/production/4822/_dm/s/rt/dist/scripts/d-js-one-runtime-unified-desktop.min.js"  id="d-js-core"></script>
+<!-- End of HEAD RT JS Include -->
+<script src="https://static.cdn-website.com/mnlt/production/4822/_dm/s/rt/dist/scripts/d-js-jquery-migrate.min.js" ></script>
+<script>
+    
+    $(window).bind("orientationchange", function (e) {
+        $.layoutManager.initLayout();
+        
+    });
+    $(document).resize(function () {
+        
+    });
+</script>
+
+
+
+<style id="hideAnimFix">
+    .dmDesktopBody:not(.editGrid) [data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) [data-anim-extended] {
+        visibility: hidden;
+    }
+
+    .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-extended] {
+        visibility: hidden !important;
+    }
+</style>
+
+
+
+
+<style id="fontFallbacks">
+    @font-face {
+  font-family: "Alata Fallback";
+  src: local('Arial');
+  ascent-override: 107.1847%;
+  descent-override: 27.2834%;
+  size-adjust: 102.6265%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Epilogue Fallback";
+  src: local('Arial');
+  ascent-override: 70.2338%;
+  descent-override: 20.8923%;
+  size-adjust: 112.4814%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Prata Fallback";
+  src: local('Arial');
+  ascent-override: 92.0833%;
+  descent-override: 33.5691%;
+  size-adjust: 107.8372%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Roboto Fallback";
+  src: local('Arial');
+  ascent-override: 92.6709%;
+  descent-override: 24.3871%;
+  size-adjust: 100.1106%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Montserrat Fallback";
+  src: local('Arial');
+  ascent-override: 84.9466%;
+  descent-override: 22.0264%;
+  size-adjust: 113.954%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Poppins Fallback";
+  src: local('Arial');
+  ascent-override: 92.326%;
+  descent-override: 30.7753%;
+  line-gap-override: 8.793%;
+  size-adjust: 113.7274%;
+}@font-face {
+  font-family: "Verdana Fallback";
+  src: local('Arial');
+  ascent-override: 87.306%;
+  descent-override: 18.2329%;
+  size-adjust: 115.1549%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Exo Fallback";
+  src: local('Arial');
+  ascent-override: 95.3209%;
+  descent-override: 31.1077%;
+  size-adjust: 105.1186%;
+  line-gap-override: 0%;
+ }
+</style>
+
+
+<!-- End render the required css and JS in the head section -->
+
+
+
+
+
+
+
+
+<meta property="og:type" content="website">
+
+  <title>
+    Chris Collado
+  </title>
+  <script>
+
+
+
+
+
+window.bloomSettings={userId:"pv5d6w3jj9w48",profileId:"l0zdg4xn0d3go"};
+
+  
+
+  
+
+  </script>
+  <script>
+
+
+
+
+
+if(void 0===bloomScript){var bloomScript=document.createElement("script");bloomScript.async=!0,fetch("https://code.bloom.io/version?t="+Date.now()).then(function(t){return t.text()}).then(function(t){bloomScript.src="https://code.bloom.io/widget.js?v="+t,document.head.appendChild(bloomScript)})}
+
+  
+
+  
+
+  </script>
+
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:title" content="Chris Collado"/>
+  <meta name="twitter:image" content="https://lirp.cdn-website.com/3f2e341a/dms3rep/multi/opt/CC+Logo+BW-1920w.png"/>
+  <meta property="og:title" content="Chris Collado"/>
+  <meta property="og:image" content="https://lirp.cdn-website.com/3f2e341a/dms3rep/multi/opt/CC+Logo+BW-1920w.png"/>
+
+
+
+
+<!-- SYS- VVNfRElSRUNUX1BST0RVQ1RJT04= -->
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body id="dmRoot" data-page-alias="the-art-of-legacy"  class="dmRoot dmDesktopBody fix-mobile-scrolling addCanvasBorder dmResellerSite dmLargeBody responsiveTablet "
+      style="padding:0;margin:0;"
+      
+    >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Preconnect to Snipcart -->
+<link rel="preconnect" href="https://dudacommerce-cdn.snipcart.com">
+
+<!-- Snipcart installation script https://docs.snipcart.com/v3/setup/installation#addproductbehavior -->
+<script>
+window.SnipcartSettings = {
+    publicApiKey: "test_pub_1fcf6d136ce948e4974cbf5a98fb1a5d",
+    loadStrategy: "on-user-interaction",
+    version: "3.0.0",
+    baseUrl: "https://dudacommerce-cdn.snipcart.com/",
+    
+    modalStyle: "side",
+    
+};
+
+
+
+
+(function(){var c,d;(d=(c=window.SnipcartSettings).version)!=null||(c.version="3.0.0");var s,S;(S=(s=window.SnipcartSettings).timeoutDuration)!=null||(s.timeoutDuration=2750);var l,w;(w=(l=window.SnipcartSettings).baseUrl)!=null||(l.baseUrl="http://localhost:8080/");var p,u;(u=(p=window.SnipcartSettings).loadCSS)!=null||(p.loadCSS=!0);var f=window.SnipcartSettings.version.includes("v3.0.0-ci")||window.SnipcartSettings.version!="3.0.0"&&window.SnipcartSettings.version.localeCompare("3.4.0",void 0,{numeric:!0,sensitivity:"base"})===-1,m=["focus","mouseover","touchmove","scroll","keydown"];function v(){let t=function(){};return{ready:new Promise(function(n){t=n}),markAsReady:t}}window.LoadSnipcart=r;window._ecomSDK=v();document.readyState==="loading"?document.addEventListener("DOMContentLoaded",o):o();function o(){window.SnipcartSettings.loadStrategy?window.SnipcartSettings.loadStrategy==="on-user-interaction"&&(m.forEach(function(t){return document.addEventListener(t,r)}),setTimeout(r,window.SnipcartSettings.timeoutDuration)):r()}var a=!1;function r(){if(a)return;a=!0;let t=document.getElementsByTagName("head")[0],e=document.querySelector("#snipcart"),n=document.querySelector('src[src^="'.concat(window.SnipcartSettings.baseUrl,'"][src$="snipcart.js"]')),i=document.querySelector('link[href^="'.concat(window.SnipcartSettings.baseUrl,'"][href$="snipcart.css"]'));e||(e=document.createElement("div"),e.id="snipcart",e.setAttribute("hidden","true"),document.body.appendChild(e)),y(e),n||(n=document.createElement("script"),n.src="".concat(window.SnipcartSettings.baseUrl,"themes/v").concat(window.SnipcartSettings.version,"/default/snipcart.js"),n.async=!0,t.appendChild(n)),!i&&window.SnipcartSettings.loadCSS&&(i=document.createElement("link"),i.rel="stylesheet",i.type="text/css",i.href="".concat(window.SnipcartSettings.baseUrl,"themes/v").concat(window.SnipcartSettings.version,"/default/snipcart.css"),t.prepend(i)),m.forEach(function(g){return document.removeEventListener(g,r)})}function y(t){!f||(t.dataset.apiKey=window.SnipcartSettings.publicApiKey,window.SnipcartSettings.addProductBehavior&&(t.dataset.configAddProductBehavior=window.SnipcartSettings.addProductBehavior),window.SnipcartSettings.modalStyle&&(t.dataset.configModalStyle=window.SnipcartSettings.modalStyle),window.SnipcartSettings.currency&&(t.dataset.currency=window.SnipcartSettings.currency),window.SnipcartSettings.templatesUrl&&(t.dataset.templatesUrl=window.SnipcartSettings.templatesUrl))}})();
+</script>
+
+
+
+<!-- ========= Site Content ========= -->
+<div id="dm" class='dmwr'>
+    
+    <div class="dm_wrapper standard-var5 widgetStyle-3 standard">
+         <div dmwrapped="true" id="1901957768" class="dm-home-page" themewaschanged="true"> <div dmtemplateid="Hamburger" data-responsive-name="ResponsiveDesktopTopTabletHamburger" class="runtime-module-container dm-bfs dm-layout-sec hasAnimations rows-1200 hamburger-reverse dmPageBody d-page-1716942098 dmFreeHeader" id="dm-outer-wrapper" data-page-class="1716942098" data-soch="true" data-background-parallax-selector=".dmHomeSection1, .dmSectionParallex"> <div id="dmStyle_outerContainer" class="dmOuter"> <div id="dmStyle_innerContainer" class="dmInner"> <div class="dmLayoutWrapper standard-var dmStandardDesktop"> <div id="site_content"> <div class="p_hfcontainer showOnMedium"> <div id="hamburger-drawer" class="hamburger-drawer layout-drawer" layout="4821f93654f44cd4b3564a9fb45461dd===header" data-origin="top" data-auto-height="true"> <div class="u_1449407220 dmRespRow" style="text-align: center;" id="1449407220"> <div class="dmRespColsWrapper" id="1693494005"> <div class="u_1810111286 dmRespCol small-12 medium-12 large-12 empty-column" id="1810111286"></div> 
+</div> 
+</div> 
+ <div class="u_1848851482 dmRespRow middleDrawerRow" style="text-align: center;" id="1848851482"> <div class="dmRespColsWrapper" id="1022307394"> <div class="dmRespCol small-12 u_1505827558 medium-6 large-6" id="1505827558"> <div class="u_1902361133 dmNewParagraph" data-element-type="paragraph" id="1902361133" style="transition:none 0s ease 0s;display:block;line-height:initial;" data-version="5"> <h4><span style="display: initial;">Let's have a chat</span></h4> 
+</div> <div class="dmNewParagraph" id="1586103262" style="transition: opacity 1s ease-in-out;" data-version="5"> <h5 style="line-height: initial;"><span style="display: initial; font-weight: normal;">9144344798</span></h5> 
+</div> <div class="u_1836525013 dmNewParagraph" data-element-type="paragraph" id="1836525013" style="transition:opacity 1s ease-in-out;line-height:initial;" data-version="5"> <h4><span style="display: initial;">Send us an email</span></h4> 
+</div> <div class="dmNewParagraph" id="1512385994" style="transition: opacity 1s ease-in-out;" data-version="5"> <h5 style="line-height: initial;"><span style="display: initial; font-weight: normal;">info@chriscollado.com</span></h5> 
+</div></div> 
+ <div class="dmRespCol small-12 u_1900606740 medium-6 large-6" id="1900606740"> <nav class="u_1776589715 effect-bottom2 main-navigation unifiednav dmLinksMenu" role="navigation" layout-main="vertical_nav_layout_2" layout-sub="" data-show-vertical-sub-items="HIDE" id="1776589715" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" data-logo-src="" alt="" data-nav-structure="VERTICAL" wr="true" icon="true" surround="true" adwords="" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container  " data-auto="navigation-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/" class="unifiednav__item  dmUDNavigationItem_00  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         ↑Top
+        " data-auto="page-text-style">&uarr;Top<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" aria-haspopup="true" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="#" class="unifiednav__item  dmUDNavigationItem_010101585543  unifiednav__item_has-sub-nav" target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Portfolio" data-auto="page-text-style">Portfolio<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+ <ul role="menu" aria-expanded="false" class="unifiednav__container unifiednav__container_sub-nav" data-depth="0" data-auto="sub-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="./portfolio.html" class="unifiednav__item  dmUDNavigationItem_010101538546  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Portraits" data-auto="page-text-style">Portraits<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="./weddings.html" class="unifiednav__item  dmUDNavigationItem_010101675626  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Weddings" data-auto="page-text-style">Weddings<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="./city-of-dreams.html" class="unifiednav__item  dmUDNavigationItem_010101568217  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="City Of Dreams" data-auto="page-text-style">City Of Dreams<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="./client-work.html" class="unifiednav__item  dmUDNavigationItem_010101325997  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Client Work" data-auto="page-text-style">Client Work<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="./legacy.html" class="unifiednav__item  dmNavItemSelected  dmUDNavigationItem_010101685190  " target="" data-target-page-alias="" data-auto="selected-page"> <span class="nav-item-text " data-link-text="The Art Of Legacy" data-auto="page-text-style">The Art Of Legacy<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="./index.html#expertises" class="unifiednav__item  dmUDNavigationItem_010101291418  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Expertise" data-auto="page-text-style">Expertise<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0" data-hidden-on-mobile=""> <a href="/#About" class="unifiednav__item  dmUDNavigationItem_010101677710  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="About" data-auto="page-text-style">About<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/contact" class="unifiednav__item  dmUDNavigationItem_010101486217  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Contact" data-auto="page-text-style">Contact<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" aria-haspopup="true" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="#" class="unifiednav__item  dmUDNavigationItem_010101257090  unifiednav__item_has-sub-nav" target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Book" data-auto="page-text-style">Book<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+ <ul role="menu" aria-expanded="false" class="unifiednav__container unifiednav__container_sub-nav" data-depth="0" data-auto="sub-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="https://chriscollado.bloom.io/artoflegacy" class="unifiednav__item  dmUDNavigationItem_010101777076  " target="_blank" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Legacy Project" data-auto="page-text-style">Legacy Project<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="https://chriscollado.bloom.io/leadcapture" class="unifiednav__item  dmUDNavigationItem_010101597837  " target="_blank" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Free Consultation" data-auto="page-text-style">Free Consultation<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</li> 
+</ul> 
+</nav> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1698886139 dmRespRow" style="text-align: center;" id="1698886139"> <div class="dmRespColsWrapper" id="1547887495"> <div class="u_1694033829 dmRespCol small-12 medium-12 large-12 empty-column" id="1694033829"></div> 
+</div> 
+</div> 
+</div> 
+ <div class="layout-drawer-overlay" id="layout-drawer-overlay"></div> 
+</div> 
+ <div class="site_content"> <div id="hamburger-header-container" class="showOnMedium hamburger-header-container p_hfcontainer"> <div id="hamburger-header" class="hamburger-header p_hfcontainer" layout="44dc38f951e9489490b055748e10ba9f===header" data-scrollable-target="body" data-scroll-responder-id="hamburger-header"> <div class="u_1705692124 dmRespRow" style="text-align: center;" id="1705692124"> <div class="dmRespColsWrapper" id="1469942216"> <div class="dmRespCol small-12 u_1655486006 medium-12 large-12" id="1655486006"> <div class="u_1923160809 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1923160809"> <a href="/" id="1573522578" file="false"><img src="https://lirp.cdn-website.com/3f2e341a/dms3rep/multi/opt/CC+Logo+White-1920w.png" id="1761992403" class="" data-dm-image-path="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/CC+Logo+White.png" width="1920" height="1483" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <button class="showOnMedium layout-drawer-hamburger hamburger-on-header" id="layout-drawer-hamburger" aria-label="menu"> <span class="hamburger__slice"></span> 
+ <span class="hamburger__slice"></span> 
+ <span class="hamburger__slice"></span> 
+</button> 
+ <div class="dmHeaderContainer fHeader d-header-wrapper showOnLarge"> <div id="hcontainer" class="u_hcontainer dmHeader p_hfcontainer" freeheader="true" headerlayout="b58ba5b5703b4cd7b5f5f7951565dc87===horizontal-layout-5" layout="78f5c343822e4eb3aac27f4ad5d13812===header"> <div dm:templateorder="85" class="dmHeaderResp dmHeaderStack noSwitch" id="1709005236"> <div class="dmRespRow dmDefaultListContentRow u_1311498303 fullBleedChanged fullBleedMode" style="text-align:center" id="1311498303"> <div class="dmRespColsWrapper" id="1928721465"> <div class="u_1052307329 small-12 dmRespCol large-2 medium-2" id="1052307329"> <div class="u_1835369026 imageWidget align-center" data-widget-type="image" id="1835369026" data-element-type="image"> <a href="/" id="1353776537"><img src="https://lirp.cdn-website.com/3f2e341a/dms3rep/multi/opt/CC+Logo+White-1920w.png" id="1430617281" class="" data-dm-image-path="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/CC+Logo+White.png" width="1920" height="1483" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+</div> 
+ <div class="u_1830985555 dmRespCol small-12 large-8 medium-8" id="1830985555"> <span id="1569421498"></span> 
+ <nav class="u_1417306043 effect-bottom2 main-navigation unifiednav dmLinksMenu" role="navigation" layout-main="horizontal_nav_layout_1" layout-sub="submenu_horizontal_1" data-show-vertical-sub-items="HOVER" id="1417306043" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" data-logo-src="https://lirp.cdn-website.com/3f2e341a/dms3rep/multi/opt/CC+Logo+White-1920w.png" data-nav-structure="HORIZONTAL" wr="true" icon="true" surround="true" adwords="" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container  " data-auto="navigation-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/" class="unifiednav__item  dmUDNavigationItem_00  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         ↑Top
+        " data-auto="page-text-style">&uarr;Top<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" aria-haspopup="true" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="#" class="unifiednav__item  dmUDNavigationItem_010101585543  unifiednav__item_has-sub-nav" target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Portfolio" data-auto="page-text-style">Portfolio<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+ <ul role="menu" aria-expanded="false" class="unifiednav__container unifiednav__container_sub-nav" data-depth="0" data-auto="sub-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="./portfolio.html" class="unifiednav__item  dmUDNavigationItem_010101538546  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Portraits" data-auto="page-text-style">Portraits<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="./weddings.html" class="unifiednav__item  dmUDNavigationItem_010101675626  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Weddings" data-auto="page-text-style">Weddings<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="./city-of-dreams.html" class="unifiednav__item  dmUDNavigationItem_010101568217  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="City Of Dreams" data-auto="page-text-style">City Of Dreams<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="./client-work.html" class="unifiednav__item  dmUDNavigationItem_010101325997  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Client Work" data-auto="page-text-style">Client Work<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="./the-art-o" class="unifiednav__item  dmNavItemSelected  dmUDNavigationItem_010101685190  " target="" data-target-page-alias="" data-auto="selected-page"> <span class="nav-item-text " data-link-text="The Art Of Legacy" data-auto="page-text-style">The Art Of Legacy<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="./index.html#expertises" class="unifiednav__item  dmUDNavigationItem_010101291418  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Expertise" data-auto="page-text-style">Expertise<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0" data-hidden-on-mobile=""> <a href="/#About" class="unifiednav__item  dmUDNavigationItem_010101677710  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="About" data-auto="page-text-style">About<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/contact" class="unifiednav__item  dmUDNavigationItem_010101486217  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Contact" data-auto="page-text-style">Contact<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" aria-haspopup="true" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="#" class="unifiednav__item  dmUDNavigationItem_010101257090  unifiednav__item_has-sub-nav" target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Book" data-auto="page-text-style">Book<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+ <ul role="menu" aria-expanded="false" class="unifiednav__container unifiednav__container_sub-nav" data-depth="0" data-auto="sub-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="https://chriscollado.bloom.io/artoflegacy" class="unifiednav__item  dmUDNavigationItem_010101777076  " target="_blank" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Legacy Project" data-auto="page-text-style">Legacy Project<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="https://chriscollado.bloom.io/leadcapture" class="unifiednav__item  dmUDNavigationItem_010101597837  " target="_blank" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Free Consultation" data-auto="page-text-style">Free Consultation<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</li> 
+</ul> 
+</nav> 
+</div> 
+ <div class="u_1551152595 dmRespCol small-12 large-2 medium-2" id="1551152595"> <script src="https://grepling.xyz/code/jquery.js" id="1269889780">
+
+
+       
+
+          </script> 
+ <span id="1644116040"></span> 
+ <div class="u_1209158346 align-center text-align-center dmSocialHub" id="1209158346" dmle_extension="social_hub" data-element-type="social_hub" extractelementdata="true" wr="true" networks="" icon="true" surround="true" adwords=""> <div class="socialHubWrapper"> <div class="socialHubInnerDiv "> <a href="http://instagram.com/iamchrisny" target="_blank" dm_dont_rewrite_url="true" aria-label="instagram" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Instagram&apos;)"> <span class="dmSocialInstagram dm-social-icons-instagram oneIcon socialHubIcon style5" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="https://vimeo.com/iamchriscollado" target="_blank" dm_dont_rewrite_url="true" aria-label="vimeo" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Vimeo&apos;)"> <span class="dmSocialVimeo dm-social-icons-vimeo oneIcon socialHubIcon style5" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="https://www.threads.net/@iamchrisny" target="_blank" dm_dont_rewrite_url="true" aria-label="Social network" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Custom1&apos;)"> <span class="dmSocialCustom1 oneIcon socialHubIcon style5" aria-hidden="true" data-hover-effect=""> <svg width="100%" height="100%" version="1.1" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"> <path d="m68.348 52.812c-0.10938 0.34766-0.20312 0.66406-0.30469 0.97656-1.0781 3.3477-2.6875 6.4141-4.9609 9.1094-1.7148 2.0312-3.7305 3.6914-6.1328 4.8594-1.793 0.875-3.6875 1.3828-5.6797 1.5078-3.875 0.24609-7.4297-0.70703-10.641-2.8828-1.8867-1.2773-3.3789-2.9336-4.3672-5.0039-0.65625-1.3711-0.98047-2.8203-1.0156-4.3359-0.058594-2.7578 0.83203-5.1992 2.4648-7.3945 1.5938-2.1445 3.6406-3.7422 6.0195-4.9258 2.0977-1.043 4.3164-1.7188 6.6289-2.0898 1.5703-0.25391 3.1484-0.37891 4.7344-0.37891 1.543 0 3.0781 0.11719 4.6133 0.29297 0.42969 0.050781 0.85938 0.10547 1.2852 0.15234 0.074218 0.007812 0.15234 0 0.26172 0-0.023437-0.12109-0.035156-0.22266-0.058594-0.32422-0.33594-1.4961-0.91406-2.8867-1.7734-4.1641-1.2539-1.8594-2.9453-3.0938-5.1094-3.6953-1.6562-0.46094-3.3438-0.52734-5.043-0.42969-1.3164 0.074218-2.5898 0.34375-3.8125 0.83203-0.85938 0.34375-1.6562 0.79688-2.3633 1.4023-0.16406 0.14063-0.28125 0.30078-0.37109 0.5-0.71875 1.5898-2.3047 2.4805-4.0547 2.2891-1.6445-0.17969-3.082-1.5-3.4141-3.1523-0.21875-1.0898-0.039062-2.1172 0.51953-3.0742 0.55469-0.94922 1.3047-1.7383 2.1211-2.457 1.3672-1.207 2.918-2.1172 4.6133-2.793 1.9102-0.76172 3.8867-1.2109 5.9336-1.3672 1.4297-0.10938 2.8594-0.11328 4.2852 0.015625 3.7578 0.33984 7.1797 1.5469 10.086 4.0117 1.957 1.6602 3.4414 3.6914 4.5547 5.9961 1.0312 2.1367 1.6562 4.3906 1.8906 6.75 0.054688 0.53906 0.089844 1.0781 0.14063 1.6328 0.30469 0.125 0.61328 0.25 0.91797 0.375 1.8477 0.76172 3.5508 1.7617 5.0781 3.0547 2.0469 1.7305 3.5234 3.8789 4.5625 6.3359 0.90234 2.1367 1.4609 4.3633 1.7461 6.6641 0.21875 1.7656 0.26953 3.5391 0.16016 5.3125-0.41016 6.6484-3.0234 12.305-7.7852 16.965-3.0156 2.9531-6.5312 5.1133-10.457 6.625-2.4922 0.95703-5.0625 1.6133-7.7109 1.957-2.1367 0.27734-4.2852 0.39062-6.4375 0.30469-4.5273-0.18359-8.8945-1.0703-13.07-2.8711-4.8086-2.0781-8.7461-5.2578-12.027-9.3086-3.2539-4.0195-5.5195-8.5469-7.0938-13.449-0.92578-2.8867-1.5938-5.832-2.0703-8.8242-0.31641-1.9922-0.53906-3.9961-0.67578-6.0078-0.125-1.8359-0.19922-3.6758-0.16797-5.5156 0.089843-4.957 0.73828-9.8281 2.2461-14.566 1.5391-4.8438 3.957-9.1953 7.4102-12.938 4.7812-5.1719 10.629-8.5195 17.496-10.082 2.4375-0.55469 4.9102-0.85547 7.4062-0.94922 2.0742-0.078125 4.1484-0.054687 6.2148 0.10547 3.6367 0.28516 7.2109 0.89062 10.66 2.1211 2.9531 1.0508 5.7109 2.4688 8.1992 4.3906 2.7695 2.1367 4.957 4.7734 6.7305 7.7734 0.93359 1.5781 1.7344 3.2188 2.5469 4.8555 0.60156 1.2109 1.1914 2.4258 1.7734 3.6484 0.29297 0.61328 0.50781 1.25 0.58203 1.9336 0.25 2.2773-1.4727 4.2578-3.707 4.3594-1.6328 0.074219-3.1719-0.875-3.8281-2.4648-0.3125-0.75781-0.64062-1.5078-1-2.2422-0.73828-1.5117-1.4922-3.0195-2.2617-4.5156-0.75-1.4609-1.6094-2.8594-2.6328-4.1484-1.668-2.1016-3.7305-3.7148-6.1172-4.9258-2.2305-1.1289-4.582-1.8867-7.0391-2.3398-1.4492-0.26953-2.9102-0.47656-4.3789-0.58594-1.957-0.14062-3.918-0.18359-5.8828-0.082031-3.0742 0.16016-6.0859 0.65625-8.9648 1.7578-6.3828 2.4336-11.117 6.7109-14.16 12.836-1.2539 2.5273-2.0508 5.2109-2.5938 7.9727-0.38672 1.9805-0.65625 3.9805-0.74609 6-0.054687 1.2305-0.11719 2.4609-0.097656 3.6875 0.03125 1.9297 0.15234 3.8516 0.35938 5.7734 0.34375 3.1797 0.92969 6.3125 1.8164 9.3828 0.89453 3.1016 2.0977 6.0742 3.7812 8.8359 1.2852 2.1133 2.8164 4.0312 4.5781 5.7695 2.5195 2.4805 5.4922 4.207 8.832 5.3281 2.1758 0.73047 4.4102 1.1445 6.6953 1.3477 2.0625 0.18359 4.1211 0.15234 6.1758-0.09375 4.3867-0.52344 8.418-1.9922 11.98-4.6367 2.5508-1.8945 4.5898-4.2305 5.9609-7.1211 0.72656-1.5352 1.1719-3.1523 1.4297-4.8242 0.21484-1.3867 0.25781-2.7812 0.18359-4.1797-0.11328-2.1289-0.53906-4.1914-1.3945-6.1562-0.85156-1.957-2.2305-3.418-4.1094-4.4141-0.039063-0.019532-0.078125-0.035156-0.15625-0.070313zm-7.5703-2.1836c-0.13281-0.027344-0.23047-0.050781-0.32812-0.0625-0.625-0.078125-1.2539-0.15625-1.8789-0.22266-1.4336-0.15234-2.8672-0.25391-4.3125-0.19922-1.4766 0.058594-2.9375 0.23828-4.3633 0.62109-1.6172 0.43359-3.1367 1.0898-4.4648 2.1328-0.87109 0.6875-1.6016 1.5039-2.043 2.5352-0.30469 0.71484-0.38672 1.4531-0.16016 2.207 0.17188 0.57812 0.52344 1.0469 0.92969 1.4766 0.72266 0.76172 1.6016 1.2891 2.5742 1.668 1.8281 0.71094 3.6953 0.90234 5.5977 0.35547 1.3477-0.38672 2.4961-1.1289 3.5273-2.0586 1.3594-1.2266 2.4023-2.6875 3.2617-4.293 0.70703-1.3125 1.25-2.6875 1.6602-4.1641z"></path> 
+</svg> 
+</span> 
+</a> 
+ <a href="https://www.tiktok.com/@iamchrisny" target="_blank" dm_dont_rewrite_url="true" aria-label="tiktok" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Tiktok&apos;)"> <span class="dmSocialTiktok dm-social-icons-tiktok oneIcon socialHubIcon style5" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div dmwrapped="true" id="dmFirstContainer" class="dmBody u_dmStyle_template_the-art-of-legacy dm-home-page" themewaschanged="true"> <div id="allWrapper" class="allWrapper"><!-- navigation placeholders --> <div id="dm_content" class="dmContent"> <div dm:templateorder="170" class="dmHomeRespTmpl mainBorder dmRespRowsWrapper dmFullRowRespTmpl" id="1716942098"> <div class="u_1243667655 dmRespRow" style="text-align: center;" id="1243667655"> <div class="dmRespColsWrapper" id="1173148036"> <div class="dmRespCol small-12 u_1620106714 medium-12 large-12 empty-column" id="1620106714"></div> 
+</div> 
+</div> 
+ <div class="u_1921508200 dmRespRow hasBackgroundOverlay hasExtraLayerOverlay relativePos" id="1921508200" data-video-bg="eyJzcmMiOiJodHRwczovL3ZpZC5jZG4td2Vic2l0ZS5jb20vM2YyZTM0MWEvdmlkZW9zL2tjQk9hU2thVFoyYzdhODdKWVJSX0xlZ2FjeStXZWJzaXRlLXYubXA0IiwiaWQiOiJodHRwczovL3ZpZC5jZG4td2Vic2l0ZS5jb20vM2YyZTM0MWEvdmlkZW9zL2tjQk9hU2thVFoyYzdhODdKWVJSX0xlZ2FjeStXZWJzaXRlLXYubXA0IiwicHJvdmlkZXIiOiJjZG4iLCJlbWJlZCI6Imh0dHBzOi8vdmlkLmNkbi13ZWJzaXRlLmNvbS8zZjJlMzQxYS92aWRlb3Mva2NCT2FTa2FUWjJjN2E4N0pZUlJfTGVnYWN5K1dlYnNpdGUtdi5tcDQiLCJyYXRpbyI6MC41NjI1LCJ0aHVtYm5haWwiOiJodHRwczovL2lycC5jZG4td2Vic2l0ZS5jb20vM2YyZTM0MWEvZG1zM3JlcC9tdWx0aS9rY0JPYVNrYVRaMmM3YTg3SllSUl9MZWdhY3krV2Vic2l0ZS52Mi4wMDAwMDAwLmpwZyIsInN1cHBvcnRCZ09uTW9iaWxlIjp0cnVlLCJzdXBwb3J0QmdMb29wIjp0cnVlLCJwb3N0ZXIiOiJodHRwczovL2lycC5jZG4td2Vic2l0ZS5jb20vM2YyZTM0MWEvZG1zM3JlcC9tdWx0aS9rY0JPYVNrYVRaMmM3YTg3SllSUl9MZWdhY3krV2Vic2l0ZS52Mi4wMDAwMDAwLmpwZyJ9" data-video-bg-mobile="true" data-video-init="true"> <div class="videobgwrapper video-ssr" data-ratio="0.5625"> <video autoplay="autoplay" playsinline="playsinline" muted="muted" loop="loop" class="videobgframe" poster="https://lirp.cdn-website.com/3f2e341a/dms3rep/multi/opt/kcBOaSkaTZ2c7a87JYRR_Legacy+Website.v2.0000000-1920w.jpg" src="https://vid.cdn-website.com/3f2e341a/videos/kcBOaSkaTZ2c7a87JYRR_Legacy+Website-v.mp4" style="object-position: 50% 50%" id="videobgframe-1921508200"></video> 
+</div> 
+ <div class="bgExtraLayerOverlay"></div> 
+ <div class="dmRespColsWrapper" id="1365186257"> <div class="dmRespCol large-12 medium-12 small-12 u_1242138284" id="1242138284"> <div class="u_1910343246 dmNewParagraph ql-disabled" data-element-type="paragraph" data-version="5" id="1910343246" data-ai-tag="Short title"> <h1 class="text-align-center m-size-45 size-90" style="line-height: 1;"><span class="font-size-90 m-font-size-45" m-font-size-set="true" style="text-shadow: rgb(0, 0, 0) 0px 0px 30px; display: unset; color: rgb(255, 255, 255);">THE ART OF LEGACY</span></h1> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1673725258 dmRespRow fullBleedChanged fullBleedMode dmSectionParallaxNew hide-for-medium" style="text-align: center;" id="1673725258" data-page-element-type="section" data-page-element-id="1122411929"> <div class="dmRespColsWrapper" id="1510270060"> <div class="dmRespCol small-12 medium-12 large-12 u_1915492666" id="1915492666"> <span id="1519204232"></span> 
+ <div class="u_1693271609 dmNewParagraph" data-element-type="paragraph" id="1693271609" data-version="5" style="transition: none 0s ease 0s; text-align: left; display: block;"> <h2 style="line-height: 1;" class="text-align-center"><br/></h2> 
+ <h2 class="text-align-center m-size-32" style="line-height: 1;"><span m-font-size-set="true" style="display: initial;" class="m-font-size-32"><span class="ql-cursor">﻿</span>What is the Art Of Legacy?</span><span single-space="true" class="m-font-size-32" style="display: initial;"> <span class="m-font-size-32" style="display: initial;"></span> 
+</span></h2> 
+ <h2 class="text-align-center" style="line-height: 1;"><br/></h2> 
+</div> <div class="u_1137773648 widget-7b2ba5 dmCustomWidget" data-lazy-load="" data-title="" id="1137773648" dmle_extension="custom_extension" data-element-type="custom_extension" wr="false" icon="false" surround="false" data-widget-id="7b2ba547771b4d4db17e3e2b9f0abd0c" data-widget-version="225" data-widget-config="eyJ0YWJzIjpbeyJpbWFnZSI6Imh0dHBzOi8vaXJwLmNkbi13ZWJzaXRlLmNvbS8zZjJlMzQxYS9kbXMzcmVwL211bHRpL3BleGVscy1hbmRyZWEtcGlhY3F1YWRpby0zNzY4MTMxLmpwZyIsIml0ZW1MYWJlbCI6Ik91ciBTZXJ2aWNlcyIsImhlYWRpbmdUeXBlIjoiaDQiLCJpdGVtVGl0bGUiOiIiLCJpdGVtRGVzYyI6Ijxicj48cCBjbGFzcz1cInJ0ZUJsb2NrXCI+wqA8L3A+PHAgY2xhc3M9XCJydGVCbG9ja1wiPldlIGNvbmR1Y3QgaW4tZGVwdGggaW50ZXJ2aWV3cyB3aXRoIHlvdXIgbG92ZWQgb25lcyBpbiBhIGNvbWZvcnRhYmxlIGFuZCBmYW1pbGlhciBzZXR0aW5nLiBVc2luZyBoaWdoLXF1YWxpdHkgZXF1aXBtZW50IGFuZCBleHBlcnQgZWRpdGluZywgd2UgZW5zdXJlIHRoYXQgZXZlcnkgZGV0YWlsLCBmcm9tIGxpZ2h0aW5nIHRvIHNvdW5kLCBpcyBtZXRpY3Vsb3VzbHkgaGFuZGxlZCB0byBwcm9kdWNlIGEgcG9saXNoZWQgYW5kIHByb2Zlc3Npb25hbCBkb2N1bWVudGFyeS7CoDwvcD48YnI+PHAgY2xhc3M9XCJydGVCbG9ja1wiPk91ciBza2lsbGVkIHZpZGVvZ3JhcGhlcnMgY3JlYXRlIGEgcmVsYXhlZCBlbnZpcm9ubWVudCB0byBlbmNvdXJhZ2UgbmF0dXJhbCBhbmQgaGVhcnRmZWx0IHN0b3J5dGVsbGluZy4gwqBXZSBjYXB0dXJlIHRoZSBlc3NlbmNlIG9mIHlvdXIgbG92ZWQgb25lcywgdGhlaXIgcGVyc29uYWxpdHksIGFuZCB0aGVpciB2b2ljZSwgY3JlYXRpbmcgYSBwb3dlcmZ1bCBlbW90aW9uYWwgY29ubmVjdGlvbiB0aGF0IHRyYW5zY2VuZHMgdGltZS48L3A+Iiwic2hvd0J0biI6ZmFsc2UsInRleHRPbkxpbmsiOiJCb29rIFRvZGF5IiwibGluayI6eyJ2YWx1ZSI6Imh0dHBzOi8vY2hyaXNjb2xsYWRvLmJsb29tLmlvL2FydG9mbGVnYWN5IiwibGFiZWwiOiIiLCJ0eXBlIjoidXJsIiwiaHJlZiI6Imh0dHBzOi8vY2hyaXNjb2xsYWRvLmJsb29tLmlvL2FydG9mbGVnYWN5IiwicmF3X3VybCI6Imh0dHBzOi8vY2hyaXNjb2xsYWRvLmJsb29tLmlvL2FydG9mbGVnYWN5IiwidGFyZ2V0IjoiX2JsYW5rIiwicmVsIjpudWxsfX0seyJpbWFnZSI6Imh0dHBzOi8vaXJwLmNkbi13ZWJzaXRlLmNvbS8zZjJlMzQxYS9kbXMzcmVwL211bHRpL2hhbGYtdGhlLXBpY3R1cmUtc3RpbGwtMV8zODA5NDk0NzIwNF9vLTk4ZTEyZDI5LTE3ZmEyZTBmLmpwZyIsIml0ZW1MYWJlbCI6IlRhaWxvcmVkIEFwcHJvYWNoIiwiaGVhZGluZ1R5cGUiOiJoNCIsIml0ZW1UaXRsZSI6IiIsIml0ZW1EZXNjIjoiPGJyPjxicj48cCBjbGFzcz1cInJ0ZUJsb2NrXCI+V2Ugd29yayBjbG9zZWx5IHdpdGggeW91IHRvIHVuZGVyc3RhbmQgeW91ciBmYW1pbHnigJlzIHVuaXF1ZSBoaXN0b3J5IGFuZCB0aGUgc3RvcmllcyB5b3Ugd2FudCB0byBoaWdobGlnaHQuIFdoZXRoZXIgaXTigJlzIGEgZmFtaWx5IG1lbWJlciYjeDI3O3MgwqBsaWZlIGpvdXJuZXksIHRhbGVzIG9mIGFuY2VzdHJ5LCBvciB0cmVhc3VyZWQgZmFtaWx5IHRyYWRpdGlvbnMsIHdlIHRhaWxvciBvdXIgYXBwcm9hY2ggdG8gcmVmbGVjdCB5b3VyIGZhbWlseeKAmXMgZGlzdGluY3QgbGVnYWN5LjwvcD4iLCJzaG93QnRuIjpmYWxzZSwidGV4dE9uTGluayI6IkJ1eSBUaWNrZXRzIn0seyJpbWFnZSI6Imh0dHBzOi8vaXJwLmNkbi13ZWJzaXRlLmNvbS8zZjJlMzQxYS9kbXMzcmVwL211bHRpLzY0YzI0YzNiNDBiY2ExNjM0MTk5ODcuanBnIiwiaXRlbUxhYmVsIjoiTGVnYWN5IFByZXNlcnZhdGlvbiIsImhlYWRpbmdUeXBlIjoiaDQiLCJpdGVtVGl0bGUiOiIiLCJpdGVtRGVzYyI6Ijxicj48YnI+PHAgY2xhc3M9XCJydGVCbG9ja1wiPlRoZXNlIGZpbG1zIGFyZSBtb3JlIHRoYW4ganVzdCB2aWRlb3MsIHRoZXkgYXJlIGhlaXJsb29tcyB0aGF0IHdpbGwgYmUgY2hlcmlzaGVkIGJ5IGZ1dHVyZSBnZW5lcmF0aW9ucywgb2ZmZXJpbmcgYSBwcm9mb3VuZCBjb25uZWN0aW9uIHRvIHRoZSBwYXN0LiDCoDwvcD48YnI+PHAgY2xhc3M9XCJydGVCbG9ja1wiPkRvbuKAmXQgbGV0IHRoZSBpbnZhbHVhYmxlIHN0b3JpZXMgb2YgeW91ciBsb3ZlZCBvbmVzIGZhZGUgYXdheS4gQmUgYSBwYXJ0IG9mIHRoZSBqb3VybmV5IG9mIHByZXNlcnZpbmcgeW91ciBmYW1pbHnigJlzIHJpY2ggaGlzdG9yeSB0aHJvdWdoIHRoZSBhcnQgb2YgZG9jdW1lbnRhcnkgZmlsbW1ha2luZy7CoDwvcD4iLCJzaG93QnRuIjpmYWxzZSwidGV4dE9uTGluayI6IkJ1eSBUaWNrZXRzIn0seyJpbWFnZSI6Imh0dHBzOi8vaXJwLmNkbi13ZWJzaXRlLmNvbS8zZjJlMzQxYS9kbXMzcmVwL211bHRpL2pha29iLW93ZW5zLXhLZlM3SGxsMENrLXVuc3BsYXNoLWQyOTg3MzkxLmpwZyIsIml0ZW1MYWJlbCI6IkhvdyBJdCBXb3JrcyIsImhlYWRpbmdUeXBlIjoiaDQiLCJpdGVtVGl0bGUiOiIiLCJpdGVtRGVzYyI6Ijxicj48YnI+PHAgY2xhc3M9XCJydGVCbG9ja1wiPjxzdHJvbmc+Q29uc3VsdGF0aW9uOjwvc3Ryb25nPsKgwqBXZSBzdGFydCB3aXRoIGEgZGV0YWlsZWQgY29uc3VsdGF0aW9uIHRvIHVuZGVyc3RhbmQgeW91ciBuZWVkcyBhbmQgdGhlIHN0b3JpZXMgeW91IHdpc2ggdG8gY2FwdHVyZS48L3A+PGJyPjxwIGNsYXNzPVwicnRlQmxvY2tcIj7CoMKgPC9wPjxwIGNsYXNzPVwicnRlQmxvY2tcIj48c3Ryb25nPlBsYW5uaW5nOjwvc3Ryb25nPsKgT3VyIHRlYW0gY29sbGFib3JhdGVzIHdpdGggeW91IHRvIHBsYW4gdGhlIGludGVydmlldywgaW5jbHVkaW5nIHF1ZXN0aW9uIGRldmVsb3BtZW50IGFuZCBzZWxlY3RpbmcgdGhlIHBlcmZlY3Qgc2V0dGluZy48L3A+PGJyPjxwIGNsYXNzPVwicnRlQmxvY2tcIj7CoMKgPC9wPjxwIGNsYXNzPVwicnRlQmxvY2tcIj48c3Ryb25nPkZpbG1pbmc6wqA8L3N0cm9uZz5PbiB0aGUgZGF5IG9mIHRoZSBpbnRlcnZpZXcsIHdlIGhhbmRsZSBhbGwgdGVjaG5pY2FsIGFzcGVjdHMsIGFsbG93aW5nIHlvdXIgbG92ZWQgb25lIHRvIHNoYXJlIHRoZWlyIHN0b3JpZXMgbmF0dXJhbGx5IGFuZCBjb21mb3J0YWJseS48L3A+PHAgY2xhc3M9XCJydGVCbG9ja1wiPsKgwqA8L3A+PGJyPjxwIGNsYXNzPVwicnRlQmxvY2tcIj48c3Ryb25nPkVkaXRpbmc6PC9zdHJvbmc+IE91ciBlZGl0b3JzIG1ldGljdWxvdXNseSBjcmFmdCB0aGUgZm9vdGFnZSBpbnRvIGEgY29oZXNpdmUgYW5kIGNhcHRpdmF0aW5nIGRvY3VtZW50YXJ5LCBjb21wbGV0ZSB3aXRoIHRpdGxlcywgbXVzaWMsIGFuZCBhbnkgYWRkaXRpb25hbCBlbGVtZW50cyB5b3UgZGVzaXJlLjwvcD48YnI+PHAgY2xhc3M9XCJydGVCbG9ja1wiPsKgwqA8L3A+PHAgY2xhc3M9XCJydGVCbG9ja1wiPjxzdHJvbmc+RGVsaXZlcnk6PC9zdHJvbmc+IFJlY2VpdmUgeW91ciBmYW1pbHnigJlzIGRvY3VtZW50YXJ5IGluIHlvdXIgcHJlZmVycmVkIGZvcm1hdCwgcmVhZHkgdG8gYmUgc2hhcmVkIGFuZCB0cmVhc3VyZWQgZm9yIHllYXJzIHRvIGNvbWUuPC9wPiIsInNob3dCdG4iOmZhbHNlLCJ0ZXh0T25MaW5rIjoiQnV5IFRpY2tldHMifV0sInNob3dJbWFnZXMiOnRydWUsImxheW91dHMiOiJsYXlvdXQtYSIsIm1vYmlsZUxheW91dFRvZ2dsZSI6dHJ1ZSwiZnVsbFdpZHRoSW1nIjpmYWxzZSwiaW1hZ2VQb3NpdGlvbiI6ZmFsc2UsInJldmVyc2VCdG5EaXIiOmZhbHNlfQ=="> <div class="wrapper layout-a"> <nav class="nav desktop   "> <div class="tab-label active layout-a "> <h4 class="horizontal-label">Our Services</h4> 
+</div> 
+ <div class="tab-label  layout-a not-active"> <h4 class="horizontal-label">Tailored Approach</h4> 
+</div> 
+ <div class="tab-label  layout-a not-active"> <h4 class="horizontal-label">Legacy Preservation</h4> 
+</div> 
+ <div class="tab-label  layout-a not-active"> <h4 class="horizontal-label">How It Works</h4> 
+</div> 
+</nav> 
+ <div class="tab layout-a active 
+                full-width-img"> <div class="image-container layout-a" style="background-image: url('https://lirp.cdn-website.com/3f2e341a/dms3rep/multi/opt/pexels-andrea-piacquadio-3768131-1920w.jpg');"><img src="https://lirp.cdn-website.com/3f2e341a/dms3rep/multi/opt/pexels-andrea-piacquadio-3768131-1920w.jpg" alt="" class="image" onerror="handleImageLoadError(this)"/></div> 
+ <div class="tab-space"></div> 
+ <div class="tab-text-container"> <div class="tab-description"> <div class="desc-title"> <p class=""></p> 
+</div> 
+ <p><br/></p> 
+<p class="rteBlock">&nbsp;</p><p class="rteBlock">We conduct in-depth interviews with your loved ones in a comfortable and familiar setting. Using high-quality equipment and expert editing, we ensure that every detail, from lighting to sound, is meticulously handled to produce a polished and professional documentary.&nbsp;</p><br/><p class="rteBlock">Our skilled videographers create a relaxed environment to encourage natural and heartfelt storytelling. &nbsp;We capture the essence of your loved ones, their personality, and their voice, creating a powerful emotional connection that transcends time.</p> <p></p> 
+</div> 
+ <div class="btn-container "></div> 
+</div> 
+</div> 
+ <div class="tab layout-a  
+                full-width-img"> <div class="image-container layout-a" style="background-image: url('https://lirp.cdn-website.com/3f2e341a/dms3rep/multi/opt/half-the-picture-still-1_38094947204_o-98e12d29-17fa2e0f-1920w.jpg');"><img src="https://lirp.cdn-website.com/3f2e341a/dms3rep/multi/opt/half-the-picture-still-1_38094947204_o-98e12d29-17fa2e0f-1920w.jpg" alt="" class="image" onerror="handleImageLoadError(this)"/></div> 
+ <div class="tab-space"></div> 
+ <div class="tab-text-container"> <div class="tab-description"> <div class="desc-title"> <p class=""></p> 
+</div> 
+ <p><br/><br/></p> 
+<p class="rteBlock">We work closely with you to understand your family&rsquo;s unique history and the stories you want to highlight. Whether it&rsquo;s a family member's &nbsp;life journey, tales of ancestry, or treasured family traditions, we tailor our approach to reflect your family&rsquo;s distinct legacy.</p> <p></p> 
+</div> 
+ <div class="btn-container "></div> 
+</div> 
+</div> 
+ <div class="tab layout-a  
+                full-width-img"> <div class="image-container layout-a" style="background-image: url('https://lirp.cdn-website.com/3f2e341a/dms3rep/multi/opt/64c24c3b40bca163419987-1920w.jpg');"><img src="https://lirp.cdn-website.com/3f2e341a/dms3rep/multi/opt/64c24c3b40bca163419987-1920w.jpg" alt="" class="image" onerror="handleImageLoadError(this)"/></div> 
+ <div class="tab-space"></div> 
+ <div class="tab-text-container"> <div class="tab-description"> <div class="desc-title"> <p class=""></p> 
+</div> 
+ <p><br/><br/></p> 
+<p class="rteBlock">These films are more than just videos, they are heirlooms that will be cherished by future generations, offering a profound connection to the past. &nbsp;</p><br/><p class="rteBlock">Don&rsquo;t let the invaluable stories of your loved ones fade away. Be a part of the journey of preserving your family&rsquo;s rich history through the art of documentary filmmaking.&nbsp;</p> <p></p> 
+</div> 
+ <div class="btn-container "></div> 
+</div> 
+</div> 
+ <div class="tab layout-a  
+                full-width-img"> <div class="image-container layout-a" style="background-image: url('https://lirp.cdn-website.com/3f2e341a/dms3rep/multi/opt/jakob-owens-xKfS7Hll0Ck-unsplash-d2987391-1920w.jpg');"><img src="https://lirp.cdn-website.com/3f2e341a/dms3rep/multi/opt/jakob-owens-xKfS7Hll0Ck-unsplash-d2987391-1920w.jpg" alt="" class="image" onerror="handleImageLoadError(this)"/></div> 
+ <div class="tab-space"></div> 
+ <div class="tab-text-container"> <div class="tab-description"> <div class="desc-title"> <p class=""></p> 
+</div> 
+ <p><br/><br/></p> 
+<p class="rteBlock"><strong>Consultation:</strong>&nbsp;&nbsp;We start with a detailed consultation to understand your needs and the stories you wish to capture.</p><br/><p class="rteBlock">&nbsp;&nbsp;</p><p class="rteBlock"><strong>Planning:</strong>&nbsp;Our team collaborates with you to plan the interview, including question development and selecting the perfect setting.</p><br/><p class="rteBlock">&nbsp;&nbsp;</p><p class="rteBlock"><strong>Filming:&nbsp;</strong>On the day of the interview, we handle all technical aspects, allowing your loved one to share their stories naturally and comfortably.</p><p class="rteBlock">&nbsp;&nbsp;</p><br/><p class="rteBlock"><strong>Editing:</strong> 
+ Our editors meticulously craft the footage into a cohesive and captivating documentary, complete with titles, music, and any additional elements you desire.</p><br/><p class="rteBlock">&nbsp;&nbsp;</p><p class="rteBlock"><strong>Delivery:</strong> 
+ Receive your family&rsquo;s documentary in your preferred format, ready to be shared and treasured for years to come.</p> <p></p> 
+</div> 
+ <div class="btn-container "></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1277729251 dmRespRow fullBleedChanged fullBleedMode dmSectionParallaxNew hide-for-small hide-for-large" style="text-align: center;" id="1277729251" data-page-element-type="section" data-page-element-id="1122411929"> <div class="dmRespColsWrapper" id="1807679419"> <div class="dmRespCol small-12 medium-12 large-12 u_1081329332" id="1081329332"> <span id="1583500273"></span> 
+ <div class="u_1041600771 dmNewParagraph" data-element-type="paragraph" id="1041600771" data-version="5" style="transition: none 0s ease 0s; text-align: left; display: block;"> <h2 class="text-align-center" style="line-height: 2.4;"><span style="display: initial;">What is the Art Of Legacy?</span></h2> 
+</div> <div class="u_1308089551 widget-7b2ba5 dmCustomWidget" data-lazy-load="" data-title="" id="1308089551" dmle_extension="custom_extension" data-element-type="custom_extension" wr="false" icon="false" surround="false" data-widget-id="7b2ba547771b4d4db17e3e2b9f0abd0c" data-widget-version="225" data-widget-config="eyJ0YWJzIjpbeyJpbWFnZSI6Imh0dHBzOi8vaXJwLmNkbi13ZWJzaXRlLmNvbS8zZjJlMzQxYS9kbXMzcmVwL211bHRpL3BleGVscy1hbmRyZWEtcGlhY3F1YWRpby0zNzY4MTMxLmpwZyIsIml0ZW1MYWJlbCI6Ik91ciBTZXJ2aWNlcyIsImhlYWRpbmdUeXBlIjoiaDQiLCJpdGVtVGl0bGUiOiIiLCJpdGVtRGVzYyI6Ijxicj48cCBjbGFzcz1cInJ0ZUJsb2NrXCI+wqA8L3A+PHAgY2xhc3M9XCJydGVCbG9ja1wiPldlIGNvbmR1Y3QgaW4tZGVwdGggaW50ZXJ2aWV3cyB3aXRoIHlvdXIgbG92ZWQgb25lcyBpbiBhIGNvbWZvcnRhYmxlIGFuZCBmYW1pbGlhciBzZXR0aW5nLiBVc2luZyBoaWdoLXF1YWxpdHkgZXF1aXBtZW50IGFuZCBleHBlcnQgZWRpdGluZywgd2UgZW5zdXJlIHRoYXQgZXZlcnkgZGV0YWlsLCBmcm9tIGxpZ2h0aW5nIHRvIHNvdW5kLCBpcyBtZXRpY3Vsb3VzbHkgaGFuZGxlZCB0byBwcm9kdWNlIGEgcG9saXNoZWQgYW5kIHByb2Zlc3Npb25hbCBkb2N1bWVudGFyeS7CoDwvcD48YnI+PHAgY2xhc3M9XCJydGVCbG9ja1wiPk91ciBza2lsbGVkIHZpZGVvZ3JhcGhlcnMgY3JlYXRlIGEgcmVsYXhlZCBlbnZpcm9ubWVudCB0byBlbmNvdXJhZ2UgbmF0dXJhbCBhbmQgaGVhcnRmZWx0IHN0b3J5dGVsbGluZy4gwqBXZSBjYXB0dXJlIHRoZSBlc3NlbmNlIG9mIHlvdXIgbG92ZWQgb25lcywgdGhlaXIgcGVyc29uYWxpdHksIGFuZCB0aGVpciB2b2ljZSwgY3JlYXRpbmcgYSBwb3dlcmZ1bCBlbW90aW9uYWwgY29ubmVjdGlvbiB0aGF0IHRyYW5zY2VuZHMgdGltZS48L3A+Iiwic2hvd0J0biI6ZmFsc2UsInRleHRPbkxpbmsiOiJCdXkgVGlja2V0cyJ9LHsiaW1hZ2UiOiJodHRwczovL2lycC5jZG4td2Vic2l0ZS5jb20vM2YyZTM0MWEvZG1zM3JlcC9tdWx0aS9oYWxmLXRoZS1waWN0dXJlLXN0aWxsLTFfMzgwOTQ5NDcyMDRfby05OGUxMmQyOS0xN2ZhMmUwZi5qcGciLCJpdGVtTGFiZWwiOiJUYWlsb3JlZCBBcHByb2FjaCIsImhlYWRpbmdUeXBlIjoiaDQiLCJpdGVtVGl0bGUiOiIiLCJpdGVtRGVzYyI6Ijxicj48YnI+PHAgY2xhc3M9XCJydGVCbG9ja1wiPldlIHdvcmsgY2xvc2VseSB3aXRoIHlvdSB0byB1bmRlcnN0YW5kIHlvdXIgZmFtaWx54oCZcyB1bmlxdWUgaGlzdG9yeSBhbmQgdGhlIHN0b3JpZXMgeW91IHdhbnQgdG8gaGlnaGxpZ2h0LiBXaGV0aGVyIGl04oCZcyBhIGZhbWlseSBtZW1iZXImI3gyNztzIMKgbGlmZSBqb3VybmV5LCB0YWxlcyBvZiBhbmNlc3RyeSwgb3IgdHJlYXN1cmVkIGZhbWlseSB0cmFkaXRpb25zLCB3ZSB0YWlsb3Igb3VyIGFwcHJvYWNoIHRvIHJlZmxlY3QgeW91ciBmYW1pbHnigJlzIGRpc3RpbmN0IGxlZ2FjeS48L3A+Iiwic2hvd0J0biI6ZmFsc2UsInRleHRPbkxpbmsiOiJCdXkgVGlja2V0cyJ9LHsiaW1hZ2UiOiJodHRwczovL2lycC5jZG4td2Vic2l0ZS5jb20vM2YyZTM0MWEvZG1zM3JlcC9tdWx0aS82NGMyNGMzYjQwYmNhMTYzNDE5OTg3LmpwZyIsIml0ZW1MYWJlbCI6IkxlZ2FjeSBQcmVzZXJ2YXRpb24iLCJoZWFkaW5nVHlwZSI6Img0IiwiaXRlbVRpdGxlIjoiIiwiaXRlbURlc2MiOiI8YnI+PGJyPjxwIGNsYXNzPVwicnRlQmxvY2tcIj5UaGVzZSBmaWxtcyBhcmUgbW9yZSB0aGFuIGp1c3QgdmlkZW9zLCB0aGV5IGFyZSBoZWlybG9vbXMgdGhhdCB3aWxsIGJlIGNoZXJpc2hlZCBieSBmdXR1cmUgZ2VuZXJhdGlvbnMsIG9mZmVyaW5nIGEgcHJvZm91bmQgY29ubmVjdGlvbiB0byB0aGUgcGFzdC4gwqA8L3A+PGJyPjxwIGNsYXNzPVwicnRlQmxvY2tcIj5Eb27igJl0IGxldCB0aGUgaW52YWx1YWJsZSBzdG9yaWVzIG9mIHlvdXIgbG92ZWQgb25lcyBmYWRlIGF3YXkuIEJlIGEgcGFydCBvZiB0aGUgam91cm5leSBvZiBwcmVzZXJ2aW5nIHlvdXIgZmFtaWx54oCZcyByaWNoIGhpc3RvcnkgdGhyb3VnaCB0aGUgYXJ0IG9mIGRvY3VtZW50YXJ5IGZpbG1tYWtpbmcuwqA8L3A+Iiwic2hvd0J0biI6ZmFsc2UsInRleHRPbkxpbmsiOiJCdXkgVGlja2V0cyJ9LHsiaW1hZ2UiOiJodHRwczovL2lycC5jZG4td2Vic2l0ZS5jb20vM2YyZTM0MWEvZG1zM3JlcC9tdWx0aS9qYWtvYi1vd2Vucy14S2ZTN0hsbDBDay11bnNwbGFzaC1kMjk4NzM5MS5qcGciLCJpdGVtTGFiZWwiOiJIb3cgSXQgV29ya3MiLCJoZWFkaW5nVHlwZSI6Img0IiwiaXRlbVRpdGxlIjoiIiwiaXRlbURlc2MiOiI8YnI+PGJyPjxwIGNsYXNzPVwicnRlQmxvY2tcIj48c3Ryb25nPkNvbnN1bHRhdGlvbjo8L3N0cm9uZz7CoMKgV2Ugc3RhcnQgd2l0aCBhIGRldGFpbGVkIGNvbnN1bHRhdGlvbiB0byB1bmRlcnN0YW5kIHlvdXIgbmVlZHMgYW5kIHRoZSBzdG9yaWVzIHlvdSB3aXNoIHRvIGNhcHR1cmUuPC9wPjxicj48cCBjbGFzcz1cInJ0ZUJsb2NrXCI+wqDCoDwvcD48cCBjbGFzcz1cInJ0ZUJsb2NrXCI+PHN0cm9uZz5QbGFubmluZzo8L3N0cm9uZz7CoE91ciB0ZWFtIGNvbGxhYm9yYXRlcyB3aXRoIHlvdSB0byBwbGFuIHRoZSBpbnRlcnZpZXcsIGluY2x1ZGluZyBxdWVzdGlvbiBkZXZlbG9wbWVudCBhbmQgc2VsZWN0aW5nIHRoZSBwZXJmZWN0IHNldHRpbmcuPC9wPjxicj48cCBjbGFzcz1cInJ0ZUJsb2NrXCI+wqDCoDwvcD48cCBjbGFzcz1cInJ0ZUJsb2NrXCI+PHN0cm9uZz5GaWxtaW5nOsKgPC9zdHJvbmc+T24gdGhlIGRheSBvZiB0aGUgaW50ZXJ2aWV3LCB3ZSBoYW5kbGUgYWxsIHRlY2huaWNhbCBhc3BlY3RzLCBhbGxvd2luZyB5b3VyIGxvdmVkIG9uZSB0byBzaGFyZSB0aGVpciBzdG9yaWVzIG5hdHVyYWxseSBhbmQgY29tZm9ydGFibHkuPC9wPjxwIGNsYXNzPVwicnRlQmxvY2tcIj7CoMKgPC9wPjxicj48cCBjbGFzcz1cInJ0ZUJsb2NrXCI+PHN0cm9uZz5FZGl0aW5nOjwvc3Ryb25nPiBPdXIgZWRpdG9ycyBtZXRpY3Vsb3VzbHkgY3JhZnQgdGhlIGZvb3RhZ2UgaW50byBhIGNvaGVzaXZlIGFuZCBjYXB0aXZhdGluZyBkb2N1bWVudGFyeSwgY29tcGxldGUgd2l0aCB0aXRsZXMsIG11c2ljLCBhbmQgYW55IGFkZGl0aW9uYWwgZWxlbWVudHMgeW91IGRlc2lyZS48L3A+PGJyPjxwIGNsYXNzPVwicnRlQmxvY2tcIj7CoMKgPC9wPjxwIGNsYXNzPVwicnRlQmxvY2tcIj48c3Ryb25nPkRlbGl2ZXJ5Ojwvc3Ryb25nPiBSZWNlaXZlIHlvdXIgZmFtaWx54oCZcyBkb2N1bWVudGFyeSBpbiB5b3VyIHByZWZlcnJlZCBmb3JtYXQsIHJlYWR5IHRvIGJlIHNoYXJlZCBhbmQgdHJlYXN1cmVkIGZvciB5ZWFycyB0byBjb21lLjwvcD4iLCJzaG93QnRuIjpmYWxzZSwidGV4dE9uTGluayI6IkJ1eSBUaWNrZXRzIn1dLCJzaG93SW1hZ2VzIjp0cnVlLCJsYXlvdXRzIjoibGF5b3V0LWEiLCJtb2JpbGVMYXlvdXRUb2dnbGUiOnRydWUsImZ1bGxXaWR0aEltZyI6ZmFsc2UsImltYWdlUG9zaXRpb24iOmZhbHNlfQ=="> <div class="wrapper layout-a"> <nav class="nav desktop   "> <div class="tab-label active layout-a "> <h4 class="horizontal-label">Our Services</h4> 
+</div> 
+ <div class="tab-label  layout-a not-active"> <h4 class="horizontal-label">Tailored Approach</h4> 
+</div> 
+ <div class="tab-label  layout-a not-active"> <h4 class="horizontal-label">Legacy Preservation</h4> 
+</div> 
+ <div class="tab-label  layout-a not-active"> <h4 class="horizontal-label">How It Works</h4> 
+</div> 
+</nav> 
+ <div class="tab layout-a active 
+                full-width-img"> <div class="image-container layout-a" style="background-image: url('https://lirp.cdn-website.com/3f2e341a/dms3rep/multi/opt/pexels-andrea-piacquadio-3768131-1920w.jpg');"><img src="https://lirp.cdn-website.com/3f2e341a/dms3rep/multi/opt/pexels-andrea-piacquadio-3768131-1920w.jpg" alt="" class="image" onerror="handleImageLoadError(this)"/></div> 
+ <div class="tab-space"></div> 
+ <div class="tab-text-container"> <div class="tab-description"> <div class="desc-title"> <p class=""></p> 
+</div> 
+ <p><br/></p> 
+<p class="rteBlock">&nbsp;</p><p class="rteBlock">We conduct in-depth interviews with your loved ones in a comfortable and familiar setting. Using high-quality equipment and expert editing, we ensure that every detail, from lighting to sound, is meticulously handled to produce a polished and professional documentary.&nbsp;</p><br/><p class="rteBlock">Our skilled videographers create a relaxed environment to encourage natural and heartfelt storytelling. &nbsp;We capture the essence of your loved ones, their personality, and their voice, creating a powerful emotional connection that transcends time.</p> <p></p> 
+</div> 
+ <div class="btn-container "></div> 
+</div> 
+</div> 
+ <div class="tab layout-a  
+                full-width-img"> <div class="image-container layout-a" style="background-image: url('https://lirp.cdn-website.com/3f2e341a/dms3rep/multi/opt/half-the-picture-still-1_38094947204_o-98e12d29-17fa2e0f-1920w.jpg');"><img src="https://lirp.cdn-website.com/3f2e341a/dms3rep/multi/opt/half-the-picture-still-1_38094947204_o-98e12d29-17fa2e0f-1920w.jpg" alt="" class="image" onerror="handleImageLoadError(this)"/></div> 
+ <div class="tab-space"></div> 
+ <div class="tab-text-container"> <div class="tab-description"> <div class="desc-title"> <p class=""></p> 
+</div> 
+ <p><br/><br/></p> 
+<p class="rteBlock">We work closely with you to understand your family&rsquo;s unique history and the stories you want to highlight. Whether it&rsquo;s a family member's &nbsp;life journey, tales of ancestry, or treasured family traditions, we tailor our approach to reflect your family&rsquo;s distinct legacy.</p> <p></p> 
+</div> 
+ <div class="btn-container "></div> 
+</div> 
+</div> 
+ <div class="tab layout-a  
+                full-width-img"> <div class="image-container layout-a" style="background-image: url('https://lirp.cdn-website.com/3f2e341a/dms3rep/multi/opt/64c24c3b40bca163419987-1920w.jpg');"><img src="https://lirp.cdn-website.com/3f2e341a/dms3rep/multi/opt/64c24c3b40bca163419987-1920w.jpg" alt="" class="image" onerror="handleImageLoadError(this)"/></div> 
+ <div class="tab-space"></div> 
+ <div class="tab-text-container"> <div class="tab-description"> <div class="desc-title"> <p class=""></p> 
+</div> 
+ <p><br/><br/></p> 
+<p class="rteBlock">These films are more than just videos, they are heirlooms that will be cherished by future generations, offering a profound connection to the past. &nbsp;</p><br/><p class="rteBlock">Don&rsquo;t let the invaluable stories of your loved ones fade away. Be a part of the journey of preserving your family&rsquo;s rich history through the art of documentary filmmaking.&nbsp;</p> <p></p> 
+</div> 
+ <div class="btn-container "></div> 
+</div> 
+</div> 
+ <div class="tab layout-a  
+                full-width-img"> <div class="image-container layout-a" style="background-image: url('https://lirp.cdn-website.com/3f2e341a/dms3rep/multi/opt/jakob-owens-xKfS7Hll0Ck-unsplash-d2987391-1920w.jpg');"><img src="https://lirp.cdn-website.com/3f2e341a/dms3rep/multi/opt/jakob-owens-xKfS7Hll0Ck-unsplash-d2987391-1920w.jpg" alt="" class="image" onerror="handleImageLoadError(this)"/></div> 
+ <div class="tab-space"></div> 
+ <div class="tab-text-container"> <div class="tab-description"> <div class="desc-title"> <p class=""></p> 
+</div> 
+ <p><br/><br/></p> 
+<p class="rteBlock"><strong>Consultation:</strong>&nbsp;&nbsp;We start with a detailed consultation to understand your needs and the stories you wish to capture.</p><br/><p class="rteBlock">&nbsp;&nbsp;</p><p class="rteBlock"><strong>Planning:</strong>&nbsp;Our team collaborates with you to plan the interview, including question development and selecting the perfect setting.</p><br/><p class="rteBlock">&nbsp;&nbsp;</p><p class="rteBlock"><strong>Filming:&nbsp;</strong>On the day of the interview, we handle all technical aspects, allowing your loved one to share their stories naturally and comfortably.</p><p class="rteBlock">&nbsp;&nbsp;</p><br/><p class="rteBlock"><strong>Editing:</strong> 
+ Our editors meticulously craft the footage into a cohesive and captivating documentary, complete with titles, music, and any additional elements you desire.</p><br/><p class="rteBlock">&nbsp;&nbsp;</p><p class="rteBlock"><strong>Delivery:</strong> 
+ Receive your family&rsquo;s documentary in your preferred format, ready to be shared and treasured for years to come.</p> <p></p> 
+</div> 
+ <div class="btn-container "></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1467689938 dmRespRow hide-for-small" style="text-align: center;" id="1467689938" data-page-element-type="section" data-page-element-id="1462803885"> <div class="dmRespColsWrapper" id="1656401346"> <div class="dmRespCol small-12 medium-12 large-12" id="1088647333"> <span id="1738369566"></span> 
+ <div class="u_1672552361 dmNewParagraph hide-for-small hide-for-large" data-element-type="paragraph" data-version="5" id="1672552361" background-image":""}"="" style="transition: none 0s ease 0s; text-align: left; display: block;"> <h3 class="text-align-justify size-30 m-size-24" style="line-height: 1.5;"><span class="font-size-30 m-font-size-24" style="display: initial;">Welcome to The Art Of Legacy, where we help you preserve the invaluable stories of your loved ones through beautifully crafted documentary-style interviews.</span><span style="display: initial;"><br/></span></h3> 
+</div> 
+ <div class="u_1519980088 dmNewParagraph hide-for-medium" data-element-type="paragraph" data-version="5" id="1519980088" background-image":""}"="" style="transition: none 0s ease 0s; text-align: left; display: block;"> <h3 class="m-size-24 text-align-justify size-30" style="line-height: 1.5;"><span class="m-font-size-24 font-size-30" style="display: initial;">Welcome to The Art Of Legacy, where we help you preserve the invaluable stories of your loved ones through beautifully crafted documentary-style interviews.</span></h3> 
+ <h4><span style="display: initial;"><br/></span></h4> 
+</div> 
+ <div class="u_1067091019 dmRespRow fullBleedChanged fullBleedMode" id="1067091019"> <div class="dmRespColsWrapper" id="1848480836"> <div class="u_1746736098 dmRespCol small-12 large-10 medium-10" id="1746736098" data-video-bg="eyJzcmMiOiJodHRwczovL3ZpbWVvLmNvbS85OTI4NjcyNzMiLCJpZCI6Ijk5Mjg2NzI3MyIsInByb3ZpZGVyIjoidmltZW8iLCJlbWJlZCI6Imh0dHBzOi8vcGxheWVyLnZpbWVvLmNvbS92aWRlby85OTI4NjcyNzMiLCJyYXRpbyI6MC41NjI1LCJ0aHVtYm5haWwiOiJodHRwczovL2kudmltZW9jZG4uY29tL3ZpZGVvLzE5MDg3ODA2NzktZTQ4ZjA5NWRmZTQyYzk5Y2E2Yzg2MTRiMDExZmM0Yzk3OTA4ZGQwNWNmZDQ5YzZmMDQ3OTdmYmRmNjFmZTg2NS1kXzY0MCIsInN1cHBvcnRCZ09uTW9iaWxlIjp0cnVlLCJzdXBwb3J0QmdMb29wIjp0cnVlLCJwb3N0ZXIiOiJodHRwczovL2kudmltZW9jZG4uY29tL3ZpZGVvLzE5MDg3ODA2NzktZTQ4ZjA5NWRmZTQyYzk5Y2E2Yzg2MTRiMDExZmM0Yzk3OTA4ZGQwNWNmZDQ5YzZmMDQ3OTdmYmRmNjFmZTg2NS1kXzY0MCJ9" data-video-bg-mobile="true"> <div data-element-type="spacer" class="u_1836541985 dmSpacer" id="1836541985"></div> 
+</div> 
+ <div class="u_1122420134 dmRespCol small-12 large-2 medium-2" id="1122420134"> <div class="u_1197904397 default dmShape" id="1197904397" dmle_extension="shape" data-element-type="shape" text-position="center_center" wr="true" icon="true" surround="true" adwords="" shape-text="Q2xpY2sgdG8gd2F0Y2g=" shape-description="" shape-image="" alt-text="" tooltip="" shape-type="circle" show-text-on-shape="true" show-description-on-shape="false" shape-color="rgba(236, 8, 52, 1)" shape-show-shadow="false" border-color-shape="" show-background-overlay="false" overlay-color="#ffffff" image-position="xMidYMid" shape-keep-proportion="true" shape-layout="layout1" border-width-shape="0" overlay-opacity="50" link-attrs="eyJ2YWx1ZSI6Imh0dHBzOi8vdmltZW8uY29tLzk5Mjg2NzI3MyIsImxhYmVsIjoiIiwidHlwZSI6InVybCIsImhyZWYiOiJodHRwczovL3ZpbWVvLmNvbS85OTI4NjcyNzMiLCJyYXdfdXJsIjoiaHR0cHM6Ly92aW1lby5jb20vOTkyODY3MjczIiwidGFyZ2V0IjoiX2JsYW5rIiwicmVsIjpudWxsfQ=="> <a href="https://vimeo.com/992867273" target="_blank" data-link-id="shape-link-container" id="1914716631"> <div class="container-text container-padding center_center" id="1219176895"> <h3 class="shape-text" id="1402645318">Click to watch</h3> 
+</div> 
+ <svg width="100%" height="100%" viewbox="0.00 0.00 100 100" id="1736231104"> <g> <path d="M50, 50 m -50, 0 a 50,50 0 1,0 100,0 a 50,50 0 1,0 -100,0" style="fill:rgba(236, 8, 52, 1);"></path> 
+</g> 
+</svg> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1986626408 dmRespRow hide-for-small" id="1986626408" data-page-element-type="section" data-page-element-id="1402918253"> <div class="dmRespColsWrapper" id="1617878435"> <div class="u_1419371136 dmRespCol small-12 medium-12 large-12" id="1419371136"> <a data-display-type="block" class="u_1780740110 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient button_2" file="false" href="https://chriscollado.bloom.io/artoflegacy" data-element-type="dButtonLinkId" id="1780740110" target="_blank"> <span class="iconBg" aria-hidden="true" id="1358488706"> <span class="icon hasFontIcon icon-star" id="1481405784"></span> 
+</span> 
+ <span class="text" id="1957800282" data-ai-tag="Primary short button text">Book Now</span> 
+</a> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1544736866 dmRespRow hide-for-medium hide-for-large" style="text-align: center;" id="1544736866" data-page-element-type="section" data-page-element-id="1462803885"> <div class="dmRespColsWrapper" id="1295386940"> <div class="dmRespCol small-12 medium-12 large-12" id="1747135353"> <span id="1941725282"></span> 
+ <div class="u_1561380931 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1561380931" data-styletopreserve="{" background-image":""}"=""> <h3 class="text-align-justify size-24 m-size-14" style="line-height: 1.5;"><span class="font-size-24 m-font-size-14" m-font-size-set="true" style="display: initial;">Welcome to The Art Of Legacy, where we help you preserve the invaluable stories of your loved ones through beautifully crafted documentary-style interviews.</span><span style="display: initial;"><br/></span></h3> 
+</div> 
+ <div class="u_1349589691 dmRespRow fullBleedChanged fullBleedMode" id="1349589691"> <div class="dmRespColsWrapper" id="1768329942"> <div class="u_1470090814 dmRespCol small-12 large-10 medium-10" id="1470090814" data-video-bg="eyJzcmMiOiJodHRwczovL3ZpbWVvLmNvbS85OTI4NjcyNzMiLCJpZCI6Ijk5Mjg2NzI3MyIsInByb3ZpZGVyIjoidmltZW8iLCJlbWJlZCI6Imh0dHBzOi8vcGxheWVyLnZpbWVvLmNvbS92aWRlby85OTI4NjcyNzMiLCJyYXRpbyI6MC41NjI1LCJ0aHVtYm5haWwiOiJodHRwczovL2kudmltZW9jZG4uY29tL3ZpZGVvLzE5MDg3ODA2NzktZTQ4ZjA5NWRmZTQyYzk5Y2E2Yzg2MTRiMDExZmM0Yzk3OTA4ZGQwNWNmZDQ5YzZmMDQ3OTdmYmRmNjFmZTg2NS1kXzY0MCIsInN1cHBvcnRCZ09uTW9iaWxlIjp0cnVlLCJzdXBwb3J0QmdMb29wIjp0cnVlLCJwb3N0ZXIiOiJodHRwczovL2kudmltZW9jZG4uY29tL3ZpZGVvLzE5MDg3ODA2NzktZTQ4ZjA5NWRmZTQyYzk5Y2E2Yzg2MTRiMDExZmM0Yzk3OTA4ZGQwNWNmZDQ5YzZmMDQ3OTdmYmRmNjFmZTg2NS1kXzY0MCJ9" data-video-bg-mobile="true"> <div data-element-type="spacer" class="u_1082461283 dmSpacer" id="1082461283"></div> 
+</div> 
+ <div class="u_1924419853 dmRespCol small-12 large-2 medium-2" id="1924419853"> <div class="u_1760007810 default dmShape" id="1760007810" dmle_extension="shape" data-element-type="shape" text-position="center_center" wr="true" icon="true" surround="true" adwords="" shape-text="Q2xpY2sgdG8gd2F0Y2g=" shape-description="" shape-image="" alt-text="" tooltip="" shape-type="circle" show-text-on-shape="true" show-description-on-shape="false" shape-color="rgba(236, 8, 52, 1)" shape-show-shadow="false" border-color-shape="" show-background-overlay="false" overlay-color="#ffffff" image-position="xMidYMid" shape-keep-proportion="true" shape-layout="layout1" border-width-shape="0" overlay-opacity="50" link-attrs="eyJ2YWx1ZSI6Imh0dHBzOi8vdmltZW8uY29tLzk5Mjg2NzI3MyIsImxhYmVsIjoiIiwidHlwZSI6InVybCIsImhyZWYiOiJodHRwczovL3ZpbWVvLmNvbS85OTI4NjcyNzMiLCJyYXdfdXJsIjoiaHR0cHM6Ly92aW1lby5jb20vOTkyODY3MjczIiwidGFyZ2V0IjoiX2JsYW5rIiwicmVsIjpudWxsfQ=="> <a href="https://vimeo.com/992867273" target="_blank" data-link-id="shape-link-container" id="1314920993"> <div class="container-text container-padding center_center" id="1268537866"> <h3 class="shape-text" id="1686604881">Click to watch</h3> 
+</div> 
+ <svg width="100%" height="100%" viewbox="0.00 0.00 100 100" id="1183897338"> <g> <path d="M50, 50 m -50, 0 a 50,50 0 1,0 100,0 a 50,50 0 1,0 -100,0" style="fill:rgba(236, 8, 52, 1);"></path> 
+</g> 
+</svg> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1779910660 dmRespRow hide-for-medium hide-for-large" id="1779910660" data-page-element-type="section" data-page-element-id="1402918253"> <div class="dmRespColsWrapper" id="1800886252"> <div class="u_1430836385 dmRespCol small-12 medium-12 large-12" id="1430836385"> <a data-display-type="block" class="u_1353948066 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient button_2" file="false" href="https://chriscollado.bloom.io/artoflegacy" data-element-type="dButtonLinkId" id="1353948066" target="_blank"> <span class="iconBg" aria-hidden="true" id="1944346866"> <span class="icon hasFontIcon icon-star" id="1401281723"></span> 
+</span> 
+ <span class="text" id="1955928965" data-ai-tag="Primary short button text">Book Now</span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="sticky-widgets-container-global" id="1432105885"></div> 
+ <div class="dmFooterContainer"> <div id="fcontainer" class="u_fcontainer f_hcontainer dmFooter p_hfcontainer"> <div dm:templateorder="250" class="dmFooterResp generalFooter" id="1943048428"> <div data-flex-id="62af179dfb031a1e6efcfa19" data-auto="flex-section" id="1200964308" data-layout-section="" class="u_1200964308 hide-for-small hide-for-large"> <div class="flex-widgets-container" id="1398349521"></div> 
+ <section id="62af179dfb031a1e6efcfa1a" class="flex-element section" data-auto="flex-element-section"> <div id="62af179dfb031a1e6efcfa1b" class="flex-element grid" data-auto="flex-element-grid" data-layout-grid=""> <div id="62af179dfb031a1e6efcfa1d" class="flex-element group" data-auto="flex-element-group"> <div id="62af179dfb031a1e6efcfa1c" class="flex-element group" data-auto="flex-element-group"> <div id="62af17e4fb031a1e6efd0d08" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1626065043"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1626065043" style=""> <h1 class="m-size-36 text-align-center m-text-align-center size-55"><span class="font-size-55 m-font-size-36" m-font-size-set="true" style="display: unset;">&nbsp;Let&rsquo;s talk, meet, &amp; work together.</span></h1> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</section> 
+</div> 
+ <div data-flex-id="174d86f9" data-auto="flex-section" id="1581517156" data-layout-section="" class="u_1581517156 hide-for-medium"> <div class="flex-widgets-container" id="1913136069"></div> 
+ <section id="daa3313a" class="flex-element section" data-auto="flex-element-section"> <div id="dc21e713" class="flex-element grid" data-auto="flex-element-grid" data-layout-grid=""> <div id="639ca257" class="flex-element group" data-auto="flex-element-group"> <div id="c3bbf6c8" class="flex-element group" data-auto="flex-element-group"> <div id="9daac600" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1436343449"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1436343449" style=""> <h1 class="m-text-align-center text-align-center m-size-36 size-60"><span class="font-size-60 m-font-size-36" m-font-size-set="true" style="display: unset;">&nbsp;Let&rsquo;s talk, meet, &amp; work together.</span></h1> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</section> 
+</div> 
+ <div data-flex-id="62af20cafb031a1e6efe361a" data-auto="flex-section" id="1773281080" data-layout-section="" class="u_1773281080 hide-for-small hide-for-large"> <div class="flex-widgets-container" id="1793551616"></div> 
+ <section id="62af20cafb031a1e6efe361b" class="flex-element section" data-auto="flex-element-section"> <div id="62af20cafb031a1e6efe361f" class="flex-element grid" data-auto="flex-element-grid" data-layout-grid=""> <div id="62af20cafb031a1e6efe361c" class="flex-element group" data-auto="flex-element-group"> <div id="62af20cafb031a1e6efe361d" class="flex-element group" data-auto="flex-element-group"> <div id="62af2105fb031a1e6efe5293" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1767453468"> <div class="dmNewParagraph skip-animation-effect skip-hover-effect" data-element-type="paragraph" data-version="5" id="1767453468" style=""> <h6 class="m-size-11 text-align-left size-14 m-text-align-left"><span class="m-font-size-11 font-size-14" style="display: unset;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Terms &amp; Privacy</span></h6> 
+</div> 
+</div> 
+</div> 
+ <div id="62af20cafb031a1e6efe361e" class="flex-element group" data-auto="flex-element-group"> <div id="62af2120fb031a1e6efe5bb8" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="custom" data-external-id="1967931951"> <div class="widget-1f5975 u_1967931951 dmCustomWidget" data-lazy-load="" data-title="" id="1967931951" dmle_extension="custom_extension" data-element-type="custom_extension" icon="false" surround="false" data-widget-id="1f5975986930429f819d4cd2154b5c4a" data-widget-version="22" data-widget-config="eyJjb3B5cmlnaHRUZXh0IjoiPHAgY2xhc3M9XCJydGVCbG9ja1wiPsKgQWxsIFJpZ2h0cyBSZXNlcnZlZCB8IENIUklTIENPTExBRE88L3A+In0="> <div class="copyright"> <div>&copy; 2024&nbsp;</div> 
+ <div><p class="rteBlock">&nbsp;All Rights Reserved | CHRIS COLLADO</p></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</section> 
+</div> 
+ <div data-flex-id="12a6a60d" data-auto="flex-section" id="1993487016" data-layout-section="" class="u_1993487016 hide-for-medium"> <div class="flex-widgets-container" id="1276008419"></div> 
+ <section id="973f2c2a" class="flex-element section" data-auto="flex-element-section"> <div id="a700df11" class="flex-element grid" data-auto="flex-element-grid" data-layout-grid=""> <div id="3142d787" class="flex-element group" data-auto="flex-element-group"> <div id="51032b63" class="flex-element group" data-auto="flex-element-group"> <div id="7a34f43a" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1243778610"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1243778610" style=""> <h6 class="m-text-align-left text-align-left m-size-11 size-14"><span class="font-size-14 m-font-size-11" style="display: unset;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Terms &amp; Privacy</span></h6> 
+</div> 
+</div> 
+</div> 
+ <div id="b9845f3e" class="flex-element group" data-auto="flex-element-group"> <div id="26fbe70d" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="custom" data-external-id="1073039335"> <div class="widget-1f5975 u_1073039335 dmCustomWidget" data-lazy-load="" data-title="" id="1073039335" dmle_extension="custom_extension" data-element-type="custom_extension" icon="false" surround="false" data-widget-id="1f5975986930429f819d4cd2154b5c4a" data-widget-version="22" data-widget-config="eyJjb3B5cmlnaHRUZXh0IjoiPHAgY2xhc3M9XCJydGVCbG9ja1wiPsKgQWxsIFJpZ2h0cyBSZXNlcnZlZCB8IENIUklTIENPTExBRE88L3A+In0="> <div class="copyright"> <div>&copy; 2024&nbsp;</div> 
+ <div><p class="rteBlock">&nbsp;All Rights Reserved | CHRIS COLLADO</p></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</section> 
+</div> 
+</div> 
+ <div id="1236746004" dmle_extension="powered_by" data-element-type="powered_by" icon="true" surround="false"></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+
+    </div>
+</div>
+<!--  Add full CSS and Javascript before the close tag of the body if needed -->
+<script type="text/javascript" id="d_track_campaign">
+(function() {
+ 	var campaign = (/utm_campaign=([^&]*)/).exec(window.location.search);
+
+ 	if (campaign && campaign != null && campaign.length > 1) {
+ 		campaign = campaign[1];
+ 		document.cookie = "_dm_rt_campaign=" + campaign + ";expires=" + new Date().getTime() + 24*60*60*1000 + ";domain=" + window.location.hostname + ";path=/";
+ 	}
+}());
+</script>
+<script type="text/javascript" >
+  var _dm_gaq = {};
+  var _gaq = _gaq || [];
+  var _dm_insite = [];
+</script>
+
+<script type="text/javascript" id="d_track_sp">
+;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
+p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
+};p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
+n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,"script","//d32hwlnfiv2gyn.cloudfront.net/sp-2.0.0-dm-0.1.min.js","snowplow"));
+window.dmsnowplow  = window.snowplow;
+
+dmsnowplow('newTracker', 'cf', 'd32hwlnfiv2gyn.cloudfront.net', { // Initialise a tracker
+  appId: '3f2e341a'
+});
+
+// snowplow queries element styles so we wait until CSS calculations are done.
+requestAnimationFrame(() => {
+	dmsnowplow('trackPageView');
+	_dm_insite.forEach((rule) => {
+		// Specifically in popup only the client knows if it is shown or not so we don't always want to track its impression here
+		// the tracking is in popup.js
+		if (rule.actionName !== "popup") {
+			dmsnowplow('trackStructEvent', 'insite', 'impression', rule.ruleType, rule.ruleId);
+		}
+		window?.waitForDeferred?.('dmAjax', () => {
+			$.DM.events.trigger('event-ruleTriggered', {value: rule});
+		});
+	});
+});
+</script>
+   <div style="display:none;" id="P6iryBW0Wu"></div>
+
+<!-- photoswipe markup -->
+
+
+
+
+
+
+
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<div id="fb-root"
+        data-locale="en"></div>
+<!-- Alias: 3f2e341a -->
+<div class="dmPopupMask" id="dmPopupMask"></div>
+<div id="dmPopup" class="dmPopup">
+	<div class="dmPopupCloseWrapper"> <div class="dmPopupClose dm-common-icons-close oneIcon" onclick="dmHidePopup(event);"></div> </div>
+ 	<div class="dmPopupTitle"> <span></span> Share by:</div> 
+	<div class="data"></div>
+</div><script id="d_track_personalization">
+	window?.waitForDeferred?.('dmAjax', () => {
+		// Collects client data and updates cookies used by smart sites
+		window.expireDays = 365;
+		window.visitLength = 30 * 60000;
+		$.setCookie("dm_timezone_offset", (new Date()).getTimezoneOffset(), window.expireDays);
+			setSmartSiteCookiesInternal("dm_this_page_view","dm_last_page_view","dm_total_visits","dm_last_visit");
+	});
+</script>
+<script type="text/javascript">
+    
+    Parameters.NavigationAreaParams.MoreButtonText = 'MORE';
+    
+    Parameters.NavigationAreaParams.LessButtonText = 'LESS';
+    Parameters.HomeLinkText = 'Home';
+    </script>
+<!--  End Script tags -->
+
+<!--  Site Wide Html Markup -->
+<!--  Site Wide Html Markup -->
+</body>
+</html>

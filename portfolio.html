@@ -1,0 +1,3006 @@
+<!doctype html >
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      class="">
+<head>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    window._currentDevice = 'mobile';
+    window.Parameters = window.Parameters || {
+        HomeUrl: 'https://www.chriscollado.com/',
+        AccountUUID: '5776bbf2368948bbad668c38a86a0639',
+        SystemID: 'US_DIRECT_PRODUCTION',
+        SiteAlias: '3f2e341a',
+        SiteType: atob('RFVEQU9ORQ=='),
+        PublicationDate: 'Tue Oct 01 11:01:58 UTC 2024',
+        ExternalUid: null,
+        IsSiteMultilingual: false,
+        InitialPostAlias: '',
+        InitialDynamicItem: '',
+        DynamicPageInfo: {
+            isDynamicPage: false,
+            base64JsonRowData: 'null',
+        },
+        InitialPageAlias: 'portfolio',
+        InitialPageUuid: 'c043db2d2e6c4d3cb6087f4e163dc1ac',
+        InitialPageId: '31140075',
+        InitialEncodedPageAlias: 'cG9ydGZvbGlv',
+        CurrentPageUrl: '',
+        IsCurrentHomePage: false,
+        AllowAjax: false,
+        AfterAjaxCommand: null,
+        HomeLinkText: 'Back To Home',
+        UseGalleryModule: false,
+        CurrentThemeName: 'Layout Theme',
+        ThemeVersion: '47980',
+        DefaultPageAlias: '',
+        RemoveDID: true,
+        WidgetStyleID: null,
+        IsHeaderFixed: false,
+        IsHeaderSkinny: false,
+        IsBfs: true,
+        StorePageAlias: 'null',
+        StorePagesUrls: 'eyJTVE9SRV9DQVRFR09SWV9QQUdFIjoiY2F0ZWdvcnkiLCJTVE9SRV9QUk9EVUNUX1BBR0UiOiJwcm9kdWN0In0=',
+        IsNewStore: 'false',
+        StorePath: '',
+        StoreId: 'null',
+        StoreVersion: 0,
+        StoreBaseUrl: '',
+        StoreCleanUrl: true,
+        StoreDisableScrolling: true,
+        IsStoreSuspended: false,
+        NotificationSubDomain: 'chriscollado',
+        HasCustomDomain: true,
+        SimpleSite: false,
+        showCookieNotification: false,
+        cookiesNotificationMarkup: 'null',
+        translatedPageUrl: '',
+        isFastMigrationSite: false,
+        sidebarPosition: 'NA',
+        currentLanguage: 'en',
+        currentLocale: 'en',
+        NavItems: '{}',
+        errors: {
+            general: 'There was an error connecting to the page.<br/> Make sure you are not offline.',
+            password: 'Incorrect name/password combination',
+            tryAgain: 'Try again'
+        },
+        NavigationAreaParams: {
+            ShowBackToHomeOnInnerPages: true,
+            NavbarSize: 5,
+            NavbarLiveHomePage: 'https://www.chriscollado.com/',
+            BlockContainerSelector: '.dmBody',
+            NavbarSelector: '#dmNav:has(a)',
+            SubNavbarSelector: '#subnav_main'
+        },
+        hasCustomCode: true,
+        planID: '7',
+        customTemplateId: 'null',
+        siteTemplateId: 'null',
+        productId: 'DM_DIRECT',
+        disableTracking: false,
+        pageType: 'FROM_SCRATCH',
+        isRuntimeServer: true,
+        isInEditor: false,
+        hasNativeStore: true,
+        defaultLang: 'en',
+    };
+
+    window.Parameters.LayoutID = {};
+    window.Parameters.LayoutID[window._currentDevice] = 22;
+    window.Parameters.LayoutVariationID = {};
+    window.Parameters.LayoutVariationID[window._currentDevice] = 5;
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Injecting site-wide to the head -->
+
+
+
+
+<!-- End Injecting site-wide to the head -->
+
+<!-- Inject secured cdn script -->
+
+
+<!-- ========= Meta Tags ========= -->
+<!-- PWA settings -->
+<script>
+    function toHash(str) {
+        var hash = 5381, i = str.length;
+        while (i) {
+            hash = hash * 33 ^ str.charCodeAt(--i)
+        }
+        return hash >>> 0
+    }
+</script>
+<script>
+    (function (global) {
+    //const cacheKey = global.cacheKey;
+    const isOffline = 'onLine' in navigator && navigator.onLine === false;
+    const hasServiceWorkerSupport = 'serviceWorker' in navigator;
+    if (isOffline) {
+        console.log('offline mode');
+    }
+    if (!hasServiceWorkerSupport) {
+        console.log('service worker is not supported');
+    }
+    if (hasServiceWorkerSupport && !isOffline) {
+        window.addEventListener('load', function () {
+            const serviceWorkerPath = '/runtime-service-worker.js?v=3';
+            navigator.serviceWorker
+                .register(serviceWorkerPath, { scope: './' })
+                .then(
+                    function (registration) {
+                        // Registration was successful
+                        console.log(
+                            'ServiceWorker registration successful with scope: ',
+                            registration.scope
+                        );
+                    },
+                    function (err) {
+                        // registration failed :(
+                        console.log('ServiceWorker registration failed: ', err);
+                    }
+                )
+                .catch(function (err) {
+                    console.log(err);
+                });
+        });
+
+        // helper function to refresh the page
+        var refreshPage = (function () {
+            var refreshing;
+            return function () {
+                if (refreshing) return;
+                // prevent multiple refreshes
+                var refreshkey = 'refreshed' + location.href;
+                var prevRefresh = localStorage.getItem(refreshkey);
+                if (prevRefresh) {
+                    localStorage.removeItem(refreshkey);
+                    if (Date.now() - prevRefresh < 30000) {
+                        return; // dont go into a refresh loop
+                    }
+                }
+                refreshing = true;
+                localStorage.setItem(refreshkey, Date.now());
+                console.log('refereshing page');
+                window.location.reload();
+            };
+        })();
+
+        function messageServiceWorker(data) {
+            return new Promise(function (resolve, reject) {
+                if (navigator.serviceWorker.controller) {
+                    var worker = navigator.serviceWorker.controller;
+                    var messageChannel = new MessageChannel();
+                    messageChannel.port1.onmessage = replyHandler;
+                    worker.postMessage(data, [messageChannel.port2]);
+                    function replyHandler(event) {
+                        resolve(event.data);
+                    }
+                } else {
+                    resolve();
+                }
+            });
+        }
+    }
+})(window);
+</script>
+<!-- Add manifest -->
+<!-- End PWA settings -->
+
+
+<meta http-equiv="Content-type" content="text/html;charset=utf-8">
+<meta charset="utf-8">
+
+<link rel="canonical" href="https://www.chriscollado.com./portfolio.html">
+
+<meta id="view" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!--Add favorites icons-->
+
+<link rel="apple-touch-icon" href="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/CC+Logo+BW.png"/>
+
+<link rel="icon" type="image/x-icon" href="https://irp.cdn-website.com/3f2e341a/site_favicon_16_1722631783051.ico"/>
+
+<!-- End favorite icons -->
+<link rel="preconnect" href="https://lirp.cdn-website.com/"/>
+
+
+
+<!-- render the required CSS and JS in the head section -->
+<script>
+    window.SystemID = 'US_DIRECT_PRODUCTION';
+
+    if (!window.dmAPI) {
+        window.dmAPI = {
+            registerExternalRuntimeComponent: function () {
+            },
+            getCurrentDeviceType: function () {
+                return window._currentDevice;
+            },
+            runOnReady: (ns, fn) => {
+                const safeFn = dmAPI.toSafeFn(fn);
+                ns = ns || 'global_' + Math.random().toString(36).slice(2, 11);
+                const eventName = 'afterAjax.' + ns;
+
+                if (document.readyState === 'complete') {
+                    $.DM.events.off(eventName).on(eventName, safeFn);
+                    setTimeout(function () {
+                        safeFn({
+                            isAjax: false,
+                        });
+                    }, 0);
+                } else {
+                    window?.waitForDeferred?.('dmAjax', () => {
+                        $.DM.events.off(eventName).on(eventName, safeFn);
+                        safeFn({
+                            isAjax: false,
+                        });
+                    });
+                }
+            },
+            toSafeFn: (fn) => {
+                if (fn?.safe) {
+                    return fn;
+                }
+                const safeFn = function (...args) {
+                    try {
+                        return fn?.apply(null, args);
+                    } catch (e) {
+                        console.log('function failed ' + e.message);
+                    }
+                };
+                safeFn.safe = true;
+                return safeFn;
+            }
+        };
+    }
+
+    if (!window.requestIdleCallback) {
+        window.requestIdleCallback = function (fn) {
+            setTimeout(fn, 0);
+        }
+    }
+</script>
+
+<!-- loadCSS function header.jsp-->
+
+
+
+
+
+
+<script id="d-js-load-css">
+/**
+ * There are a few <link> tags with CSS resource in them that are preloaded in the page
+ * in each of those there is a "onload" handler which invokes the loadCSS callback
+ * defined here.
+ * We are monitoring 3 main CSS files - the runtime, the global and the page.
+ * When each load we check to see if we can append them all in a batch. If threre
+ * is no page css (which may happen on inner pages) then we do not wait for it
+ */
+(function () {
+  let cssLinks = {};
+  function loadCssLink(link) {
+    link.onload = null;
+    link.rel = "stylesheet";
+    link.type = "text/css";
+  }
+  
+    function checkCss() {
+      const pageCssLink = document.querySelector("[id*='CssLink']");
+      const widgetCssLink = document.querySelector("[id*='widgetCSS']");
+
+        if (cssLinks && cssLinks.runtime && cssLinks.global && (!pageCssLink || cssLinks.page) && (!widgetCssLink || cssLinks.widget)) {
+            const storedRuntimeCssLink = cssLinks.runtime;
+            const storedPageCssLink = cssLinks.page;
+            const storedGlobalCssLink = cssLinks.global;
+            const storedWidgetCssLink = cssLinks.widget;
+
+            storedGlobalCssLink.disabled = true;
+            loadCssLink(storedGlobalCssLink);
+
+            if (storedPageCssLink) {
+                storedPageCssLink.disabled = true;
+                loadCssLink(storedPageCssLink);
+            }
+
+            if(storedWidgetCssLink) {
+                storedWidgetCssLink.disabled = true;
+                loadCssLink(storedWidgetCssLink);
+            }
+
+            storedRuntimeCssLink.disabled = true;
+            loadCssLink(storedRuntimeCssLink);
+
+            requestAnimationFrame(() => {
+                setTimeout(() => {
+                    storedRuntimeCssLink.disabled = false;
+                    storedGlobalCssLink.disabled = false;
+                    if (storedPageCssLink) {
+                      storedPageCssLink.disabled = false;
+                    }
+                    if (storedWidgetCssLink) {
+                      storedWidgetCssLink.disabled = false;
+                    }
+                    // (SUP-4179) Clear the accumulated cssLinks only when we're
+                    // sure that the document has finished loading and the document 
+                    // has been parsed.
+                    if(document.readyState === 'interactive') {
+                      cssLinks = null;
+                    }
+                }, 0);
+            });
+        }
+    }
+  
+
+  function loadCSS(link) {
+    try {
+      var urlParams = new URLSearchParams(window.location.search);
+      var noCSS = !!urlParams.get("nocss");
+      var cssTimeout = urlParams.get("cssTimeout") || 0;
+
+      if (noCSS) {
+        return;
+      }
+      if (link.href && link.href.includes("d-css-runtime")) {
+        cssLinks.runtime = link;
+        checkCss();
+      } else if (link.id === "siteGlobalCss") {
+        cssLinks.global = link;
+        checkCss();
+      } 
+      
+      else if (link.id && link.id.includes("CssLink")) {
+        cssLinks.page = link;
+        checkCss();
+      } else if (link.id && link.id.includes("widgetCSS")) {
+        cssLinks.widget = link;
+        checkCss();
+      }
+      
+      else {
+        requestIdleCallback(function () {
+          window.setTimeout(function () {
+            loadCssLink(link);
+          }, parseInt(cssTimeout, 10));
+        });
+      }
+    } catch (e) {
+      throw e
+    }
+  }
+  window.loadCSS = window.loadCSS || loadCSS;
+})();
+</script>
+
+
+
+<script data-role="deferred-init" type="text/javascript">
+    /* usage: window.getDeferred(<deferred name>).resolve() or window.getDeferred(<deferred name>).promise.then(...)*/
+    function Def() {
+        this.promise = new Promise((function (a, b) {
+            this.resolve = a, this.reject = b
+        }).bind(this))
+    }
+
+    const defs = {};
+    window.getDeferred = function (a) {
+        return null == defs[a] && (defs[a] = new Def), defs[a]
+    }
+    window.waitForDeferred = function (b, a, c) {
+        let d = window?.getDeferred?.(b);
+        d
+            ? d.promise.then(a)
+            : c && ["complete", "interactive"].includes(document.readyState)
+                ? setTimeout(a, 1)
+                : c
+                    ? document.addEventListener("DOMContentLoaded", a)
+                    : console.error(`Deferred  does not exist`);
+    };
+</script>
+<style id="forceCssIncludes">
+    /* This file is auto-generated from a `scss` file with the same name */
+
+.videobgwrapper{overflow:hidden;position:absolute;z-index:0;width:100%;height:100%;top:0;left:0;pointer-events:none;border-radius:inherit}.videobgframe{position:absolute;width:101%;height:100%;top:50%;left:50%;transform:translateY(-50%) translateX(-50%);object-fit:fill}#dm video.videobgframe{margin:0}@media (max-width:767px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:80vh}}@media (min-width:1025px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}@media (min-width:768px) and (max-width:1024px){.responsiveTablet .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}#dm [data-show-on-page-only]{display:none!important}#dmRoot div.stickyHeaderFix div.site_content{margin-top:0!important}#dmRoot div.stickyHeaderFix div.hamburger-header-container{position:relative}
+    #dmRoot div.site_content {
+    margin-top: 82.9531px !important;
+}
+
+
+</style>
+<style id="cssVariables" type="text/css">
+    :root {
+  --color_1: rgba(255,255,255,1);
+  --color_2: rgba(169,176,189,1);
+  --color_3: rgba(0,0,0,1);
+  --color_4: rgba(181, 174, 3, 1);
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Google Fonts Include -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- loadCSS function fonts.jsp-->
+
+
+
+<link type="text/css" rel="stylesheet" href="https://irp.cdn-website.com/fonts/css2?family=Spartan:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900&family=Alata:ital,wght@0,400&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Prata:ital,wght@0,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Exo:ital,wght@0,100..900;1,100..900&amp;subset=latin-ext&amp;display=swap"  />
+
+<style>
+@font-face {
+  font-family: "ITCAvantGardePro-Bold";
+  src: url("https://irp.cdn-website.com/3f2e341a/fonts/ITCAvantGardePro-Bold-6e89_400.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+<style>
+@font-face {
+  font-family: "ITCAvantGardePro-Bk";
+  src: url("https://irp.cdn-website.com/3f2e341a/fonts/ITCAvantGardePro-Bk-20d7_400.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+<style>
+@font-face {
+  font-family: "ITCAvantGardePro-BoldObl";
+  src: url("https://irp.cdn-website.com/3f2e341a/fonts/ITCAvantGardePro-BoldObl-3e6a_400.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+<style>
+@font-face {
+  font-family: "ITCAvantGardePro-Md";
+  src: url("https://irp.cdn-website.com/3f2e341a/fonts/ITCAvantGardePro-Md-1e01_400.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+
+
+
+
+<!-- RT CSS Include d-css-runtime-mobile-one-package-structured-global-->
+<link rel="stylesheet" type="text/css" href="https://static.cdn-website.com/mnlt/production/4837/_dm/s/rt/dist/css/d-css-runtime-mobile-one-package-structured-global.min.css" />
+
+<!-- End of RT CSS Include -->
+
+<link type="text/css" rel="stylesheet" href="https://irp.cdn-website.com/WIDGET_CSS/b2c9c792040414cf39ecffc278c83568.css" id="widgetCSS" />
+
+<!-- Support `img` size attributes -->
+<style>img[width][height] {
+    height: auto;
+}</style>
+
+<!-- Support showing sticky element on page only -->
+<style>
+    body[data-page-alias="portfolio"] #dm [data-show-on-page-only="portfolio"] {
+        display: block !important;
+    }
+</style>
+
+<!-- This is populated in Ajax navigation -->
+<style id="pageAdditionalWidgetsCss" type="text/css">
+</style>
+
+
+
+
+<!-- Site CSS -->
+<link type="text/css" rel="stylesheet" href="https://irp.cdn-website.com/3f2e341a/files/3f2e341a_0.min.css?v=353" id="siteGlobalCss" />
+
+
+
+<style id="customWidgetStyle" type="text/css">
+    
+</style>
+<style id="innerPagesStyle" type="text/css">
+    
+</style>
+
+
+<style
+        id="additionalGlobalCss" type="text/css"
+>
+</style>
+
+<style id="pagestyle" type="text/css">
+    *#dm *.dmBody div.u_1433910778 .svg
+{
+	color:rgba(45,46,50,1) !important;
+	fill:rgba(45,46,50,1) !important;
+}
+*#dm *.dmBody div.u_1237496434 .svg
+{
+	color:rgba(45,46,50,1) !important;
+	fill:rgba(45,46,50,1) !important;
+}
+*#dm *.dmBody div.u_1592198911 .svg
+{
+	color:rgba(45,46,50,1) !important;
+	fill:rgba(45,46,50,1) !important;
+}
+*#dm *.dmBody div.u_1072901936 .svg
+{
+	color:rgba(45,46,50,1) !important;
+	fill:rgba(45,46,50,1) !important;
+}
+*#dm *.dmBody div.u_1178006568 .svg
+{
+	color:rgba(45,46,50,1) !important;
+	fill:rgba(45,46,50,1) !important;
+}
+*#dm *.dmBody div.u_1406272526
+{
+	background-color:rgba(255,255,255,0.9) !important;
+}
+*#dm *.dmBody div.u_1388593454
+{
+	background-color:rgba(255,255,255,0.9) !important;
+}
+*#dm *.dmBody div.u_1270838560
+{
+	background-color:rgba(255,255,255,0.9) !important;
+}
+*#dm *.dmBody div.u_1614552840 .caption-inner
+{
+	background-color:var(--color_1) !important;
+}
+*#dm *.dmBody div.u_1614552840
+{
+	border-style:solid !important;
+	border-width:0px !important;
+}
+*#dm *.dmBody nav.u_1776589715
+{
+	color:white !important;
+}
+*#dm *.dmBody nav.u_1417306043
+{
+	color:white !important;
+}
+*#dm *.dmBody *.u_1614552840 .photoGalleryThumbs .image-container a
+{
+	background-size:cover !important;
+}
+
+</style>
+
+<style id="pagestyleDevice" type="text/css">
+    
+</style>
+
+<!-- Flex Sections CSS -->
+
+ <style id="grid-styles-desktop-af3429b4-c043db2d2e6c4d3cb6087f4e163dc1ac" data-page-uuid="c043db2d2e6c4d3cb6087f4e163dc1ac">@media all {
+    
+#\38 9677677 {
+    align-self: start;
+    background-size: cover;
+    min-height: 195px;
+    background-repeat: no-repeat;
+    flex-direction: row;
+    order: 0;
+    display: flex;
+    background-position: 50% 50%;
+    column-gap: 4%;
+    row-gap: 24px;
+    max-width: none;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    justify-self: center;
+    padding: 41px 2% 41px 2%;
+    margin: 0px 0% 0px 0%;
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+    
+#\37 0e90e40 {
+    margin: 0px 0% 0px 0%;
+}
+    
+#\37 939c203 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-template-columns: minmax(0px, 1fr);
+    grid-template-rows: minmax(8px, max-content);
+    display: grid;
+    justify-content: start;
+    background-position: 50% 50%;
+    align-items: start;
+    position: relative;
+    background-color: rgba(0, 0, 0, 1);
+}
+    
+#f43199ef {
+    align-self: stretch;
+    background-size: cover;
+    display: flex;
+    min-height: 8px;
+    background-position: 50% 50%;
+    column-gap: 4%;
+    row-gap: 24px;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-width: 4%;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0% 0px 0%;
+}
+    
+#\38 555b2ca {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-width: 10px;
+    min-height: 10px;
+    max-width: none;
+    align-self: auto;
+    justify-self: auto;
+    order: 0;
+    grid-area: auto / auto / auto / auto;
+}
+}</style> 
+
+
+ <style id="grid-styles-adjustments_for_tablet-af3429b4-c043db2d2e6c4d3cb6087f4e163dc1ac" data-page-uuid="c043db2d2e6c4d3cb6087f4e163dc1ac">@media (min-width: 767px) and (max-width: 1024px) {
+}</style> 
+
+
+ <style id="grid-styles-tablet-af3429b4-c043db2d2e6c4d3cb6087f4e163dc1ac" data-page-uuid="c043db2d2e6c4d3cb6087f4e163dc1ac">@media (min-width: 767px) and (max-width: 1024px) {
+}</style> 
+
+
+ <style id="grid-styles-desktop_wide-af3429b4-c043db2d2e6c4d3cb6087f4e163dc1ac" data-page-uuid="c043db2d2e6c4d3cb6087f4e163dc1ac">@media (min-width: 1400px) {
+    
+#\38 9677677 {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+    
+#\37 939c203 {
+    background-color: rgba(0, 0, 0, 1);
+}
+}</style> 
+
+
+ <style id="grid-styles-inherited_from_desktop-af3429b4-c043db2d2e6c4d3cb6087f4e163dc1ac" data-page-uuid="c043db2d2e6c4d3cb6087f4e163dc1ac">@media (max-width: 766px) {
+    
+#\38 9677677 {
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+    
+#\37 939c203 {
+    grid-template-rows: minmax(8px, max-content);
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_portrait-af3429b4-c043db2d2e6c4d3cb6087f4e163dc1ac" data-page-uuid="c043db2d2e6c4d3cb6087f4e163dc1ac">@media (max-width: 767px) {
+    
+#\38 9677677 {
+    min-height: unset;
+    flex-direction: column;
+    padding: 50px 4% 30px 4%;
+}
+    
+#f43199ef {
+    width: 100%;
+    min-height: 10vh;
+    align-items: center;
+    row-gap: 10px;
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_landscape-af3429b4-c043db2d2e6c4d3cb6087f4e163dc1ac" data-page-uuid="c043db2d2e6c4d3cb6087f4e163dc1ac">@media (min-width: 468px) and (max-width: 767px) {
+}</style> 
+
+
+ <style id="grid-styles-desktop-b8a27c02-c043db2d2e6c4d3cb6087f4e163dc1ac" data-page-uuid="c043db2d2e6c4d3cb6087f4e163dc1ac">@media all {
+    
+#\38 4224959 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    min-width: 4%;
+    min-height: 8px;
+    column-gap: 4%;
+    row-gap: 24px;
+    align-self: stretch;
+    background-image: none;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0% 0px 0%;
+}
+    
+#\32 4e00cc6 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-width: 10px;
+    min-height: 10px;
+    max-width: none;
+    align-self: auto;
+    justify-self: auto;
+    order: 0;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#a8c621c8 {
+    margin: 0px 0% 0px 0%;
+}
+    
+#\35 14395ee {
+    align-self: start;
+    background-size: cover;
+    min-height: 1000px;
+    background-repeat: no-repeat;
+    flex-direction: row;
+    order: 0;
+    display: flex;
+    background-position: 50% 50%;
+    column-gap: 0%;
+    row-gap: 0px;
+    max-width: none;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    justify-self: center;
+    padding: 0px 0% 0px 0%;
+    margin: 0px 0% 0px 0%;
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+    
+#f0defab0 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-template-columns: minmax(0px, 1fr);
+    grid-template-rows: minmax(8px, max-content);
+    display: grid;
+    justify-content: start;
+    background-position: 50% 50%;
+    align-items: start;
+    position: relative;
+    background-color: rgba(255, 255, 255, 1);
+}
+}</style> 
+
+
+ <style id="grid-styles-adjustments_for_tablet-b8a27c02-c043db2d2e6c4d3cb6087f4e163dc1ac" data-page-uuid="c043db2d2e6c4d3cb6087f4e163dc1ac">@media (min-width: 767px) and (max-width: 1024px) {
+}</style> 
+
+
+ <style id="grid-styles-tablet-b8a27c02-c043db2d2e6c4d3cb6087f4e163dc1ac" data-page-uuid="c043db2d2e6c4d3cb6087f4e163dc1ac">@media (min-width: 767px) and (max-width: 1024px) {
+    
+#\35 14395ee {
+    padding: 0px 0px 0px 0px;
+}
+}</style> 
+
+
+ <style id="grid-styles-desktop_wide-b8a27c02-c043db2d2e6c4d3cb6087f4e163dc1ac" data-page-uuid="c043db2d2e6c4d3cb6087f4e163dc1ac">@media (min-width: 1400px) {
+    
+#\35 14395ee {
+    min-height: 400px;
+}
+}</style> 
+
+
+ <style id="grid-styles-inherited_from_desktop-b8a27c02-c043db2d2e6c4d3cb6087f4e163dc1ac" data-page-uuid="c043db2d2e6c4d3cb6087f4e163dc1ac">@media (max-width: 766px) {
+    
+#\35 14395ee {
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+    
+#f0defab0 {
+    grid-template-rows: minmax(8px, max-content);
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_portrait-b8a27c02-c043db2d2e6c4d3cb6087f4e163dc1ac" data-page-uuid="c043db2d2e6c4d3cb6087f4e163dc1ac">@media (max-width: 767px) {
+    
+#\38 4224959 {
+    width: 100%;
+    min-height: 325px;
+    align-items: center;
+}
+    
+#\35 14395ee {
+    min-height: 50vh;
+    flex-direction: column;
+    padding: 0px 0px 0px 0px;
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_landscape-b8a27c02-c043db2d2e6c4d3cb6087f4e163dc1ac" data-page-uuid="c043db2d2e6c4d3cb6087f4e163dc1ac">@media (min-width: 468px) and (max-width: 767px) {
+}</style> 
+
+
+ <style id="grid-styles-desktop-62af179dfb031a1e6efcfa19-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media all {
+    
+#\36 2af179dfb031a1e6efcfa1c {
+    align-self: stretch;
+    background-size: cover;
+    display: flex;
+    min-height: 8px;
+    background-position: 50% 50%;
+    column-gap: 4%;
+    row-gap: 24px;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    min-width: 4%;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0% 0px 0%;
+}
+    
+#\36 2af179dfb031a1e6efcfa1d {
+    align-self: start;
+    background-size: cover;
+    min-height: 191px;
+    background-repeat: no-repeat;
+    flex-direction: row;
+    order: 0;
+    display: flex;
+    background-position: 50% 50%;
+    column-gap: 2%;
+    row-gap: 12px;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    justify-self: center;
+    flex-wrap: nowrap;
+    padding: 57px 2% 50px 4%;
+    margin: 0px 0% 0px 0%;
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+    
+#\36 2af179dfb031a1e6efcfa1a {
+    margin: 0px 0% 0px 0%;
+}
+    
+#\36 2af179dfb031a1e6efcfa1b {
+    background-color: rgba(0,0,0,0);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-template-columns: minmax(0px, 1fr);
+    grid-template-rows: minmax(8px, max-content);
+    display: grid;
+    justify-content: start;
+    background-position: 50% 50%;
+    align-items: start;
+    position: relative;
+}
+    
+#\36 2af17e4fb031a1e6efd0d08.flex-element.widget-wrapper > [data-element-type] {
+    padding-top: 0px;
+}
+#\36 2af17e4fb031a1e6efd0d08 {
+    align-self: auto;
+    min-height: 10px;
+    max-width: 100%;
+    width: 100.00%;
+    position: relative;
+    justify-self: auto;
+    height: auto;
+    min-width: 10px;
+    order: 1;
+    grid-area: auto / auto / auto / auto;
+}
+}</style> 
+
+
+ <style id="grid-styles-adjustments_for_tablet-62af179dfb031a1e6efcfa19-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media (min-width: 767px) and (max-width: 1024px) {
+}</style> 
+
+
+ <style id="grid-styles-tablet-62af179dfb031a1e6efcfa19-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media (min-width: 767px) and (max-width: 1024px) {
+    
+#\36 2af179dfb031a1e6efcfa1c {
+    padding: 0px 0px 0px 0px;
+}
+    
+#\36 2af179dfb031a1e6efcfa1d {
+    min-height: 304px;
+    padding: 60px 2% 5px 2%;
+}
+    
+#\36 2af17e4fb031a1e6efd0d08 {
+    width: 99.9990515803645%;
+    justify-self: auto;
+    align-self: auto;
+    order: 0;
+    margin: 0px 0% 0px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+}</style> 
+
+
+ <style id="grid-styles-desktop_wide-62af179dfb031a1e6efcfa19-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media (min-width: 1400px) {
+}</style> 
+
+
+ <style id="grid-styles-inherited_from_desktop-62af179dfb031a1e6efcfa19-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media (max-width: 766px) {
+    
+#\36 2af179dfb031a1e6efcfa1d {
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+    
+#\36 2af179dfb031a1e6efcfa1b {
+    grid-template-rows: minmax(8px, max-content);
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_portrait-62af179dfb031a1e6efcfa19-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media (max-width: 767px) {
+    
+#\36 2af179dfb031a1e6efcfa1c {
+    row-gap: 10px;
+    width: 100%;
+    min-height: 71px;
+    align-items: center;
+    padding: 0px 0px 0px 0px;
+}
+    
+#\36 2af179dfb031a1e6efcfa1d {
+    flex-direction: column;
+    min-height: unset;
+    padding: 60px 2% 40px 2%;
+}
+    
+#\36 2af17e4fb031a1e6efd0d08 {
+    align-self: stretch;
+    margin-left: 0%;
+    max-width: none;
+    width: 100%;
+    margin-right: 0px;
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_landscape-62af179dfb031a1e6efcfa19-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media (min-width: 468px) and (max-width: 767px) {
+    
+#\36 2af17e4fb031a1e6efd0d08 {
+    align-self: center;
+    margin-left: 0%;
+    width: 80.90%;
+    margin-right: 0px;
+}
+}</style> 
+
+
+ <style id="grid-styles-desktop-174d86f9-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media all {
+    
+#\39 daac600.flex-element.widget-wrapper > [data-element-type] {
+    padding-top: 0px;
+}
+#\39 daac600 {
+    align-self: auto;
+    min-height: 10px;
+    max-width: 100%;
+    width: 100.00%;
+    position: relative;
+    justify-self: auto;
+    height: auto;
+    min-width: 10px;
+    order: 1;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#dc21e713 {
+    background-color: rgba(0,0,0,0);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-template-columns: minmax(0px, 1fr);
+    grid-template-rows: minmax(8px, max-content);
+    display: grid;
+    justify-content: start;
+    background-position: 50% 50%;
+    align-items: start;
+    position: relative;
+}
+    
+#c3bbf6c8 {
+    align-self: stretch;
+    background-size: cover;
+    display: flex;
+    min-height: 8px;
+    background-position: 50% 50%;
+    column-gap: 4%;
+    row-gap: 24px;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    min-width: 4%;
+    padding: 0px 10px 0px 0px;
+    margin: 0px 0% 0px 0%;
+}
+    
+#daa3313a {
+    margin: 0px 0% 0px 0%;
+}
+    
+#\36 39ca257 {
+    align-self: start;
+    background-size: cover;
+    min-height: 191px;
+    background-repeat: no-repeat;
+    flex-direction: row;
+    order: 0;
+    display: flex;
+    background-position: 50% 50%;
+    column-gap: 2%;
+    row-gap: 12px;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    justify-self: center;
+    flex-wrap: nowrap;
+    padding: 121px 2% 100px 4%;
+    margin: 0px 0% 0px 0%;
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+}</style> 
+
+
+ <style id="grid-styles-adjustments_for_tablet-174d86f9-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media (min-width: 767px) and (max-width: 1024px) {
+}</style> 
+
+
+ <style id="grid-styles-tablet-174d86f9-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media (min-width: 767px) and (max-width: 1024px) {
+    
+#\39 daac600 {
+    width: 99.83%;
+}
+    
+#c3bbf6c8 {
+    padding: 0px 0px 0px 0px;
+}
+    
+#\36 39ca257 {
+    min-height: 304px;
+    padding: 60px 2% 20px 2%;
+}
+}</style> 
+
+
+ <style id="grid-styles-desktop_wide-174d86f9-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media (min-width: 1400px) {
+}</style> 
+
+
+ <style id="grid-styles-inherited_from_desktop-174d86f9-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media (max-width: 766px) {
+    
+#dc21e713 {
+    grid-template-rows: minmax(8px, max-content);
+}
+    
+#\36 39ca257 {
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_portrait-174d86f9-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media (max-width: 767px) {
+    
+#\39 daac600 {
+    align-self: stretch;
+    margin-left: 0%;
+    max-width: none;
+    width: 100%;
+    margin-right: 0px;
+}
+    
+#c3bbf6c8 {
+    row-gap: 10px;
+    width: 100%;
+    min-height: 71px;
+    align-items: center;
+    padding: 0px 0px 0px 0px;
+}
+    
+#\36 39ca257 {
+    flex-direction: column;
+    min-height: unset;
+    padding: 60px 2% 40px 2%;
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_landscape-174d86f9-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media (min-width: 468px) and (max-width: 767px) {
+    
+#\39 daac600 {
+    align-self: center;
+    margin-left: 0%;
+    width: 80.90%;
+    margin-right: 0px;
+}
+}</style> 
+
+
+ <style id="grid-styles-desktop-62af20cafb031a1e6efe361a-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media all {
+    
+#\36 2af20cafb031a1e6efe361e {
+    align-self: stretch;
+    background-size: cover;
+    display: flex;
+    min-height: 8px;
+    background-position: 50% 50%;
+    column-gap: 4%;
+    row-gap: 0px;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    max-width: 100%;
+    width: 50%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+    min-width: 4%;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0% 0px 0%;
+}
+    
+#\36 2af20cafb031a1e6efe361d {
+    align-self: stretch;
+    background-size: cover;
+    display: flex;
+    min-height: 8px;
+    background-position: 50% 50%;
+    column-gap: 4%;
+    row-gap: 24px;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    max-width: 100%;
+    width: 50%;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: relative;
+    min-width: 4%;
+    padding: 0px 0px 0px 73px;
+    margin: 0px 0% 0px 0%;
+}
+    
+#\36 2af20cafb031a1e6efe361f {
+    background-color: rgba(0,0,0,0);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-template-columns: minmax(0px, 1fr);
+    grid-template-rows: minmax(8px, max-content);
+    display: grid;
+    justify-content: start;
+    background-position: 50% 50%;
+    align-items: start;
+    position: relative;
+}
+    
+#\36 2af20cafb031a1e6efe361c {
+    align-self: start;
+    background-size: cover;
+    min-height: 45px;
+    background-repeat: no-repeat;
+    flex-direction: row;
+    order: 0;
+    display: flex;
+    background-position: 50% 50%;
+    column-gap: 0%;
+    row-gap: 0px;
+    max-width: none;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    justify-self: center;
+    flex-wrap: nowrap;
+    margin: 0px 0% 0px 0%;
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+    
+#\36 2af20cafb031a1e6efe361b {
+    margin: 0px 0% 0px 0%;
+}
+    
+#\36 2af2105fb031a1e6efe5293.flex-element.widget-wrapper > [data-element-type] {
+    padding-bottom: 0px;
+}
+#\36 2af2105fb031a1e6efe5293 {
+    align-self: stretch;
+    min-height: 10px;
+    margin-right: 0%;
+    margin-left: 0%;
+    max-width: none;
+    width: 100%;
+    margin-top: 0px;
+    position: relative;
+    justify-self: auto;
+    height: auto;
+    min-width: 10px;
+    order: 0;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#\36 2af2120fb031a1e6efe5bb8.flex-element.widget-wrapper > [data-element-type] {
+    padding-left: 0px;
+    padding-right: 91px;
+}
+#\36 2af2120fb031a1e6efe5bb8 {
+    min-height: 10px;
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+    justify-self: auto;
+    height: auto;
+    min-width: 10px;
+    order: 0;
+    align-self: flex-end;
+    grid-area: auto / auto / auto / auto;
+}
+}</style> 
+
+
+ <style id="grid-styles-adjustments_for_tablet-62af20cafb031a1e6efe361a-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media (min-width: 767px) and (max-width: 1024px) {
+}</style> 
+
+
+ <style id="grid-styles-tablet-62af20cafb031a1e6efe361a-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media (min-width: 767px) and (max-width: 1024px) {
+    
+#\36 2af20cafb031a1e6efe361c {
+    padding-left: 2%;
+}
+    
+#\36 2af2120fb031a1e6efe5bb8.flex-element.widget-wrapper > [data-element-type] {
+    padding-left: 0px;
+}
+#\36 2af2120fb031a1e6efe5bb8 {
+    width: 397px;
+    justify-self: auto;
+    align-self: auto;
+    order: 0;
+    margin: 0px 0% 0px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+}</style> 
+
+
+ <style id="grid-styles-desktop_wide-62af20cafb031a1e6efe361a-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media (min-width: 1400px) {
+}</style> 
+
+
+ <style id="grid-styles-inherited_from_desktop-62af20cafb031a1e6efe361a-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media (max-width: 766px) {
+    
+#\36 2af20cafb031a1e6efe361f {
+    grid-template-rows: minmax(8px, max-content);
+}
+    
+#\36 2af20cafb031a1e6efe361c {
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_portrait-62af20cafb031a1e6efe361a-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media (max-width: 767px) {
+    
+#\36 2af20cafb031a1e6efe361e {
+    width: 100%;
+    min-height: 80px;
+    align-items: center;
+}
+    
+#\36 2af20cafb031a1e6efe361d {
+    width: 100%;
+    padding-bottom: 0px;
+    min-height: 80px;
+    align-items: center;
+}
+    
+#\36 2af20cafb031a1e6efe361c {
+    row-gap: 24px;
+    flex-direction: column;
+    min-height: 0;
+    flex-wrap: nowrap;
+    padding: 8px 4% 50px 4%;
+}
+    
+#\36 2af2105fb031a1e6efe5293 {
+    width: 78.53%;
+}
+    
+#\36 2af2120fb031a1e6efe5bb8.flex-element.widget-wrapper > [data-element-type] {
+    padding-right: 0px;
+    padding-top: 0px;
+}
+#\36 2af2120fb031a1e6efe5bb8 {
+    align-self: flex-start;
+    max-width: none;
+    width: 91.25%;
+    justify-self: auto;
+    order: 0;
+    margin: 0px 0% 0px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_landscape-62af20cafb031a1e6efe361a-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media (min-width: 468px) and (max-width: 767px) {
+    
+#\36 2af2105fb031a1e6efe5293 {
+    align-self: center;
+    width: 34.43%;
+    margin: 0px 0px 0px 0%;
+}
+    
+#\36 2af2120fb031a1e6efe5bb8 {
+    align-self: center;
+    width: 49.57%;
+    margin: 0px 0px 0px 0%;
+}
+}</style> 
+
+
+ <style id="grid-styles-desktop-12a6a60d-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media all {
+    
+#\35 1032b63 {
+    align-self: stretch;
+    background-size: cover;
+    display: flex;
+    min-height: 8px;
+    background-position: 50% 50%;
+    column-gap: 4%;
+    row-gap: 24px;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    max-width: 100%;
+    width: 50%;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: relative;
+    min-width: 4%;
+    padding: 0px 0px 0px 73px;
+    margin: 0px 0% 0px 0%;
+}
+    
+#\33 142d787 {
+    align-self: start;
+    background-size: cover;
+    min-height: 99px;
+    background-repeat: no-repeat;
+    flex-direction: row;
+    order: 0;
+    display: flex;
+    background-position: 50% 50%;
+    column-gap: 0%;
+    row-gap: 0px;
+    max-width: none;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    justify-self: center;
+    flex-wrap: nowrap;
+    margin: 0px 0% 0px 0%;
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+    
+#\39 73f2c2a {
+    margin: 0px 0% 0px 0%;
+}
+    
+#\37 a34f43a.flex-element.widget-wrapper > [data-element-type] {
+    padding-bottom: 0px;
+}
+#\37 a34f43a {
+    align-self: stretch;
+    min-height: 10px;
+    margin-right: 0%;
+    margin-left: 0%;
+    max-width: none;
+    width: 100%;
+    margin-top: 0px;
+    position: relative;
+    justify-self: auto;
+    height: auto;
+    min-width: 10px;
+    order: 0;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#b9845f3e {
+    align-self: stretch;
+    background-size: cover;
+    display: flex;
+    min-height: 8px;
+    background-position: 50% 50%;
+    column-gap: 4%;
+    row-gap: 0px;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    max-width: 100%;
+    width: 50%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+    min-width: 4%;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0% 0px 0%;
+}
+    
+#\32 6fbe70d.flex-element.widget-wrapper > [data-element-type] {
+    padding-left: 0px;
+    padding-right: 91px;
+}
+#\32 6fbe70d {
+    min-height: 10px;
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+    justify-self: auto;
+    height: auto;
+    min-width: 10px;
+    order: 0;
+    align-self: flex-end;
+    grid-area: auto / auto / auto / auto;
+}
+    
+#a700df11 {
+    background-color: rgba(0,0,0,0);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-template-columns: minmax(0px, 1fr);
+    grid-template-rows: minmax(8px, max-content);
+    display: grid;
+    justify-content: start;
+    background-position: 50% 50%;
+    align-items: start;
+    position: relative;
+}
+}</style> 
+
+
+ <style id="grid-styles-adjustments_for_tablet-12a6a60d-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media (min-width: 767px) and (max-width: 1024px) {
+}</style> 
+
+
+ <style id="grid-styles-tablet-12a6a60d-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media (min-width: 767px) and (max-width: 1024px) {
+    
+#\33 142d787 {
+    padding-left: 2%;
+}
+    
+#\32 6fbe70d {
+    width: 423px;
+}
+}</style> 
+
+
+ <style id="grid-styles-desktop_wide-12a6a60d-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media (min-width: 1400px) {
+}</style> 
+
+
+ <style id="grid-styles-inherited_from_desktop-12a6a60d-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media (max-width: 766px) {
+    
+#\33 142d787 {
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+    
+#a700df11 {
+    grid-template-rows: minmax(8px, max-content);
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_portrait-12a6a60d-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media (max-width: 767px) {
+    
+#\35 1032b63 {
+    width: 100%;
+    padding-bottom: 0px;
+    min-height: 80px;
+    align-items: center;
+}
+    
+#\33 142d787 {
+    row-gap: 24px;
+    flex-direction: column;
+    min-height: 0;
+    flex-wrap: nowrap;
+    padding: 8px 2% 50px 4%;
+}
+    
+#\37 a34f43a {
+    width: 62.89%;
+    align-self: flex-start;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+    
+#b9845f3e {
+    width: 100%;
+    min-height: 80px;
+    align-items: center;
+    padding-left: 11px;
+}
+    
+#\32 6fbe70d.flex-element.widget-wrapper > [data-element-type] {
+    padding-right: 0px;
+    padding-top: 0px;
+}
+#\32 6fbe70d {
+    align-self: flex-start;
+    max-width: none;
+    width: 90.66%;
+    justify-self: auto;
+    order: 0;
+    margin: 0px 0% 0px 0%;
+    grid-area: auto / auto / auto / auto;
+}
+}</style> 
+
+
+ <style id="grid-styles-mobile_landscape-12a6a60d-0025414534c04018b0bf5a3565a73246" data-page-uuid="0025414534c04018b0bf5a3565a73246" data-is-header="true">@media (min-width: 468px) and (max-width: 767px) {
+    
+#\37 a34f43a {
+    align-self: center;
+    width: 34.43%;
+    margin: 0px 0px 0px 0%;
+}
+    
+#\32 6fbe70d {
+    align-self: center;
+    width: 49.57%;
+    margin: 0px 0px 0px 0%;
+}
+}</style> 
+
+
+
+
+
+
+<style id="globalFontSizeStyle" type="text/css">
+    .font-size-72, .size-72, .size-72 > font { font-size: 72px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-20, .size-20, .size-20 > font { font-size: 20px !important; }.font-size-16, .size-16, .size-16 > font { font-size: 16px !important; }.font-size-55, .size-55, .size-55 > font { font-size: 55px !important; }.font-size-60, .size-60, .size-60 > font { font-size: 60px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.dmMobileBody .m-font-size-58, .dmMobileBody .m-size-58, .dmMobileBody .m-size-58 > font { font-size: 58px !important; }.dmMobileBody .m-font-size-14, .dmMobileBody .m-size-14, .dmMobileBody .m-size-14 > font { font-size: 14px !important; }.dmMobileBody .m-font-size-16, .dmMobileBody .m-size-16, .dmMobileBody .m-size-16 > font { font-size: 16px !important; }.dmMobileBody .m-font-size-13, .dmMobileBody .m-size-13, .dmMobileBody .m-size-13 > font { font-size: 13px !important; }.dmMobileBody .m-font-size-36, .dmMobileBody .m-size-36, .dmMobileBody .m-size-36 > font { font-size: 36px !important; }.dmMobileBody .m-font-size-11, .dmMobileBody .m-size-11, .dmMobileBody .m-size-11 > font { font-size: 11px !important; }
+</style>
+<style id="pageFontSizeStyle" type="text/css">
+</style>
+
+
+
+
+<style id="hideAnimFix">
+    .dmDesktopBody:not(.editGrid) [data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) [data-anim-extended] {
+        visibility: hidden;
+    }
+
+    .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-extended] {
+        visibility: hidden !important;
+    }
+</style>
+
+
+
+
+<style id="fontFallbacks">
+    @font-face {
+  font-family: "Alata Fallback";
+  src: local('Arial');
+  ascent-override: 107.1847%;
+  descent-override: 27.2834%;
+  size-adjust: 102.6265%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Epilogue Fallback";
+  src: local('Arial');
+  ascent-override: 70.2338%;
+  descent-override: 20.8923%;
+  size-adjust: 112.4814%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Prata Fallback";
+  src: local('Arial');
+  ascent-override: 92.0833%;
+  descent-override: 33.5691%;
+  size-adjust: 107.8372%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Roboto Fallback";
+  src: local('Arial');
+  ascent-override: 92.6709%;
+  descent-override: 24.3871%;
+  size-adjust: 100.1106%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Montserrat Fallback";
+  src: local('Arial');
+  ascent-override: 84.9466%;
+  descent-override: 22.0264%;
+  size-adjust: 113.954%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Poppins Fallback";
+  src: local('Arial');
+  ascent-override: 92.326%;
+  descent-override: 30.7753%;
+  line-gap-override: 8.793%;
+  size-adjust: 113.7274%;
+}@font-face {
+  font-family: "Verdana Fallback";
+  src: local('Arial');
+  ascent-override: 87.306%;
+  descent-override: 18.2329%;
+  size-adjust: 115.1549%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Exo Fallback";
+  src: local('Arial');
+  ascent-override: 95.3209%;
+  descent-override: 31.1077%;
+  size-adjust: 105.1186%;
+  line-gap-override: 0%;
+ }
+</style>
+
+
+<!-- End render the required css and JS in the head section -->
+
+
+
+
+
+
+
+
+<meta property="og:type" content="website">
+
+  <title>
+    Chris Collado
+  </title>
+  <script>
+
+
+
+
+
+window.bloomSettings={userId:"pv5d6w3jj9w48",profileId:"l0zdg4xn0d3go"};
+
+  
+
+  
+
+  </script>
+  <script>
+
+
+
+
+
+if(void 0===bloomScript){var bloomScript=document.createElement("script");bloomScript.async=!0,fetch("https://code.bloom.io/version?t="+Date.now()).then(function(t){return t.text()}).then(function(t){bloomScript.src="https://code.bloom.io/widget.js?v="+t,document.head.appendChild(bloomScript)})}
+
+  
+
+  
+
+  </script>
+
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:title" content="Chris Collado"/>
+  <meta name="twitter:image" content="https://lirp.cdn-website.com/3f2e341a/dms3rep/multi/opt/CC+Logo+BW-1920w.png"/>
+  <meta property="og:title" content="Chris Collado"/>
+  <meta property="og:image" content="https://lirp.cdn-website.com/3f2e341a/dms3rep/multi/opt/CC+Logo+BW-1920w.png"/>
+
+
+
+
+<!-- SYS- VVNfRElSRUNUX1BST0RVQ1RJT04= -->
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body id="dmRoot" data-page-alias="portfolio"  class="dmRoot dmMobileBody fix-mobile-scrolling addCanvasBorder dmResellerSite responsiveTablet "
+      style="padding:0;margin:0;"
+      
+    >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Preconnect to Snipcart -->
+<link rel="preconnect" href="https://dudacommerce-cdn.snipcart.com">
+
+<!-- Snipcart installation script https://docs.snipcart.com/v3/setup/installation#addproductbehavior -->
+<script>
+window.SnipcartSettings = {
+    publicApiKey: "test_pub_1fcf6d136ce948e4974cbf5a98fb1a5d",
+    loadStrategy: "on-user-interaction",
+    version: "3.0.0",
+    baseUrl: "https://dudacommerce-cdn.snipcart.com/",
+    
+    modalStyle: "side",
+    
+};
+
+
+
+
+(function(){var c,d;(d=(c=window.SnipcartSettings).version)!=null||(c.version="3.0.0");var s,S;(S=(s=window.SnipcartSettings).timeoutDuration)!=null||(s.timeoutDuration=2750);var l,w;(w=(l=window.SnipcartSettings).baseUrl)!=null||(l.baseUrl="http://localhost:8080/");var p,u;(u=(p=window.SnipcartSettings).loadCSS)!=null||(p.loadCSS=!0);var f=window.SnipcartSettings.version.includes("v3.0.0-ci")||window.SnipcartSettings.version!="3.0.0"&&window.SnipcartSettings.version.localeCompare("3.4.0",void 0,{numeric:!0,sensitivity:"base"})===-1,m=["focus","mouseover","touchmove","scroll","keydown"];function v(){let t=function(){};return{ready:new Promise(function(n){t=n}),markAsReady:t}}window.LoadSnipcart=r;window._ecomSDK=v();document.readyState==="loading"?document.addEventListener("DOMContentLoaded",o):o();function o(){window.SnipcartSettings.loadStrategy?window.SnipcartSettings.loadStrategy==="on-user-interaction"&&(m.forEach(function(t){return document.addEventListener(t,r)}),setTimeout(r,window.SnipcartSettings.timeoutDuration)):r()}var a=!1;function r(){if(a)return;a=!0;let t=document.getElementsByTagName("head")[0],e=document.querySelector("#snipcart"),n=document.querySelector('src[src^="'.concat(window.SnipcartSettings.baseUrl,'"][src$="snipcart.js"]')),i=document.querySelector('link[href^="'.concat(window.SnipcartSettings.baseUrl,'"][href$="snipcart.css"]'));e||(e=document.createElement("div"),e.id="snipcart",e.setAttribute("hidden","true"),document.body.appendChild(e)),y(e),n||(n=document.createElement("script"),n.src="".concat(window.SnipcartSettings.baseUrl,"themes/v").concat(window.SnipcartSettings.version,"/default/snipcart.js"),n.async=!0,t.appendChild(n)),!i&&window.SnipcartSettings.loadCSS&&(i=document.createElement("link"),i.rel="stylesheet",i.type="text/css",i.href="".concat(window.SnipcartSettings.baseUrl,"themes/v").concat(window.SnipcartSettings.version,"/default/snipcart.css"),t.prepend(i)),m.forEach(function(g){return document.removeEventListener(g,r)})}function y(t){!f||(t.dataset.apiKey=window.SnipcartSettings.publicApiKey,window.SnipcartSettings.addProductBehavior&&(t.dataset.configAddProductBehavior=window.SnipcartSettings.addProductBehavior),window.SnipcartSettings.modalStyle&&(t.dataset.configModalStyle=window.SnipcartSettings.modalStyle),window.SnipcartSettings.currency&&(t.dataset.currency=window.SnipcartSettings.currency),window.SnipcartSettings.templatesUrl&&(t.dataset.templatesUrl=window.SnipcartSettings.templatesUrl))}})();
+</script>
+
+
+
+<!-- ========= Site Content ========= -->
+<div id="dm" class='dmwr'>
+    
+    <div class="dm_wrapper mobileHamburgerLayout-var5 null mobileHamburgerLayout">
+         <div dmwrapped="true" id="1901957768" class="dm-home-page" themewaschanged="true"> <div dmtemplateid="mobileHamburgerLayout" class="runtime-module-container dm-bfs dm-layout-sec hasAnimations rows-1200 hamburger-reverse dmPageBody d-page-1716942098 dmFreeHeader" id="dm-outer-wrapper" data-page-class="1716942098" data-soch="true" data-background-parallax-selector=".dmHomeSection1, .dmSectionParallex"> <div id="dmStyle_outerContainer" class="dmOuter"> <div id="dmStyle_innerContainer" class="dmInner"> <div class="dmLayoutWrapper standard-var dmStandardMobile"> <div id="site_content"> <div class="p_hfcontainer"> <div id="mobile-hamburger-drawer" class="hamburger-drawer layout-drawer" layout="SHARD2cd89d780a3b64f17a737ed98a3b62b7a===header" data-origin="top"> <div class="dmRespRow u_1667675395" style="text-align: center;" id="1667675395"> <div class="dmRespColsWrapper" id="1118519776"> <div class="u_1492314309 dmRespCol small-12 medium-12 large-12" id="1492314309"> <div class="u_1754979000 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1754979000"><img src="https://lirp.cdn-website.com/3f2e341a/dms3rep/multi/opt/CC+Logo+White-640w.png" id="1826327806" class="" data-dm-image-path="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/CC+Logo+White.png" width="1920" height="1483" onerror="handleImageLoadError(this)"/></div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1516236200 dmRespRow middleDrawerRow" style="text-align: center;" id="1516236200"> <div class="dmRespColsWrapper" id="1524721309"> <div class="dmRespCol small-12 medium-12 large-12 u_1799028381" id="1799028381"> <nav class="u_1321072809 effect-text-color main-navigation unifiednav dmLinksMenu" role="navigation" layout-main="vertical_nav_layout_4" layout-sub="submenu_horizontal_1" data-show-vertical-sub-items="HIDE" id="1321072809" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" data-nav-structure="VERTICAL" wr="true" icon="true" surround="true" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container  " data-auto="navigation-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/" class="unifiednav__item  dmUDNavigationItem_00  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         ↑Top
+        " data-auto="page-text-style">&uarr;Top<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" aria-haspopup="true" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="#" class="unifiednav__item  dmUDNavigationItem_010101585543  unifiednav__item_has-sub-nav" target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Portfolio" data-auto="page-text-style">Portfolio<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+ <ul role="menu" aria-expanded="false" class="unifiednav__container unifiednav__container_sub-nav" data-depth="0" data-auto="sub-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="./portfolio.html" class="unifiednav__item  dmNavItemSelected  dmUDNavigationItem_010101538546  " target="" data-target-page-alias="" data-auto="selected-page"> <span class="nav-item-text " data-link-text="Portraits" data-auto="page-text-style">Portraits<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="./weddings.html" class="unifiednav__item  dmUDNavigationItem_010101675626  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Weddings" data-auto="page-text-style">Weddings<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="./city-of-dreams.html" class="unifiednav__item  dmUDNavigationItem_010101568217  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="City Of Dreams" data-auto="page-text-style">City Of Dreams<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="./client-work.html" class="unifiednav__item  dmUDNavigationItem_010101325997  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Client Work" data-auto="page-text-style">Client Work<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="./legacy.html" class="unifiednav__item  dmUDNavigationItem_010101685190  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="The Art Of Legacy" data-auto="page-text-style">The Art Of Legacy<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="./index.html#expertises" class="unifiednav__item  dmUDNavigationItem_010101291418  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Expertise" data-auto="page-text-style">Expertise<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0" data-hidden-on-desktop="" data-hidden-on-tablet=""> <a href="/#Agency" class="unifiednav__item  dmUDNavigationItem_010101159602  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="About" data-auto="page-text-style">About<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="/contact" class="unifiednav__item  dmUDNavigationItem_010101486217  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Contact" data-auto="page-text-style">Contact<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" aria-haspopup="true" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="#" class="unifiednav__item  dmUDNavigationItem_010101257090  unifiednav__item_has-sub-nav" target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Book" data-auto="page-text-style">Book<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+ <ul role="menu" aria-expanded="false" class="unifiednav__container unifiednav__container_sub-nav" data-depth="0" data-auto="sub-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="https://chriscollado.bloom.io/artoflegacy" class="unifiednav__item  dmUDNavigationItem_010101777076  " target="_blank" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Legacy Project" data-auto="page-text-style">Legacy Project<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="https://chriscollado.bloom.io/leadcapture" class="unifiednav__item  dmUDNavigationItem_010101597837  " target="_blank" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Free Consultation" data-auto="page-text-style">Free Consultation<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</li> 
+</ul> 
+</nav> 
+ <div class="u_1887867779 dmDividerWrapper clearfix hasFullWidthMobile" data-element-type="dDividerId" id="1887867779" layout="divider-style-1" data-widget-version="2"><hr class="dmDivider" style="min-height:2px; border:none; background:grey;" id="1705033898"/></div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1616506888" style="text-align: center;" id="1616506888"> <div class="dmRespColsWrapper" id="1753742062"> <div class="dmRespCol small-12 medium-12 large-12 u_1795958879 content-removed" id="1795958879"> <div class="u_1313806749 dmNewParagraph" id="1313806749" style="transition: opacity 1s ease-in-out;"> <div style="text-align:left;"> <font style="color:rgb(255, 255, 255);"> <span style="font-weight:600;"> <div style="text-align: left;"> <font style="color: rgb(255, 255, 255);"> <span style="font-weight: 600;">Follow us</span> 
+</font> 
+</div> 
+</span> 
+</font> 
+</div> 
+</div> <div class="u_1067326145 align-center text-align-center dmSocialHub" id="1067326145" dmle_extension="social_hub" data-element-type="social_hub" extractelementdata="true" wr="true" networks="" icon="true" surround="true" adwords=""> <div class="socialHubWrapper"> <div class="socialHubInnerDiv "> <a href="http://instagram.com/iamchrisny" target="_blank" dm_dont_rewrite_url="true" aria-label="instagram" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Instagram&apos;)"> <span class="dmSocialInstagram dm-social-icons-instagram oneIcon socialHubIcon style5" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="https://vimeo.com/iamchriscollado" target="_blank" dm_dont_rewrite_url="true" aria-label="vimeo" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Vimeo&apos;)"> <span class="dmSocialVimeo dm-social-icons-vimeo oneIcon socialHubIcon style5" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="https://www.threads.net/@iamchrisny" target="_blank" dm_dont_rewrite_url="true" aria-label="Social network" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Custom1&apos;)"> <span class="dmSocialCustom1 oneIcon socialHubIcon style5" aria-hidden="true" data-hover-effect=""> <svg width="100%" height="100%" version="1.1" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"> <path d="m68.348 52.812c-0.10938 0.34766-0.20312 0.66406-0.30469 0.97656-1.0781 3.3477-2.6875 6.4141-4.9609 9.1094-1.7148 2.0312-3.7305 3.6914-6.1328 4.8594-1.793 0.875-3.6875 1.3828-5.6797 1.5078-3.875 0.24609-7.4297-0.70703-10.641-2.8828-1.8867-1.2773-3.3789-2.9336-4.3672-5.0039-0.65625-1.3711-0.98047-2.8203-1.0156-4.3359-0.058594-2.7578 0.83203-5.1992 2.4648-7.3945 1.5938-2.1445 3.6406-3.7422 6.0195-4.9258 2.0977-1.043 4.3164-1.7188 6.6289-2.0898 1.5703-0.25391 3.1484-0.37891 4.7344-0.37891 1.543 0 3.0781 0.11719 4.6133 0.29297 0.42969 0.050781 0.85938 0.10547 1.2852 0.15234 0.074218 0.007812 0.15234 0 0.26172 0-0.023437-0.12109-0.035156-0.22266-0.058594-0.32422-0.33594-1.4961-0.91406-2.8867-1.7734-4.1641-1.2539-1.8594-2.9453-3.0938-5.1094-3.6953-1.6562-0.46094-3.3438-0.52734-5.043-0.42969-1.3164 0.074218-2.5898 0.34375-3.8125 0.83203-0.85938 0.34375-1.6562 0.79688-2.3633 1.4023-0.16406 0.14063-0.28125 0.30078-0.37109 0.5-0.71875 1.5898-2.3047 2.4805-4.0547 2.2891-1.6445-0.17969-3.082-1.5-3.4141-3.1523-0.21875-1.0898-0.039062-2.1172 0.51953-3.0742 0.55469-0.94922 1.3047-1.7383 2.1211-2.457 1.3672-1.207 2.918-2.1172 4.6133-2.793 1.9102-0.76172 3.8867-1.2109 5.9336-1.3672 1.4297-0.10938 2.8594-0.11328 4.2852 0.015625 3.7578 0.33984 7.1797 1.5469 10.086 4.0117 1.957 1.6602 3.4414 3.6914 4.5547 5.9961 1.0312 2.1367 1.6562 4.3906 1.8906 6.75 0.054688 0.53906 0.089844 1.0781 0.14063 1.6328 0.30469 0.125 0.61328 0.25 0.91797 0.375 1.8477 0.76172 3.5508 1.7617 5.0781 3.0547 2.0469 1.7305 3.5234 3.8789 4.5625 6.3359 0.90234 2.1367 1.4609 4.3633 1.7461 6.6641 0.21875 1.7656 0.26953 3.5391 0.16016 5.3125-0.41016 6.6484-3.0234 12.305-7.7852 16.965-3.0156 2.9531-6.5312 5.1133-10.457 6.625-2.4922 0.95703-5.0625 1.6133-7.7109 1.957-2.1367 0.27734-4.2852 0.39062-6.4375 0.30469-4.5273-0.18359-8.8945-1.0703-13.07-2.8711-4.8086-2.0781-8.7461-5.2578-12.027-9.3086-3.2539-4.0195-5.5195-8.5469-7.0938-13.449-0.92578-2.8867-1.5938-5.832-2.0703-8.8242-0.31641-1.9922-0.53906-3.9961-0.67578-6.0078-0.125-1.8359-0.19922-3.6758-0.16797-5.5156 0.089843-4.957 0.73828-9.8281 2.2461-14.566 1.5391-4.8438 3.957-9.1953 7.4102-12.938 4.7812-5.1719 10.629-8.5195 17.496-10.082 2.4375-0.55469 4.9102-0.85547 7.4062-0.94922 2.0742-0.078125 4.1484-0.054687 6.2148 0.10547 3.6367 0.28516 7.2109 0.89062 10.66 2.1211 2.9531 1.0508 5.7109 2.4688 8.1992 4.3906 2.7695 2.1367 4.957 4.7734 6.7305 7.7734 0.93359 1.5781 1.7344 3.2188 2.5469 4.8555 0.60156 1.2109 1.1914 2.4258 1.7734 3.6484 0.29297 0.61328 0.50781 1.25 0.58203 1.9336 0.25 2.2773-1.4727 4.2578-3.707 4.3594-1.6328 0.074219-3.1719-0.875-3.8281-2.4648-0.3125-0.75781-0.64062-1.5078-1-2.2422-0.73828-1.5117-1.4922-3.0195-2.2617-4.5156-0.75-1.4609-1.6094-2.8594-2.6328-4.1484-1.668-2.1016-3.7305-3.7148-6.1172-4.9258-2.2305-1.1289-4.582-1.8867-7.0391-2.3398-1.4492-0.26953-2.9102-0.47656-4.3789-0.58594-1.957-0.14062-3.918-0.18359-5.8828-0.082031-3.0742 0.16016-6.0859 0.65625-8.9648 1.7578-6.3828 2.4336-11.117 6.7109-14.16 12.836-1.2539 2.5273-2.0508 5.2109-2.5938 7.9727-0.38672 1.9805-0.65625 3.9805-0.74609 6-0.054687 1.2305-0.11719 2.4609-0.097656 3.6875 0.03125 1.9297 0.15234 3.8516 0.35938 5.7734 0.34375 3.1797 0.92969 6.3125 1.8164 9.3828 0.89453 3.1016 2.0977 6.0742 3.7812 8.8359 1.2852 2.1133 2.8164 4.0312 4.5781 5.7695 2.5195 2.4805 5.4922 4.207 8.832 5.3281 2.1758 0.73047 4.4102 1.1445 6.6953 1.3477 2.0625 0.18359 4.1211 0.15234 6.1758-0.09375 4.3867-0.52344 8.418-1.9922 11.98-4.6367 2.5508-1.8945 4.5898-4.2305 5.9609-7.1211 0.72656-1.5352 1.1719-3.1523 1.4297-4.8242 0.21484-1.3867 0.25781-2.7812 0.18359-4.1797-0.11328-2.1289-0.53906-4.1914-1.3945-6.1562-0.85156-1.957-2.2305-3.418-4.1094-4.4141-0.039063-0.019532-0.078125-0.035156-0.15625-0.070313zm-7.5703-2.1836c-0.13281-0.027344-0.23047-0.050781-0.32812-0.0625-0.625-0.078125-1.2539-0.15625-1.8789-0.22266-1.4336-0.15234-2.8672-0.25391-4.3125-0.19922-1.4766 0.058594-2.9375 0.23828-4.3633 0.62109-1.6172 0.43359-3.1367 1.0898-4.4648 2.1328-0.87109 0.6875-1.6016 1.5039-2.043 2.5352-0.30469 0.71484-0.38672 1.4531-0.16016 2.207 0.17188 0.57812 0.52344 1.0469 0.92969 1.4766 0.72266 0.76172 1.6016 1.2891 2.5742 1.668 1.8281 0.71094 3.6953 0.90234 5.5977 0.35547 1.3477-0.38672 2.4961-1.1289 3.5273-2.0586 1.3594-1.2266 2.4023-2.6875 3.2617-4.293 0.70703-1.3125 1.25-2.6875 1.6602-4.1641z"></path> 
+</svg> 
+</span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="layout-drawer-overlay" id="layout-drawer-overlay"></div> 
+</div> 
+ <div class="site_content"> <div id="hamburger-header-container" class="hamburger-header-container p_hfcontainer"> <div id="mobile-hamburger-header" class="hamburger-header p_hfcontainer" layout="SHARD2837ce1cb59c8431ea7fd0dcd9b0a381f===header" data-scrollable-target="body" data-scroll-responder-id="mobile-hamburger-header"> <div class="u_1278181081 dmRespRow dmDefaultListContentRow fullBleedChanged fullBleedMode" style="text-align:center" id="1278181081" mode="2"> <div class="dmRespColsWrapper" id="1218959874"> <div class="u_1665855789 dmRespCol medium-6 large-6 small-2 empty-column" id="1665855789"></div> 
+ <div class="u_1925011617 dmRespCol medium-6 large-6 small-10" id="1925011617"> <div class="u_1009830278 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1009830278"> <a id="1605811840" class="" href="/" file="false"><img src="https://lirp.cdn-website.com/3f2e341a/dms3rep/multi/opt/CC+Logo+White-640w.png" id="1371284002" class="" data-dm-image-path="https://lirp.cdn-website.com/3f2e341a/dms3rep/multi/opt/CC+Logo+White-640w.png" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <button class="layout-drawer-hamburger hamburger-on-header" id="layout-drawer-hamburger" aria-label="menu"> <span class="hamburger__slice"></span> 
+ <span class="hamburger__slice"></span> 
+ <span class="hamburger__slice"></span> 
+</button> 
+ <div dmwrapped="true" id="dmFirstContainer" class="dmBody u_dmStyle_template_portfolio dm-home-page" themewaschanged="true"> <div id="allWrapper" class="allWrapper"><!-- navigation placeholders --> <div id="dm_content" class="dmContent"> <div dm:templateorder="170" class="dmHomeRespTmpl mainBorder dmRespRowsWrapper dmFullRowRespTmpl" id="1716942098"> <div data-flex-id="af3429b4" data-auto="flex-section" id="1768433757" data-layout-section=""> <div class="flex-widgets-container" id="1475834157"></div> 
+ <section id="70e90e40" class="flex-element section" data-auto="flex-element-section"> <div id="7939c203" class="flex-element grid hasExtraLayerOverlay relativePos" data-auto="flex-element-grid" data-layout-grid="" data-video-bg-url="https://vid.cdn-website.com/3f2e341a/videos/4GggfQzR6iiTT8rbS3vK_Roses+Web-v.mp4" data-video-bg-mobile="true" data-video-bg="eyJzcmMiOiJodHRwczovL3ZpZC5jZG4td2Vic2l0ZS5jb20vM2YyZTM0MWEvdmlkZW9zLzRHZ2dmUXpSNmlpVFQ4cmJTM3ZLX1Jvc2VzK1dlYi12Lm1wNCIsImlkIjoiaHR0cHM6Ly92aWQuY2RuLXdlYnNpdGUuY29tLzNmMmUzNDFhL3ZpZGVvcy80R2dnZlF6UjZpaVRUOHJiUzN2S19Sb3NlcytXZWItdi5tcDQiLCJwcm92aWRlciI6ImNkbiIsImVtYmVkIjoiaHR0cHM6Ly92aWQuY2RuLXdlYnNpdGUuY29tLzNmMmUzNDFhL3ZpZGVvcy80R2dnZlF6UjZpaVRUOHJiUzN2S19Sb3NlcytXZWItdi5tcDQiLCJyYXRpbyI6MC41NjI1LCJ0aHVtYm5haWwiOiJodHRwczovL2lycC5jZG4td2Vic2l0ZS5jb20vM2YyZTM0MWEvZG1zM3JlcC9tdWx0aS80R2dnZlF6UjZpaVRUOHJiUzN2S19Sb3NlcytXZWIudjIuMDAwMDAwMC5qcGciLCJzdXBwb3J0QmdPbk1vYmlsZSI6dHJ1ZSwic3VwcG9ydEJnTG9vcCI6dHJ1ZSwidmlkZW9VcmwiOiJodHRwczovL3ZpZC5jZG4td2Vic2l0ZS5jb20vM2YyZTM0MWEvdmlkZW9zLzRHZ2dmUXpSNmlpVFQ4cmJTM3ZLX1Jvc2VzK1dlYi12Lm1wNCIsInBvc3RlciI6Imh0dHBzOi8vaXJwLmNkbi13ZWJzaXRlLmNvbS8zZjJlMzQxYS9kbXMzcmVwL211bHRpLzRHZ2dmUXpSNmlpVFQ4cmJTM3ZLX1Jvc2VzK1dlYi52Mi4wMDAwMDAwLmpwZyJ9" data-video-init="true"> <div class="videobgwrapper video-ssr" data-ratio="0.5625"> <video autoplay="autoplay" playsinline="playsinline" muted="muted" loop="loop" class="videobgframe" poster="https://lirp.cdn-website.com/3f2e341a/dms3rep/multi/opt/4GggfQzR6iiTT8rbS3vK_Roses+Web.v2.0000000-640w.jpg" src="https://vid.cdn-website.com/3f2e341a/videos/4GggfQzR6iiTT8rbS3vK_Roses+Web-v.mp4" style="object-position: 50% 50%" id="videobgframe-7939c203"></video> 
+</div> 
+ <div class="bgExtraLayerOverlay"></div> 
+ <div id="89677677" class="flex-element group" data-auto="flex-element-group"> <div id="f43199ef" class="flex-element group" data-auto="flex-element-group"> <div id="8555b2ca" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1710170629"> <div class="dmNewParagraph skip-animation-effect skip-hover-effect" data-element-type="paragraph" data-version="5" id="1710170629" style=""> <h1 class="m-text-align-center text-align-center size-72 m-size-58" style="letter-spacing: -0.05em;"><span class="font-size-72 m-font-size-58" style="color:rgb(255, 255, 255);font-weight:normal;display:unset;font-family:ITCAvantGardePro-BoldObl;">PORTRAITS</span></h1> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</section> 
+</div> 
+ <div data-flex-id="b8a27c02" data-auto="flex-section" id="1977997218" data-layout-section=""> <div class="flex-widgets-container" id="1945412906"> <div class="graphicWidget u_1433910778" data-element-type="graphic" data-widget-type="graphic" id="1433910778"> <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 70 70" id="1732673912" class="svg u_1732673912" data-icon-name="wp-road_signs"> <polygon points="51,30 60,22 51,14 36,14 36,10 34,10 34,14 20,14 20,30 34,30 34,34 19,34 10,42 19,50 34,50 34,60 36,60 36,50 
+	50,50 50,34 36,34 36,30 "></polygon> 
+</svg> 
+</div> 
+ <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1014173944" style=""><p class="m-size-14 size-18"> <span class="m-font-size-14 font-size-18" style="color:rgb(0, 0, 0);display:unset;">This is a paragraph. Writing in paragraphs lets visitors find what they are looking for quickly and easily.</span> 
+</p></div> 
+ <a data-display-type="block" class="align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient" file="false" href="/" data-element-type="dButtonLinkId" id="1865208844"> <span class="iconBg" id="1425030638"> <span class="icon hasFontIcon icon-star" id="1383237780"></span> 
+</span> 
+ <span class="text" id="1902996852">Learn more</span> 
+</a> 
+ <a data-display-type="block" class="align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient" file="false" href="/" data-element-type="dButtonLinkId" id="1424769181"> <span class="iconBg" id="1443114570"> <span class="icon hasFontIcon icon-star" id="1238203406"></span> 
+</span> 
+ <span class="text" id="1889846526">Learn more</span> 
+</a> 
+ <div class="graphicWidget u_1237496434" data-element-type="graphic" data-widget-type="graphic" id="1237496434"> <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 70 70" id="1478498220" class="svg u_1478498220" data-icon-name="wp-road_signs"> <polygon points="51,30 60,22 51,14 36,14 36,10 34,10 34,14 20,14 20,30 34,30 34,34 19,34 10,42 19,50 34,50 34,60 36,60 36,50 
+	50,50 50,34 36,34 36,30 "></polygon> 
+</svg> 
+</div> 
+ <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1362167295"><p class="m-size-14 size-18"> <span class="font-size-18 m-font-size-14" style="color:rgb(45, 46, 50);display:unset;">This is a paragraph. Writing in paragraphs lets visitors find what they are looking for quickly and easily.</span> 
+</p></div> 
+ <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1502835464"><p class="m-size-14 size-18"> <span class="font-size-18 m-font-size-14" style="color:rgb(45, 46, 50);display:unset;">This is a paragraph. Writing in paragraphs lets visitors find what they are looking for quickly and easily.</span> 
+</p></div> 
+ <a data-display-type="block" class="align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient" file="false" href="/" data-element-type="dButtonLinkId" id="1982342673"> <span class="iconBg" id="1221744068"> <span class="icon hasFontIcon icon-star" id="1099200798"></span> 
+</span> 
+ <span class="text" id="1896878766">Learn more</span> 
+</a> 
+ <div class="graphicWidget u_1592198911" data-element-type="graphic" data-widget-type="graphic" id="1592198911"> <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 70 70" id="1703736690" class="svg u_1703736690" data-icon-name="wp-road_signs"> <polygon points="51,30 60,22 51,14 36,14 36,10 34,10 34,14 20,14 20,30 34,30 34,34 19,34 10,42 19,50 34,50 34,60 36,60 36,50 
+	50,50 50,34 36,34 36,30 "></polygon> 
+</svg> 
+</div> 
+ <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1364235788" style=""><p class="m-size-14 size-18"> <span class="m-font-size-14 font-size-18" style="color:rgb(0, 0, 0);display:unset;">This is a paragraph. Writing in paragraphs lets visitors find what they are looking for quickly and easily.</span> 
+</p></div> 
+ <a data-display-type="block" class="align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient" file="false" href="/" data-element-type="dButtonLinkId" id="1196682357"> <span class="iconBg" id="1726234261"> <span class="icon hasFontIcon icon-star" id="1990411657"></span> 
+</span> 
+ <span class="text" id="1632912550">Learn more</span> 
+</a> 
+ <div class="graphicWidget u_1072901936" data-element-type="graphic" data-widget-type="graphic" id="1072901936"> <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 70 70" id="1930214547" class="svg u_1930214547" data-icon-name="wp-location_cursor"> <path d="M41,60c0,0-0.1,0-0.1,0c-0.5-0.1-0.8-0.4-0.9-0.9l-2.9-26.2L10.9,30c-0.5-0.1-0.8-0.4-0.9-0.9c-0.1-0.5,0.2-0.9,0.6-1.1
+	l48-18c0.4-0.1,0.8,0,1.1,0.2c0.3,0.3,0.4,0.7,0.2,1.1l-18,48C41.8,59.7,41.4,60,41,60z"></path> 
+</svg> 
+</div> 
+ <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1540062605" style=""><p class="m-size-14 size-18"> <span class="m-font-size-14 font-size-18" style="color:rgb(0, 0, 0);display:unset;">This is a paragraph. Writing in paragraphs lets visitors find what they are looking for quickly and easily.</span> 
+</p></div> 
+ <a data-display-type="block" class="align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient" file="false" href="/" data-element-type="dButtonLinkId" id="1936361093"> <span class="iconBg" id="1492661330"> <span class="icon hasFontIcon icon-star" id="1540000612"></span> 
+</span> 
+ <span class="text" id="1683649430">Learn more</span> 
+</a> 
+ <div class="graphicWidget u_1178006568" data-element-type="graphic" data-widget-type="graphic" id="1178006568"> <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 70 70" id="1280494436" class="svg u_1280494436" data-icon-name="wp-bullhorn"> <path d="M53,17c-0.4,0-0.8,0.1-1.1,0.2c0,0-38.6,12.7-39.2,12.8c-1.6,0.5-2.7,2.5-2.7,5s1.1,4.5,2.7,5c0.2,0.1,4.4,1.4,9.9,3.2
+	l-0.4,1.1c-0.8,2.4,0.4,5,2.8,5.8l7.3,2.6c0.5,0.2,1,0.3,1.6,0.3c0.7,0,1.4-0.2,2-0.5c1.1-0.5,2-1.5,2.4-2.6l0.5-1.4
+	c7.1,2.3,13.1,4.3,13.1,4.3c0.4,0.1,0.7,0.2,1.1,0.2c4.5,0,7-9.3,7-18S57.5,17,53,17z M36.4,49.3c-0.2,0.7-0.7,1.2-1.3,1.5
+	c-0.6,0.3-1.3,0.3-2,0.1l-7.3-2.6c-1.3-0.5-2-2-1.6-3.3l0.4-1.1c3.9,1.3,8.3,2.7,12.4,4.1L36.4,49.3z M53,51c-2.1,0-5-6.1-5-16
+	s2.9-16,5-16c2.1,0,5,6.1,5,16S55.1,51,53,51z"></path> 
+</svg> 
+</div> 
+ <div class="dmNewParagraph u_1406272526" data-element-type="paragraph" data-version="5" id="1406272526" style=""><p class="text-align-center" style="line-height: 1;"><span style="display: initial;"><br/></span></p> <h3 class="size-20 m-size-16 text-align-center"> <span class="font-size-20 m-font-size-16" style="color:rgb(0, 0, 0);display:initial;">Name Lastname</span> 
+</h3> 
+<p class="text-align-center" style="line-height: 0.8;"><span style="display: initial;"><br/></span></p><p class="m-size-13 text-align-center size-16" style="line-height: 0.8;"> <span class="m-font-size-13 font-size-16" style="color:rgb(0, 0, 0);display:initial;">Title</span> 
+</p><p class="text-align-center" style="line-height: 1;"><span style="display: initial;"><br/></span></p></div> 
+ <div class="dmNewParagraph u_1388593454" data-element-type="paragraph" data-version="5" id="1388593454" style=""><p class="text-align-center" style="line-height: 1;"><span style="display: initial;"><br/></span></p> <h3 class="size-20 m-size-16 text-align-center"> <span class="font-size-20 m-font-size-16" style="color:rgb(0, 0, 0);display:initial;">Name Lastname</span> 
+</h3> 
+<p class="text-align-center" style="line-height: 0.8;"><span style="display: initial;"><br/></span></p><p class="m-size-13 text-align-center size-16" style="line-height: 0.8;"> <span class="m-font-size-13 font-size-16" style="color:rgb(0, 0, 0);display:initial;">Title</span> 
+</p><p class="text-align-center" style="line-height: 1;"><span style="display: initial;"><br/></span></p></div> 
+ <div class="dmNewParagraph u_1270838560" data-element-type="paragraph" data-version="5" id="1270838560" style=""><p class="text-align-center" style="line-height: 1;"><span style="display: initial;"><br/></span></p> <h3 class="size-20 m-size-16 text-align-center"> <span class="font-size-20 m-font-size-16" style="color:rgb(0, 0, 0);display:initial;">Name Lastname</span> 
+</h3> 
+<p class="text-align-center" style="line-height: 0.8;"><span style="display: initial;"><br/></span></p><p class="m-size-13 text-align-center size-16" style="line-height: 0.8;"> <span class="m-font-size-13 font-size-16" style="color:rgb(0, 0, 0);display:initial;">Title</span> 
+</p><p class="text-align-center" style="line-height: 1;"><span style="display: initial;"><br/></span></p></div> 
+</div> 
+ <section id="a8c621c8" class="flex-element section" data-auto="flex-element-section"> <div id="f0defab0" class="flex-element grid" data-auto="flex-element-grid" data-layout-grid=""> <div id="514395ee" class="flex-element group" data-auto="flex-element-group"> <div id="84224959" class="flex-element group" data-auto="flex-element-group"> <div id="24e00cc6" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="photoGallery" data-external-id="1614552840"> <div class="dmPhotoGallery newPhotoGallery dmPhotoGalleryResp u_1614552840" galleryoptionsparams="{thumbnailsPerRow: 3, rowsToShow: 3, imageScaleMethod: true}" data-desktop-layout="asymetric2" data-desktop-columns="4" data-element-type="dPhotoGalleryId" data-desktop-text-layout="over" id="1614552840" data-placeholder="false" data-rows-to-show="100" data-image-hover-effect="zoomout" data-enable-lazy-loading="false" data-dm-multisize-skip-opt="true" data-image-animation="none" data-hide-share="true"> <ul class="dmPhotoGalleryHolder clearfix gallery shadowEffectToChildren gallery4inArow" id="1275649424"> <li class="photoGalleryThumbs" id="1268379421"> <div class="image-container" id="1750305849"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC02208.jpg" id="1421574014"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC02208.jpg" id="1450333133" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1865950893"> <span class="caption-inner" id="1256100351"> <a class="caption-button dmWidget clearfix" id="1064937962"> <span class="iconBg" id="1083047842"> <span class="icon hasFontIcon icon-star" id="1752859861"></span> 
+</span> 
+ <span class="text" id="1050763866">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1668901588"> <div class="image-container" id="1328994517"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC00709.jpeg" id="1763381783"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC00709.jpeg" id="1259847619" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1506890889"> <span class="caption-inner" id="1857408487"> <a class="caption-button dmWidget clearfix" id="1773868054"> <span class="iconBg" id="1383969564"> <span class="icon hasFontIcon icon-star" id="1896966161"></span> 
+</span> 
+ <span class="text" id="1364337841">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1763833059"> <div class="image-container" id="1808616151"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC00589.jpeg" id="1798157317"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC00589.jpeg" id="1972485157" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1650357112"> <span class="caption-inner" id="1218102946"> <a class="caption-button dmWidget clearfix" id="1221042718"> <span class="iconBg" id="1467123024"> <span class="icon hasFontIcon icon-star" id="1818654120"></span> 
+</span> 
+ <span class="text" id="1923332339">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1454979215"> <div class="image-container" id="1503779353"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC04336.jpeg" id="1446076561"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC04336.jpeg" id="1964803934" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1101890288"> <span class="caption-inner" id="1049737940"> <a class="caption-button dmWidget clearfix" id="1102976213"> <span class="iconBg" id="1414714729"> <span class="icon hasFontIcon icon-star" id="1315109333"></span> 
+</span> 
+ <span class="text" id="1177424244">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1016594265"> <div class="image-container" id="1203446363"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC08855.jpg" id="1319220967"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC08855.jpg" id="1622869739" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1273112766"> <span class="caption-inner" id="1535865337"> <a class="caption-button dmWidget clearfix" id="1725203538"> <span class="iconBg" id="1513098134"> <span class="icon hasFontIcon icon-star" id="1837785587"></span> 
+</span> 
+ <span class="text" id="1602275785">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1020898346"> <div class="image-container" id="1710458889"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC0077677.jpeg" id="1629769795"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC0077677.jpeg" id="1116895996" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1757567784"> <span class="caption-inner" id="1647920850"> <a class="caption-button dmWidget clearfix" id="1637198001"> <span class="iconBg" id="1081125396"> <span class="icon hasFontIcon icon-star" id="1268367836"></span> 
+</span> 
+ <span class="text" id="1101802016">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1871012342"> <div class="image-container" id="1242750676"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC05989.jpg" id="1791471415"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC05989.jpg" id="1969666860" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1854118333"> <span class="caption-inner" id="1804637053"> <a class="caption-button dmWidget clearfix" id="1682261989"> <span class="iconBg" id="1486790086"> <span class="icon hasFontIcon icon-star" id="1985273827"></span> 
+</span> 
+ <span class="text" id="1595622896">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1136248241"> <div class="image-container" id="1779052458"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC04030.jpg" id="1127035194"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC04030.jpg" id="1072644697" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1493521104"> <span class="caption-inner" id="1868402685"> <a class="caption-button dmWidget clearfix" id="1051269197"> <span class="iconBg" id="1336617019"> <span class="icon hasFontIcon icon-star" id="1007819507"></span> 
+</span> 
+ <span class="text" id="1785452818">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1228452628"> <div class="image-container" id="1347378917"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/Jrbjd92-0-2521sizeoriginal_Original.JPG" id="1486392771"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/Jrbjd92-0-2521sizeoriginal_Original.JPG" id="1884288841" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1566159406"> <span class="caption-inner" id="1914440730"> <a class="caption-button dmWidget clearfix" id="1631213789"> <span class="iconBg" id="1469120406"> <span class="icon hasFontIcon icon-star" id="1239929396"></span> 
+</span> 
+ <span class="text" id="1363167045">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1370290669"> <div class="image-container" id="1077298115"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC02447.jpg" id="1775354365"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC02447.jpg" id="1576683889" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1830471524"> <span class="caption-inner" id="1194257841"> <a class="caption-button dmWidget clearfix" id="1619364109"> <span class="iconBg" id="1215251073"> <span class="icon hasFontIcon icon-star" id="1695916741"></span> 
+</span> 
+ <span class="text" id="1306335250">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1612387394"> <div class="image-container" id="1975153594"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC09826.jpg" id="1276382423"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC09826.jpg" id="1401834119" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1939660080"> <span class="caption-inner" id="1857339169"> <a class="caption-button dmWidget clearfix" id="1520552926"> <span class="iconBg" id="1967854940"> <span class="icon hasFontIcon icon-star" id="1730884524"></span> 
+</span> 
+ <span class="text" id="1971102787">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1196930674"> <div class="image-container" id="1300802623"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC08872.JPG" id="1271024802"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC08872.JPG" id="1808786933" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1668530695"> <span class="caption-inner" id="1548987564"> <a class="caption-button dmWidget clearfix" id="1991126722"> <span class="iconBg" id="1368863161"> <span class="icon hasFontIcon icon-star" id="1031567423"></span> 
+</span> 
+ <span class="text" id="1470068324">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1455946020"> <div class="image-container" id="1455920132"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC09028+X+GB.jpg" id="1810220307"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC09028+X+GB.jpg" id="1613385240" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1836534883"> <span class="caption-inner" id="1049557848"> <a class="caption-button dmWidget clearfix" id="1805021036"> <span class="iconBg" id="1007651672"> <span class="icon hasFontIcon icon-star" id="1476981685"></span> 
+</span> 
+ <span class="text" id="1263755252">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1292005968"> <div class="image-container" id="1338743903"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/0E6F9D79-412A-413D-AB61-C44AF382B270.JPG" id="1588045724"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/0E6F9D79-412A-413D-AB61-C44AF382B270.JPG" id="1786851618" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1360081655"> <span class="caption-inner" id="1742572733"> <a class="caption-button dmWidget clearfix" id="1070639716"> <span class="iconBg" id="1533305868"> <span class="icon hasFontIcon icon-star" id="1444647254"></span> 
+</span> 
+ <span class="text" id="1872642477">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1529139001"> <div class="image-container" id="1312227591"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC07370.jpg" id="1142236422"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC07370.jpg" id="1635086143" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1144733607"> <span class="caption-inner" id="1737253697"> <a class="caption-button dmWidget clearfix" id="1937256631"> <span class="iconBg" id="1203980758"> <span class="icon hasFontIcon icon-star" id="1584507470"></span> 
+</span> 
+ <span class="text" id="1784897711">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1073786624"> <div class="image-container" id="1380350743"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC07511.jpg" id="1516796785"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC07511.jpg" id="1750263319" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1180919188"> <span class="caption-inner" id="1435027685"> <a class="caption-button dmWidget clearfix" id="1424353807"> <span class="iconBg" id="1146551888"> <span class="icon hasFontIcon icon-star" id="1903263629"></span> 
+</span> 
+ <span class="text" id="1605462687">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1687016904"> <div class="image-container" id="1939427708"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/md/pexels/dms3rep/multi/pexels-photo-2825034.jpeg" id="1664610585"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/md/pexels/dms3rep/multi/pexels-photo-2825034.jpeg" id="1257557156" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1100450533"> <span class="caption-inner" id="1354225454"> <a class="caption-button dmWidget clearfix" id="1351309099"> <span class="iconBg" id="1252108256"> <span class="icon hasFontIcon icon-star" id="1572767774"></span> 
+</span> 
+ <span class="text" id="1352497396">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1024597004"> <div class="image-container" id="1111978337"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC06749.jpg" id="1176310774"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC06749.jpg" id="1631281019" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1147569946"> <span class="caption-inner" id="1024097472"> <a class="caption-button dmWidget clearfix" id="1951174702"> <span class="iconBg" id="1819015941"> <span class="icon hasFontIcon icon-star" id="1980356713"></span> 
+</span> 
+ <span class="text" id="1750402287">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1816886233"> <div class="image-container" id="1285046587"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/md/pexels/dms3rep/multi/pexels-photo-4823732.jpeg" id="1175613697"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/md/pexels/dms3rep/multi/pexels-photo-4823732.jpeg" id="1204510556" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1099299003"> <span class="caption-inner" id="1518455162"> <a class="caption-button dmWidget clearfix" id="1961126468"> <span class="iconBg" id="1914584873"> <span class="icon hasFontIcon icon-star" id="1829584547"></span> 
+</span> 
+ <span class="text" id="1115720212">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1632121404"> <div class="image-container" id="1120454002"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC04839.jpeg" id="1769109870"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC04839.jpeg" id="1600934982" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1776607891"> <span class="caption-inner" id="1856543050"> <a class="caption-button dmWidget clearfix" id="1108489908"> <span class="iconBg" id="1331255218"> <span class="icon hasFontIcon icon-star" id="1883450828"></span> 
+</span> 
+ <span class="text" id="1417041680">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1416066384"> <div class="image-container" id="1819861860"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC01066M.jpg" id="1167879106"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC01066M.jpg" id="1566013581" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1228531289"> <span class="caption-inner" id="1179068301"> <a class="caption-button dmWidget clearfix" id="1914322239"> <span class="iconBg" id="1521176539"> <span class="icon hasFontIcon icon-star" id="1648077640"></span> 
+</span> 
+ <span class="text" id="1020580270">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1556761588"> <div class="image-container" id="1822814259"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/md/pexels/dms3rep/multi/pexels-photo-2787341.jpeg" id="1055525493"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/md/pexels/dms3rep/multi/pexels-photo-2787341.jpeg" id="1110514262" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1042019515"> <span class="caption-inner" id="1572806726"> <a class="caption-button dmWidget clearfix" id="1474381019"> <span class="iconBg" id="1675322581"> <span class="icon hasFontIcon icon-star" id="1041857204"></span> 
+</span> 
+ <span class="text" id="1297542909">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1707131606"> <div class="image-container" id="1997463956"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC03906.jpg" id="1597651125"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC03906.jpg" id="1131165128" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1179575123"> <span class="caption-inner" id="1911339274"> <a class="caption-button dmWidget clearfix" id="1384341715"> <span class="iconBg" id="1275700521"> <span class="icon hasFontIcon icon-star" id="1190353754"></span> 
+</span> 
+ <span class="text" id="1768148132">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1993288256"> <div class="image-container" id="1022967428"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/J08A6174.jpeg" id="1758474032"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/J08A6174.jpeg" id="1924272609" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1978928821"> <span class="caption-inner" id="1375133992"> <a class="caption-button dmWidget clearfix" id="1686394956"> <span class="iconBg" id="1374076797"> <span class="icon hasFontIcon icon-star" id="1835751391"></span> 
+</span> 
+ <span class="text" id="1192872369">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1180085425"> <div class="image-container" id="1732001099"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC02562.jpg" id="1973781896"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC02562.jpg" id="1944097315" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1395174815"> <span class="caption-inner" id="1736619979"> <a class="caption-button dmWidget clearfix" id="1472956052"> <span class="iconBg" id="1230177291"> <span class="icon hasFontIcon icon-star" id="1243445434"></span> 
+</span> 
+ <span class="text" id="1008374377">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1071209442"> <div class="image-container" id="1686988852"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC03696.jpg" id="1840169025"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC03696.jpg" id="1729740584" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1865435524"> <span class="caption-inner" id="1099328606"> <a class="caption-button dmWidget clearfix" id="1806580553"> <span class="iconBg" id="1168873211"> <span class="icon hasFontIcon icon-star" id="1426621642"></span> 
+</span> 
+ <span class="text" id="1837608143">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1130100376"> <div class="image-container" id="1129524216"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC03332.jpg" id="1412642254"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC03332.jpg" id="1140780709" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1585919151"> <span class="caption-inner" id="1282916741"> <a class="caption-button dmWidget clearfix" id="1647962358"> <span class="iconBg" id="1162663045"> <span class="icon hasFontIcon icon-star" id="1545986522"></span> 
+</span> 
+ <span class="text" id="1117416344">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1731495589"> <div class="image-container" id="1431905418"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/Warrior-Woman-Final.jpeg" id="1335783369"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/Warrior-Woman-Final.jpeg" id="1406077943" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1423489745"> <span class="caption-inner" id="1731534522"> <a class="caption-button dmWidget clearfix" id="1858001677"> <span class="iconBg" id="1007835424"> <span class="icon hasFontIcon icon-star" id="1866044667"></span> 
+</span> 
+ <span class="text" id="1493357758">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1009772615"> <div class="image-container" id="1542604208"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC07453.jpeg" id="1797098293"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC07453.jpeg" id="1407949805" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1113646800"> <span class="caption-inner" id="1876884801"> <a class="caption-button dmWidget clearfix" id="1012271019"> <span class="iconBg" id="1582300399"> <span class="icon hasFontIcon icon-star" id="1753679592"></span> 
+</span> 
+ <span class="text" id="1767825773">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1265272682"> <div class="image-container" id="1409823025"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/FDK-SSBK.jpeg" id="1578620428"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/FDK-SSBK.jpeg" id="1172046391" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1867605840"> <span class="caption-inner" id="1490753039"> <a class="caption-button dmWidget clearfix" id="1828218511"> <span class="iconBg" id="1979066471"> <span class="icon hasFontIcon icon-star" id="1951138150"></span> 
+</span> 
+ <span class="text" id="1734409129">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1566763476"> <div class="image-container" id="1278792105"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC01779.jpeg" id="1823599521"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC01779.jpeg" id="1386222857" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1248016090"> <span class="caption-inner" id="1086239846"> <a class="caption-button dmWidget clearfix" id="1017862627"> <span class="iconBg" id="1784940644"> <span class="icon hasFontIcon icon-star" id="1051337562"></span> 
+</span> 
+ <span class="text" id="1194310007">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1732703126"> <div class="image-container" id="1013566515"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/J08A0265.jpeg" id="1571666837"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/J08A0265.jpeg" id="1147264885" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1266807195"> <span class="caption-inner" id="1569591468"> <a class="caption-button dmWidget clearfix" id="1752002935"> <span class="iconBg" id="1061400101"> <span class="icon hasFontIcon icon-star" id="1811559691"></span> 
+</span> 
+ <span class="text" id="1651654955">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1549237889"> <div class="image-container" id="1997666591"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC00738.jpeg" id="1106179648"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC00738.jpeg" id="1151914238" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1476300668"> <span class="caption-inner" id="1254930581"> <a class="caption-button dmWidget clearfix" id="1096140219"> <span class="iconBg" id="1029974698"> <span class="icon hasFontIcon icon-star" id="1991398473"></span> 
+</span> 
+ <span class="text" id="1422009014">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1756632866"> <div class="image-container" id="1240533916"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC00819.jpeg" id="1777984082"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC00819.jpeg" id="1334187268" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1240521871"> <span class="caption-inner" id="1500517844"> <a class="caption-button dmWidget clearfix" id="1233509561"> <span class="iconBg" id="1177988668"> <span class="icon hasFontIcon icon-star" id="1688134299"></span> 
+</span> 
+ <span class="text" id="1763698638">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1779038927"> <div class="image-container" id="1482156270"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC01109F.jpeg" id="1682226251"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC01109F.jpeg" id="1235469439" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1462205687"> <span class="caption-inner" id="1014425113"> <a class="caption-button dmWidget clearfix" id="1503215438"> <span class="iconBg" id="1005513261"> <span class="icon hasFontIcon icon-star" id="1145580928"></span> 
+</span> 
+ <span class="text" id="1464260841">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1973692892"> <div class="image-container" id="1824306476"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC01066M+copy.jpg" id="1486969235"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC01066M+copy.jpg" id="1429072251" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1903397260"> <span class="caption-inner" id="1423864600"> <a class="caption-button dmWidget clearfix" id="1055344665"> <span class="iconBg" id="1104945718"> <span class="icon hasFontIcon icon-star" id="1147920800"></span> 
+</span> 
+ <span class="text" id="1103744202">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1580990306"> <div class="image-container" id="1325827780"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/md/pexels/dms3rep/multi/pexels-photo-3007759.jpeg" id="1952883618"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/md/pexels/dms3rep/multi/pexels-photo-3007759.jpeg" id="1100181578" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1737673087"> <span class="caption-inner" id="1726749957"> <a class="caption-button dmWidget clearfix" id="1407538523"> <span class="iconBg" id="1814598398"> <span class="icon hasFontIcon icon-star" id="1531067840"></span> 
+</span> 
+ <span class="text" id="1700068989">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1268176571"> <div class="image-container" id="1524965963"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC06496.jpeg" id="1823770571"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC06496.jpeg" id="1973316249" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1338963671"> <span class="caption-inner" id="1211514561"> <a class="caption-button dmWidget clearfix" id="1654505122"> <span class="iconBg" id="1808266119"> <span class="icon hasFontIcon icon-star" id="1459501810"></span> 
+</span> 
+ <span class="text" id="1260781397">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1090290389"> <div class="image-container" id="1303195477"> <a data-dm-multisize-attr="href" data-image-url="https://irt-cdn.multiscreensite.com/4479236cdf324f2a8eca68b22887e242/dms3rep/multi/Woman_with_book-6e323014-908a1cc0.jpg" id="1806771180" class="u_1806771180"><img irh="" irw="" alt="" data-src="https://irt-cdn.multiscreensite.com/4479236cdf324f2a8eca68b22887e242/dms3rep/multi/Woman_with_book-6e323014-908a1cc0.jpg" id="1772079813" class="" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1583673495"> <span class="caption-inner" id="1137122780"> <a class="caption-button dmWidget clearfix" id="1364993850"> <span class="iconBg" id="1694667059"> <span class="icon hasFontIcon icon-star" id="1610506747"></span> 
+</span> 
+ <span class="text" id="1168560123">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1168539841"> <div class="image-container" id="1087380478"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC05504.jpeg" id="1958719341"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC05504.jpeg" id="1607563245" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1404416296"> <span class="caption-inner" id="1346997978"> <a class="caption-button dmWidget clearfix" id="1234029952"> <span class="iconBg" id="1515693605"> <span class="icon hasFontIcon icon-star" id="1142474579"></span> 
+</span> 
+ <span class="text" id="1489257081">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1542639451"> <div class="image-container" id="1772241938"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/md/pexels/dms3rep/multi/pexels-photo-4463934.jpeg" id="1260070580"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/md/pexels/dms3rep/multi/pexels-photo-4463934.jpeg" id="1801501648" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1777676071"> <span class="caption-inner" id="1749006611"> <a class="caption-button dmWidget clearfix" id="1016901967"> <span class="iconBg" id="1847862718"> <span class="icon hasFontIcon icon-star" id="1842779800"></span> 
+</span> 
+ <span class="text" id="1183214677">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1714187646"> <div class="image-container" id="1391594880"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC05212.jpeg" id="1446924733"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC05212.jpeg" id="1876641075" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1283517246"> <span class="caption-inner" id="1998194549"> <a class="caption-button dmWidget clearfix" id="1929096246"> <span class="iconBg" id="1060006999"> <span class="icon hasFontIcon icon-star" id="1849573653"></span> 
+</span> 
+ <span class="text" id="1775018404">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1814414813"> <div class="image-container" id="1174043822"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC03898.jpeg" id="1412770778"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC03898.jpeg" id="1959939780" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1833702528"> <span class="caption-inner" id="1569696108"> <a class="caption-button dmWidget clearfix" id="1833649138"> <span class="iconBg" id="1091922790"> <span class="icon hasFontIcon icon-star" id="1376942713"></span> 
+</span> 
+ <span class="text" id="1833425289">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1286197464"> <div class="image-container" id="1293339596"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC02195.jpeg" id="1911598659"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC02195.jpeg" id="1507512965" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1420539969"> <span class="caption-inner" id="1579181606"> <a class="caption-button dmWidget clearfix" id="1604859316"> <span class="iconBg" id="1175659444"> <span class="icon hasFontIcon icon-star" id="1025617050"></span> 
+</span> 
+ <span class="text" id="1176866273">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1617399999"> <div class="image-container" id="1778280891"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/D.F2.jpg" id="1005228276"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/D.F2.jpg" id="1826972594" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1134083728"> <span class="caption-inner" id="1077470341"> <a class="caption-button dmWidget clearfix" id="1020943110"> <span class="iconBg" id="1987923769"> <span class="icon hasFontIcon icon-star" id="1482236927"></span> 
+</span> 
+ <span class="text" id="1483823163">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1266372721"> <div class="image-container" id="1097656320"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/md/pexels/dms3rep/multi/pexels-photo-4754648.jpeg" id="1603085781"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/md/pexels/dms3rep/multi/pexels-photo-4754648.jpeg" id="1421622929" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1685738618"> <span class="caption-inner" id="1030471030"> <a class="caption-button dmWidget clearfix" id="1772022025"> <span class="iconBg" id="1081522803"> <span class="icon hasFontIcon icon-star" id="1560468928"></span> 
+</span> 
+ <span class="text" id="1590398797">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1206919789"> <div class="image-container" id="1849906038"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC00163.jpeg" id="1549628831"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC00163.jpeg" id="1878079508" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1509444973"> <span class="caption-inner" id="1131386668"> <a class="caption-button dmWidget clearfix" id="1972911505"> <span class="iconBg" id="1419205614"> <span class="icon hasFontIcon icon-star" id="1642447880"></span> 
+</span> 
+ <span class="text" id="1449879419">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1968902719"> <div class="image-container" id="1110002426"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC02106BW.jpg" id="1530868796"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC02106BW.jpg" id="1877013553" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1188946096"> <span class="caption-inner" id="1509808222"> <a class="caption-button dmWidget clearfix" id="1572783197"> <span class="iconBg" id="1008532109"> <span class="icon hasFontIcon icon-star" id="1463930083"></span> 
+</span> 
+ <span class="text" id="1731420115">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1299830805"> <div class="image-container" id="1106700891"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC00215.jpeg" id="1110625653"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/3f2e341a/dms3rep/multi/DSC00215.jpeg" id="1067630758" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1668858663"> <span class="caption-inner" id="1601445262"> <a class="caption-button dmWidget clearfix" id="1209495376"> <span class="iconBg" id="1653134933"> <span class="icon hasFontIcon icon-star" id="1605134568"></span> 
+</span> 
+ <span class="text" id="1555877358">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1449316887"> <div class="image-container" id="1161337485"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/md/pexels/dms3rep/multi/pexels-photo-5091121.jpeg" id="1837080916"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/md/pexels/dms3rep/multi/pexels-photo-5091121.jpeg" id="1152774910" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1218575023"> <span class="caption-inner" id="1462974734"> <a class="caption-button dmWidget clearfix" id="1983046545"> <span class="iconBg" id="1942762539"> <span class="icon hasFontIcon icon-star" id="1551288815"></span> 
+</span> 
+ <span class="text" id="1052300354">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1427675301"> <div class="image-container" id="1879708604"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/md/pexels/dms3rep/multi/pexels-photo-3533228.png" id="1106227904"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/md/pexels/dms3rep/multi/pexels-photo-3533228.png" id="1589486371" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1600764343"> <span class="caption-inner" id="1318973507"> <a class="caption-button dmWidget clearfix" id="1481819688"> <span class="iconBg" id="1348296923"> <span class="icon hasFontIcon icon-star" id="1373572029"></span> 
+</span> 
+ <span class="text" id="1195930175">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1511205158"> <div class="image-container" id="1980400595"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/md/pexels/dms3rep/multi/pexels-photo-3657140.jpeg" id="1421978047"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/md/pexels/dms3rep/multi/pexels-photo-3657140.jpeg" id="1074332356" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1713949756"> <span class="caption-inner" id="1709004541"> <a class="caption-button dmWidget clearfix" id="1862140808"> <span class="iconBg" id="1936466327"> <span class="icon hasFontIcon icon-star" id="1785510538"></span> 
+</span> 
+ <span class="text" id="1462105351">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1323823008"> <div class="image-container" id="1127761749"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/md/pexels/dms3rep/multi/pexels-photo-1933873.jpeg" id="1859975997"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/md/pexels/dms3rep/multi/pexels-photo-1933873.jpeg" id="1639535827" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1331967433"> <span class="caption-inner" id="1699775888"> <a class="caption-button dmWidget clearfix" id="1053568113"> <span class="iconBg" id="1188556303"> <span class="icon hasFontIcon icon-star" id="1849458556"></span> 
+</span> 
+ <span class="text" id="1363995661">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1412071532"> <div class="image-container" id="1540709263"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/md/pexels/dms3rep/multi/pexels-photo-3270230.jpeg" id="1483833331"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/md/pexels/dms3rep/multi/pexels-photo-3270230.jpeg" id="1685435576" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1757823994"> <span class="caption-inner" id="1620769447"> <a class="caption-button dmWidget clearfix" id="1856882157"> <span class="iconBg" id="1677365165"> <span class="icon hasFontIcon icon-star" id="1104488103"></span> 
+</span> 
+ <span class="text" id="1990819492">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1621921608"> <div class="image-container" id="1160852349"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/md/pexels/dms3rep/multi/pexels-photo-4407688.jpeg" id="1888227038"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/md/pexels/dms3rep/multi/pexels-photo-4407688.jpeg" id="1710302524" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1480650320"> <span class="caption-inner" id="1378908709"> <a class="caption-button dmWidget clearfix" id="1176911056"> <span class="iconBg" id="1420388825"> <span class="icon hasFontIcon icon-star" id="1732584989"></span> 
+</span> 
+ <span class="text" id="1134114358">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1536873482"> <div class="image-container" id="1509328070"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/md/pexels/dms3rep/multi/pexels-photo-3404200.jpeg" id="1153496510"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/md/pexels/dms3rep/multi/pexels-photo-3404200.jpeg" id="1206912720" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1934287207"> <span class="caption-inner" id="1440878625"> <a class="caption-button dmWidget clearfix" id="1251154811"> <span class="iconBg" id="1325566464"> <span class="icon hasFontIcon icon-star" id="1974331949"></span> 
+</span> 
+ <span class="text" id="1942201763">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1417263658"> <div class="image-container" id="1658662450"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/md/pexels/dms3rep/multi/pexels-photo-573263.jpeg" id="1870209179"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/md/pexels/dms3rep/multi/pexels-photo-573263.jpeg" id="1172563854" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1426850001"> <span class="caption-inner" id="1718622372"> <a class="caption-button dmWidget clearfix" id="1179266661"> <span class="iconBg" id="1179254027"> <span class="icon hasFontIcon icon-star" id="1984127703"></span> 
+</span> 
+ <span class="text" id="1424193458">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1496395713"> <div class="image-container" id="1182441827"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/md/pexels/dms3rep/multi/pexels-photo-573285.jpeg" id="1446904533"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/md/pexels/dms3rep/multi/pexels-photo-573285.jpeg" id="1470713798" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1176469230"> <span class="caption-inner" id="1503931798"> <a class="caption-button dmWidget clearfix" id="1699078410"> <span class="iconBg" id="1229454089"> <span class="icon hasFontIcon icon-star" id="1566014872"></span> 
+</span> 
+ <span class="text" id="1072232205">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+ <li class="photoGalleryThumbs" id="1331981301"> <div class="image-container" id="1481732516"> <a data-dm-multisize-attr="href" data-image-url="https://irp.cdn-website.com/md/pexels/dms3rep/multi/pexels-photo-2026960.jpeg" id="1452554626"><img irh="" irw="" alt="" data-src="https://irp.cdn-website.com/md/pexels/dms3rep/multi/pexels-photo-2026960.jpeg" id="1075139334" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="caption-container" style="display:none" id="1249286073"> <span class="caption-inner" id="1543406634"> <a class="caption-button dmWidget clearfix" id="1984125563"> <span class="iconBg" id="1187104181"> <span class="icon hasFontIcon icon-star" id="1917539177"></span> 
+</span> 
+ <span class="text" id="1948749131">Button</span> 
+</a> 
+</span> 
+</div> 
+</li> 
+</ul> 
+ <div class="photoGalleryViewAll link" isall="true" data-viewall="View more" data-viewless="View less" style="display:none;" id="1948997730"></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</section> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="sticky-widgets-container-global" id="1432105885"></div> 
+ <div class="dmFooterContainer"> <div id="fcontainer" class="u_fcontainer f_hcontainer dmFooter p_hfcontainer"> <div dm:templateorder="250" class="dmFooterResp generalFooter" id="1943048428"> <div data-flex-id="62af179dfb031a1e6efcfa19" data-auto="flex-section" id="1200964308" data-layout-section="" class="u_1200964308 hide-for-small hide-for-large"> <div class="flex-widgets-container" id="1398349521"></div> 
+ <section id="62af179dfb031a1e6efcfa1a" class="flex-element section" data-auto="flex-element-section"> <div id="62af179dfb031a1e6efcfa1b" class="flex-element grid" data-auto="flex-element-grid" data-layout-grid=""> <div id="62af179dfb031a1e6efcfa1d" class="flex-element group" data-auto="flex-element-group"> <div id="62af179dfb031a1e6efcfa1c" class="flex-element group" data-auto="flex-element-group"> <div id="62af17e4fb031a1e6efd0d08" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1626065043"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1626065043" style=""> <h1 class="m-size-36 text-align-center m-text-align-center size-55"><span class="font-size-55 m-font-size-36" m-font-size-set="true" style="display: unset;">&nbsp;Let&rsquo;s talk, meet, &amp; work together.</span></h1> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</section> 
+</div> 
+ <div data-flex-id="174d86f9" data-auto="flex-section" id="1581517156" data-layout-section="" class="u_1581517156 hide-for-medium"> <div class="flex-widgets-container" id="1913136069"></div> 
+ <section id="daa3313a" class="flex-element section" data-auto="flex-element-section"> <div id="dc21e713" class="flex-element grid" data-auto="flex-element-grid" data-layout-grid=""> <div id="639ca257" class="flex-element group" data-auto="flex-element-group"> <div id="c3bbf6c8" class="flex-element group" data-auto="flex-element-group"> <div id="9daac600" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1436343449"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1436343449" style=""> <h1 class="m-text-align-center text-align-center m-size-36 size-60"><span class="font-size-60 m-font-size-36" m-font-size-set="true" style="display: unset;">&nbsp;Let&rsquo;s talk, meet, &amp; work together.</span></h1> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</section> 
+</div> 
+ <div data-flex-id="62af20cafb031a1e6efe361a" data-auto="flex-section" id="1773281080" data-layout-section="" class="u_1773281080 hide-for-small hide-for-large"> <div class="flex-widgets-container" id="1793551616"></div> 
+ <section id="62af20cafb031a1e6efe361b" class="flex-element section" data-auto="flex-element-section"> <div id="62af20cafb031a1e6efe361f" class="flex-element grid" data-auto="flex-element-grid" data-layout-grid=""> <div id="62af20cafb031a1e6efe361c" class="flex-element group" data-auto="flex-element-group"> <div id="62af20cafb031a1e6efe361d" class="flex-element group" data-auto="flex-element-group"> <div id="62af2105fb031a1e6efe5293" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1767453468"> <div class="dmNewParagraph skip-animation-effect skip-hover-effect" data-element-type="paragraph" data-version="5" id="1767453468" style=""> <h6 class="m-size-11 text-align-left size-14 m-text-align-left"><span class="m-font-size-11 font-size-14" style="display: unset;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Terms &amp; Privacy</span></h6> 
+</div> 
+</div> 
+</div> 
+ <div id="62af20cafb031a1e6efe361e" class="flex-element group" data-auto="flex-element-group"> <div id="62af2120fb031a1e6efe5bb8" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="custom" data-external-id="1967931951"> <div class="widget-1f5975 u_1967931951 dmCustomWidget" data-lazy-load="" data-title="" id="1967931951" dmle_extension="custom_extension" data-element-type="custom_extension" icon="false" surround="false" data-widget-id="1f5975986930429f819d4cd2154b5c4a" data-widget-version="22" data-widget-config="eyJjb3B5cmlnaHRUZXh0IjoiPHAgY2xhc3M9XCJydGVCbG9ja1wiPsKgQWxsIFJpZ2h0cyBSZXNlcnZlZCB8IENIUklTIENPTExBRE88L3A+In0="> <div class="copyright"> <div>&copy; 2024&nbsp;</div> 
+ <div><p class="rteBlock">&nbsp;All Rights Reserved | CHRIS COLLADO</p></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</section> 
+</div> 
+ <div data-flex-id="12a6a60d" data-auto="flex-section" id="1993487016" data-layout-section="" class="u_1993487016 hide-for-medium"> <div class="flex-widgets-container" id="1276008419"></div> 
+ <section id="973f2c2a" class="flex-element section" data-auto="flex-element-section"> <div id="a700df11" class="flex-element grid" data-auto="flex-element-grid" data-layout-grid=""> <div id="3142d787" class="flex-element group" data-auto="flex-element-group"> <div id="51032b63" class="flex-element group" data-auto="flex-element-group"> <div id="7a34f43a" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1243778610"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1243778610" style=""> <h6 class="m-text-align-left text-align-left m-size-11 size-14"><span class="font-size-14 m-font-size-11" style="display: unset;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Terms &amp; Privacy</span></h6> 
+</div> 
+</div> 
+</div> 
+ <div id="b9845f3e" class="flex-element group" data-auto="flex-element-group"> <div id="26fbe70d" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="custom" data-external-id="1073039335"> <div class="widget-1f5975 u_1073039335 dmCustomWidget" data-lazy-load="" data-title="" id="1073039335" dmle_extension="custom_extension" data-element-type="custom_extension" icon="false" surround="false" data-widget-id="1f5975986930429f819d4cd2154b5c4a" data-widget-version="22" data-widget-config="eyJjb3B5cmlnaHRUZXh0IjoiPHAgY2xhc3M9XCJydGVCbG9ja1wiPsKgQWxsIFJpZ2h0cyBSZXNlcnZlZCB8IENIUklTIENPTExBRE88L3A+In0="> <div class="copyright"> <div>&copy; 2024&nbsp;</div> 
+ <div><p class="rteBlock">&nbsp;All Rights Reserved | CHRIS COLLADO</p></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</section> 
+</div> 
+</div> 
+ <div id="1236746004" dmle_extension="powered_by" data-element-type="powered_by" icon="true" surround="false"></div> 
+</div> 
+</div> 
+</div> 
+ <a class="dmBackToTop" id="dmBackToTop" aria-label="Scroll to top" href="#dmContent"></a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+
+    </div>
+</div>
+<!--  Add full CSS and Javascript before the close tag of the body if needed -->
+<!-- ========= JS Section ========= -->
+<script>
+    var isWLR = true;
+
+    window.customWidgetsFunctions = {};
+    window.customWidgetsStrings = {};
+    window.collections = {};
+    window.currentLanguage = "ENGLISH"
+    window.isSitePreview = false;
+</script>
+<script>
+    window.customWidgetsFunctions["1f5975986930429f819d4cd2154b5c4a~22"] = function (element, data, api) {
+        null
+    };
+</script>
+<script type="text/javascript">
+
+    var d_version = "production_4837";
+    var build = "2024-10-16T08_48_18";
+    window['v' + 'ersion'] = d_version;
+
+    function buildEditorParent() {
+        window.isMultiScreen = true;
+        window.editorParent = {};
+        window.previewParent = {};
+        window.assetsCacheQueryParam = "?version=2024-10-16T08_48_18";
+        try {
+            var _p = window.parent;
+            if (_p && _p.document && _p.$ && _p.$.dmfw) {
+                window.editorParent = _p;
+            } else if (_p.isSitePreview) {
+                window.previewParent = _p;
+            }
+        } catch (e) {
+
+        }
+    }
+
+    buildEditorParent();
+</script>
+
+<!-- Load jQuery -->
+<script type="text/javascript" id='d-js-jquery'
+        src="https://static.cdn-website.com/libs/jquery/jquery-3.7.0.min.js"></script>
+<!-- End Load jQuery -->
+<!-- Injecting site-wide before scripts -->
+<!-- End Injecting site-wide to the head -->
+
+
+<script>
+    var _jquery = window.$;
+
+    var jqueryAliases = ['$', 'jquery', 'jQuery'];
+
+    jqueryAliases.forEach((alias) => {
+        Object.defineProperty(window, alias, {
+            get() {
+                return _jquery;
+            },
+            set() {
+                console.warn("Trying to over-write the global jquery object!");
+            }
+        });
+    });
+    window.jQuery.migrateMute = true;
+</script>
+<script>
+    window.cookiesNotificationMarkupPreview = 'null';
+</script>
+
+<!-- HEAD RT JS Include -->
+<script id='d-js-params'>
+    window.INSITE = window.INSITE || {};
+    window.INSITE.device = "mobile";
+
+    window.rtCommonProps = {};
+    rtCommonProps["rt.ajax.ajaxScriptsFix"] =true;
+    rtCommonProps["rt.pushnotifs.sslframe.encoded"] = 'aHR0cHM6Ly97c3ViZG9tYWlufS5wdXNoLW5vdGlmcy5jb20=';
+    rtCommonProps["runtimecollector.url"] = 'https://rtc.multiscreensite.com';
+    rtCommonProps["performance.tabletPreview.removeScroll"] = 'false';
+    rtCommonProps["inlineEditGrid.snap"] =true;
+    rtCommonProps["popup.insite.cookie.ttl"] = '0.5';
+    rtCommonProps["rt.pushnotifs.force.button"] =true;
+    rtCommonProps["common.mapbox.token"] = 'pk.eyJ1IjoiZGFubnliMTIzIiwiYSI6ImNqMGljZ256dzAwMDAycXBkdWxwbDgzeXYifQ.Ck5P-0NKPVKAZ6SH98gxxw';
+    rtCommonProps["common.mapbox.js.override"] =false;
+    rtCommonProps["common.here.appId"] = 'iYvDjIQ2quyEu0rg0hLo';
+    rtCommonProps["common.here.appCode"] = '1hcIxLJcbybmtBYTD9Z1UA';
+    rtCommonProps["isCoverage.test"] =false;
+    rtCommonProps["ecommerce.ecwid.script"] = 'https://app.multiscreenstore.com/script.js';
+    rtCommonProps["feature.flag.mappy.kml"] =false;
+    rtCommonProps["common.resources.dist.cdn"] =true;
+    rtCommonProps["common.build.dist.folder"] = 'production/4837';
+    rtCommonProps["common.resources.cdn.host"] = 'https://static.cdn-website.com';
+    rtCommonProps["common.resources.folder"] = 'https://static.cdn-website.com/mnlt/production/4837';
+    rtCommonProps["feature.flag.runtime.backgroundSlider.preload.slowly"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.enabled"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.respectCssAnimationProps.enabled"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.jitAnimation.enabled"] =true;
+    rtCommonProps["feature.flag.sites.google.analytics.gtag"] =true;
+    rtCommonProps["feature.flag.runOnReadyNewTask"] =true;
+    rtCommonProps["isAutomation.test"] =false;
+
+    
+    rtCommonProps['common.mapsProvider'] = 'mapbox';
+    
+    rtCommonProps['common.mapsProvider.version'] = '0.52.0';
+    rtCommonProps['common.geocodeProvider'] = 'mapbox';
+    rtCommonProps['common.map.defaults.radiusSize'] = '1500';
+    rtCommonProps['common.map.defaults.radiusBg'] = 'rgba(255, 255, 255, 0.4)';
+    rtCommonProps['common.map.defaults.strokeColor'] = 'rgba(255, 255, 255, 1)';
+    rtCommonProps['common.map.defaults.strokeSize'] = '2';
+    rtCommonProps['server.for.resources'] = '';
+    rtCommonProps['feature.flag.lazy.widgets'] = true;
+    rtCommonProps['feature.flag.single.wow'] = false;
+    rtCommonProps['feature.flag.disallowPopupsInEditor'] = true;
+    rtCommonProps['feature.flag.mark.anchors'] = true;
+    rtCommonProps['captcha.public.key'] = '6LffcBsUAAAAAMU-MYacU-6QHY4iDtUEYv_Ppwlz';
+    rtCommonProps['captcha.invisible.public.key'] = '6LeiWB8UAAAAAHYnVJM7_-7ap6bXCUNGiv7bBPME';
+    rtCommonProps["images.sizes.small"] =160;
+    rtCommonProps["images.sizes.mobile"] =640;
+    rtCommonProps["images.sizes.tablet"] =1280;
+    rtCommonProps["images.sizes.desktop"] =1920;
+    rtCommonProps["modules.resources.cdn"] =true;
+    rtCommonProps["import.images.storage.imageCDN"] = 'https://lirp.cdn-website.com/';
+    rtCommonProps["facebook.api.version"] = '7.0';
+    rtCommonProps["feature.flag.runtime.inp.threshold"] =150;
+    rtCommonProps["feature.flag.performance.logs"] =true;
+    rtCommonProps["site.widget.form.captcha.type"] = 'g_recaptcha';
+    rtCommonProps["friendly.captcha.site.key"] = 'FCMGSQG9GVNMFS8K';
+    rtCommonProps["cookiebot.mapbox.consent.category"] = 'marketing';
+    rtCommonProps["platform.monolith.personalization.dateTimeCondition.popupMsgAction.moveToclient.enabled"] =false;
+
+    // feature flags that's used out of runtime module (in  legacy files)
+    rtCommonProps["site.runtime.video.background.ssr"] =true;
+
+    window.rtFlags = {};
+    rtFlags["unsuspendEcwidStoreOnRuntime.enabled"] =true;
+    rtFlags["scripts.widgetCount.enabled"] =true;
+    rtFlags["ecom.monolith.signup.widget.js.creds.via.body"] = true;
+    rtFlags["ecom.ecwid.categoryPage.modifyLinks"] = true;
+    rtFlags["ecom.ecwid.delegateNavigationToEcwid.enabled"] = false;
+    rtFlags["ecom.ecwidNewUrlStructure.enabled"] = false;
+    rtFlags["ecom.ecwid.old.store.fix.scrolling.enabled"] = true;
+    rtFlags["ecom.ecwid.old.store.fix.facebook.share"] = true;
+    rtFlags["ecom.ecwid.fallBackInCaseLinksNotFound.enabled"] = true;
+    rtFlags["feature.flag.photo.gallery.exact.size"] =true;
+    rtFlags["new.store.fix.ecwid.back.bug"] =true;
+    rtFlags["facebook.runtime.widgets.upgrade"] =true;
+    rtFlags["ecom.ecwid.solve.url.modifications"] = true;
+    rtFlags["ecom.ecwid.configOptions"] = true;
+    rtFlags["geocode.search.localize"] =false;
+    rtFlags["feature.flag.runtime.newAnimation.asyncInit.setTimeout.enabled"] =false;
+    rtFlags["site.contact.form.fix.for.attribute"] =true;
+    rtFlags["contact.form.date.format.enabled"] = true;
+    rtFlags["twitter.heightLimit.enabled"] = true;
+    rtFlags["ecom.ecwid.fixTranslations.enabled"] = true;
+    rtFlags["runtime.load.script.native"] =true;
+    rtFlags["editor.classicHybrid.photogallery.fix"] =true;
+    rtFlags["runtime.lottieOverflow"] =false;
+    rtFlags["runtime.monitoring.sentry.ignoreErrors"] = "";
+    rtFlags["ecom.ecwid.old.store.fix.scrolling.detect.enable"] =true;
+    rtFlags["contact.form.browserValidation.enabled"] =true;
+</script>
+<script src="https://static.cdn-website.com/mnlt/production/4837/_dm/s/rt/dist/scripts/d-js-one-runtime-unified-mobile.min.js"  id="d-js-core"></script>
+<!-- End of HEAD RT JS Include -->
+<script src="https://static.cdn-website.com/mnlt/production/4837/_dm/s/rt/dist/scripts/d-js-jquery-migrate.min.js" ></script>
+<script>
+    
+    $(window).bind("orientationchange", function (e) {
+        $.layoutManager.initLayout();
+        
+    });
+    $(document).resize(function () {
+        $.layoutManager.initLayout();
+        
+    });
+</script>
+<script type="text/javascript" id="d_track_campaign">
+(function() {
+ 	var campaign = (/utm_campaign=([^&]*)/).exec(window.location.search);
+
+ 	if (campaign && campaign != null && campaign.length > 1) {
+ 		campaign = campaign[1];
+ 		document.cookie = "_dm_rt_campaign=" + campaign + ";expires=" + new Date().getTime() + 24*60*60*1000 + ";domain=" + window.location.hostname + ";path=/";
+ 	}
+}());
+</script>
+<script type="text/javascript" >
+  var _dm_gaq = {};
+  var _gaq = _gaq || [];
+  var _dm_insite = [];
+</script>
+
+<script type="text/javascript" id="d_track_sp">
+;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
+p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
+};p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
+n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,"script","//d32hwlnfiv2gyn.cloudfront.net/sp-2.0.0-dm-0.1.min.js","snowplow"));
+window.dmsnowplow  = window.snowplow;
+
+dmsnowplow('newTracker', 'cf', 'd32hwlnfiv2gyn.cloudfront.net', { // Initialise a tracker
+  appId: '3f2e341a'
+});
+
+// snowplow queries element styles so we wait until CSS calculations are done.
+requestAnimationFrame(() => {
+	dmsnowplow('trackPageView');
+	_dm_insite.forEach((rule) => {
+		// Specifically in popup only the client knows if it is shown or not so we don't always want to track its impression here
+		// the tracking is in popup.js
+		if (rule.actionName !== "popup") {
+			dmsnowplow('trackStructEvent', 'insite', 'impression', rule.ruleType, rule.ruleId);
+		}
+		window?.waitForDeferred?.('dmAjax', () => {
+			$.DM.events.trigger('event-ruleTriggered', {value: rule});
+		});
+	});
+});
+</script>
+   <div style="display:none;" id="P6iryBW0Wu"></div>
+
+<!-- photoswipe markup -->
+
+
+
+
+
+
+
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<div id="fb-root"
+        data-locale="en"></div>
+<!-- Alias: 3f2e341a -->
+<div class="dmPopupMask" id="dmPopupMask"></div>
+<div id="dmPopup" class="dmPopup">
+	<div class="dmPopupCloseWrapper"> <div class="dmPopupClose dm-common-icons-close oneIcon" onclick="dmHidePopup(event);"></div> </div>
+ 	<div class="dmPopupTitle"> <span></span> Share by:</div> 
+	<div class="data"></div>
+</div><script id="d_track_personalization">
+	window?.waitForDeferred?.('dmAjax', () => {
+		// Collects client data and updates cookies used by smart sites
+		window.expireDays = 365;
+		window.visitLength = 30 * 60000;
+		$.setCookie("dm_timezone_offset", (new Date()).getTimezoneOffset(), window.expireDays);
+			setSmartSiteCookiesInternal("dm_this_page_view","dm_last_page_view","dm_total_visits","dm_last_visit");
+	});
+</script>
+<script type="text/javascript">
+    
+    Parameters.NavigationAreaParams.MoreButtonText = 'MORE';
+    
+    Parameters.NavigationAreaParams.LessButtonText = 'LESS';
+    Parameters.HomeLinkText = 'Home';
+    </script>
+<!--  End Script tags -->
+
+<!--  Site Wide Html Markup -->
+<!--  Site Wide Html Markup -->
+</body>
+</html>
